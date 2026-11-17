@@ -508,28 +508,28 @@
             "id": "3.2",
             "title": "المعايرة بين المقيّمين",
             "minutes": 35,
-            "summary": "تقارن تقديرات مقيّمَين لعشرين خطرًا، وتحسب الاتفاق بالنطاق نفسه وبفارق نطاق واحد، وتناقش المخاطر التي تفصلها نطاقان، ثم تعيد تقديرها بعامل متفق عليه.",
+            "summary": "تقارن تقديرات مقيّمَين مرجعيين لعشرين خطرًا، وتحسب الاتفاق بالنطاق نفسه وبفارق نطاق واحد، وتناقش المخاطر التي تفصلها نطاقان، ثم تعاير تقديرك المستقل من المختبر 3.1 مع زميل بعامل متفق عليه.",
             "href": "D3_2_calibration.html",
             "steps": [
               {
                 "text": "اقرأ ورقتي المقيّمَين ودليل التقدير",
-                "minutes": 4
+                "minutes": 3
               },
               {
                 "text": "احسب النطاق لكل تقدير والفارق بينهما",
-                "minutes": 8
+                "minutes": 6
               },
               {
                 "text": "احسب نسبة الاتفاق بالنطاق نفسه وبفارق نطاق",
-                "minutes": 5
+                "minutes": 4
               },
               {
                 "text": "ناقش المخاطر التي يفصلها نطاقان وسمِّ العامل",
-                "minutes": 10
+                "minutes": 9
               },
               {
-                "text": "أعد التقدير واحسب الاتفاق بعد المعايرة",
-                "minutes": 8
+                "text": "عايِر تقديرك المستقل من المختبر 3.1 مع زميل",
+                "minutes": 13
               }
             ],
             "stretch": "اطلب من مساعد ذكي أن يعترض على أعلى ثلاثة تقديرات عندك، وقرّر أي اعتراض يغيّر رقمًا ولماذا"
@@ -836,7 +836,7 @@
         "weight": 15
       },
       {
-        "criterion": "الدفاع أمام اللجنة وإعادة التقدير في الحال",
+        "criterion": "السياق والنطاق في التقرير واتساق توصية المتبقي",
         "weight": 20
       },
       {
@@ -858,7 +858,8 @@
         "LibreOffice Calc",
         "Microsoft Excel",
         "Google Sheets",
-        "منصة مفتوحة المصدر للحوكمة والمخاطر والامتثال مثل CISO Assistant"
+        "منصة مفتوحة المصدر للحوكمة والمخاطر والامتثال مثل CISO Assistant",
+        "حزمة تجارية للحوكمة والمخاطر والامتثال تعتمدها الجهة"
       ]
     },
     {
@@ -879,6 +880,7 @@
       "slot": "تمارين المؤشرات على بيانات المراقبة",
       "examples": [
         "جدول بيانات برسم خطي",
+        "دفتر Google Colab برسم بياني",
         "Looker Studio",
         "Power BI"
       ]
@@ -960,6 +962,14 @@
         {
           "title": "Federal Reserve, OCC, FDIC: Supervisory Guidance on Model Risk Management (SR 26-2, 2026)",
           "url": "https://www.federalreserve.gov/frrs/guidance/supervisory-guidance-on-model-risk-management.htm"
+        },
+        {
+          "title": "Cox, L. A. (2008). What's Wrong with Risk Matrices? Risk Analysis 28(2)",
+          "url": "https://doi.org/10.1111/j.1539-6924.2008.01030.x"
+        },
+        {
+          "title": "IEC 60812:2018 Failure modes and effects analysis (FMEA and FMECA)",
+          "url": "https://webstore.iec.ch/en/publication/26359"
         }
       ]
     },
