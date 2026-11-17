@@ -5,11 +5,11 @@ AI Risk Management in Practice
 
 مسار التنفيذيين والقادة · أكاديمية سدايا · LDS-AIG-204 · المستوى 200
 
-REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك فعله بعد المقرر
+تدير دورة مخاطر الذكاء الاصطناعي كاملة على الإطار الوطني: تحدد السياق، وتحدد المخاطر، وتقدّرها وتعايرها، وتعالجها، وتراقبها بمؤشرات، وتدافع عن المتبقي أمام لجنة
 
 ينفذ المشاركون دورة مخاطر الذكاء الاصطناعي كاملة على حالات واقعية: يحددون السياق والنطاق، ويحددون المخاطر بأساليب منظمة، ويقدّرون الاحتمالية والأثر، ويختارون المعالجات، ويعتمدون المخاطر المتبقية، ويعرّفون المؤشرات التي تبيّن متى يتغير الخطر. والإطار الوطني لإدارة مخاطر الذكاء الاصطناعي هو المنهج الأساسي، مع جداول مقابلة بالأطر الدولية. والمشروع الختامي تقييم كامل للمخاطر لمساعد خدمة حكومية افتراضي ولوكيل مشتريات داخلي، يُعرض على لجنة مخاطر تجريبية وتليه مهمة مراقبة متعقَّبة.
 
-**الصيغة:** دورة مكثفة: 4 أيام تدريبية ويوم للمشروع الختامي، مع عمل تحضيري موجه ومهمة متابعة متعقَّبة
+**الصيغة:** دورة مكثفة: 4 أيام تدريبية في كل منها أربع جلسات (30 دقيقة للشرح ومختبر من 35 أو 30 دقيقة)، ويوم للمشروع الختامي، مع عمل تحضيري موجه ومهمة متابعة متعقَّبة بعد أربعة أسابيع
 
 **صفحة المقرر:** https://sdaiaacademy.github.io/lds-aig-204/
 <!-- /academy:title -->
@@ -31,10 +31,10 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | الوحدة | العنوان | الجلسات | الشرائح |
 |---|---|---|---|
-| اليوم 1 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day1.html`](slides/day1.html) |
-| اليوم 2 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day2.html`](slides/day2.html) |
-| اليوم 3 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day3.html`](slides/day3.html) |
-| اليوم 4 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day4.html`](slides/day4.html) |
+| اليوم 1 | الأسس والتقبّل والسياق | الخطر في الذكاء الاصطناعي ودورة الإطار الوطني; دروس من إدارة مخاطر النماذج، والتقبّل قبل التقدير; حدود التحمّل ومسار التصعيد; السياق والنطاق قبل أي خطر | [`slides/day1.html`](slides/day1.html) |
+| اليوم 2 | تحديد المخاطر | أصحاب المصلحة والمتأثرون; صياغة الخطر وحالات إساءة الاستخدام; تحليل أنماط الفشل ومخاطر المورّد; من سجلات الحوادث إلى السجل | [`slides/day2.html`](slides/day2.html) |
+| اليوم 3 | التقدير والمعايرة والمعالجة | الاحتمالية والأثر على المصفوفة; المعايرة بين المقيّمين والتجميع; خيارات المعالجة والضوابط والإشراف البشري; التكلفة والمتبقي والاعتماد | [`slides/day3.html`](slides/day3.html) |
+| اليوم 4 | المراقبة وإعادة التقييم واللجنة | مؤشرات المخاطر الرئيسة واختبار الضوابط; قراءة بيانات المراقبة والإنذار المبكر; محفزات إعادة التقييم وإشعار المورّد; التقرير إلى اللجنة والدفاع عن المتبقي | [`slides/day4.html`](slides/day4.html) |
 | المشروع الختامي | عروض المشروع الختامي |  | [`slides/capstone.html`](slides/capstone.html) |
 <!-- /academy:units -->
 
@@ -49,22 +49,22 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | | الجلسة | المختبر | الملف |
 |---|---|---|---|
-| 1.1 | اليوم 1 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 1.1 | [`D1_1.html`](labs/D1_1.html) |
-| 1.2 | اليوم 1 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 1.2 | [`D1_2.html`](labs/D1_2.html) |
-| 1.3 | اليوم 1 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 1.3 | [`D1_3.html`](labs/D1_3.html) |
-| 1.4 | اليوم 1 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 1.4 | [`D1_4.html`](labs/D1_4.html) |
-| 2.1 | اليوم 2 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 2.1 | [`D2_1.html`](labs/D2_1.html) |
-| 2.2 | اليوم 2 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 2.2 | [`D2_2.html`](labs/D2_2.html) |
-| 2.3 | اليوم 2 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 2.3 | [`D2_3.html`](labs/D2_3.html) |
-| 2.4 | اليوم 2 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 2.4 | [`D2_4.html`](labs/D2_4.html) |
-| 3.1 | اليوم 3 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 3.1 | [`D3_1.html`](labs/D3_1.html) |
-| 3.2 | اليوم 3 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 3.2 | [`D3_2.html`](labs/D3_2.html) |
-| 3.3 | اليوم 3 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 3.3 | [`D3_3.html`](labs/D3_3.html) |
-| 3.4 | اليوم 3 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 3.4 | [`D3_4.html`](labs/D3_4.html) |
-| 4.1 | اليوم 4 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 4.1 | [`D4_1.html`](labs/D4_1.html) |
-| 4.2 | اليوم 4 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 4.2 | [`D4_2.html`](labs/D4_2.html) |
-| 4.3 | اليوم 4 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 4.3 | [`D4_3.html`](labs/D4_3.html) |
-| 4.4 | اليوم 4 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 4.4 | [`D4_4.html`](labs/D4_4.html) |
+| 1.1 | اليوم 1 · الجلسة 1 | خريطة المقابلة بين الأطر | [`D1_1_crosswalk.html`](labs/D1_1_crosswalk.html) |
+| 1.2 | اليوم 1 · الجلسة 2 | مستويات التقبّل لكل فئة | [`D1_2_appetite.html`](labs/D1_2_appetite.html) |
+| 1.3 | اليوم 1 · الجلسة 3 | حدود التحمّل والتصعيد | [`D1_3_tolerance.html`](labs/D1_3_tolerance.html) |
+| 1.4 | اليوم 1 · الجلسة 4 | نطاق «سَمْت» | [`D1_4_scope.html`](labs/D1_4_scope.html) |
+| 2.1 | اليوم 2 · الجلسة 1 | خريطة أضرار أصحاب المصلحة | [`D2_1_stakeholders.html`](labs/D2_1_stakeholders.html) |
+| 2.2 | اليوم 2 · الجلسة 2 | حالات إساءة الاستخدام | [`D2_2_misuse.html`](labs/D2_2_misuse.html) |
+| 2.3 | اليوم 2 · الجلسة 3 | تحليل أنماط الفشل في مسار الخدمة | [`D2_3_fmea.html`](labs/D2_3_fmea.html) |
+| 2.4 | اليوم 2 · الجلسة 4 | من الحوادث إلى السجل | [`D2_4_register.html`](labs/D2_4_register.html) |
+| 3.1 | اليوم 3 · الجلسة 1 | التقدير المستقل لعشرين خطرًا | [`D3_1_scoring.html`](labs/D3_1_scoring.html) |
+| 3.2 | اليوم 3 · الجلسة 2 | المعايرة بين المقيّمين | [`D3_2_calibration.html`](labs/D3_2_calibration.html) |
+| 3.3 | اليوم 3 · الجلسة 3 | اختيار المعالجة والضوابط | [`D3_3_treatment.html`](labs/D3_3_treatment.html) |
+| 3.4 | اليوم 3 · الجلسة 4 | المتبقي والاعتماد | [`D3_4_residual.html`](labs/D3_4_residual.html) |
+| 4.1 | اليوم 4 · الجلسة 1 | ورقة المؤشرات | [`D4_1_kri.html`](labs/D4_1_kri.html) |
+| 4.2 | اليوم 4 · الجلسة 2 | كشف التدهور المزروع | [`D4_2_detect.html`](labs/D4_2_detect.html) |
+| 4.3 | اليوم 4 · الجلسة 3 | إعادة التقييم بعد إشعار المورّد | [`D4_3_reassess.html`](labs/D4_3_reassess.html) |
+| 4.4 | اليوم 4 · الجلسة 4 | ورقة اللجنة وتمرين الحقيقة المتغيرة | [`D4_4_committee.html`](labs/D4_4_committee.html) |
 <!-- /academy:labs -->
 
 ## المشروع الختامي
@@ -84,17 +84,40 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 كل سطر قدرة، والأمثلة قابلة للتبديل.
 
-- **سجل المخاطر:** أي جدول بيانات, منصة مفتوحة المصدر للحوكمة والمخاطر والامتثال, حزمة تجارية للحوكمة والمخاطر والامتثال
-- **قوالب التحليل المنظم:** ورقة عمل لتحليل أنماط الفشل وآثارها, مخطط ربطة العنق (bow-tie) في أداة مخططات مفتوحة مثل draw.io
+- **سجل المخاطر:** LibreOffice Calc, Microsoft Excel, Google Sheets, منصة مفتوحة المصدر للحوكمة والمخاطر والامتثال مثل CISO Assistant
+- **قوالب التحليل المنظم:** ورقة تحليل أنماط الفشل وآثارها في جدول بيانات, مخطط ربطة العنق في draw.io
 - **السجلات العامة لحوادث الذكاء الاصطناعي:** AI Incident Database, OECD AI Incidents Monitor
-- **تمارين المؤشرات على بيانات المراقبة:** دفتر مع رسوم بيانية, أي أداة للوحات المعلومات
-- **مساعد قائم على نموذج لغوي للاعتراض والصياغة:** نموذج مفتوح الأوزان يُشغَّل محليًا, أي مساعد تجاري معتمد
+- **تمارين المؤشرات على بيانات المراقبة:** جدول بيانات برسم خطي, Looker Studio, Power BI
+- **مساعد قائم على نموذج لغوي للاعتراض والصياغة:** أي مساعد تجاري تعتمده الجهة, نموذج مفتوح الأوزان تشغّله الجهة
 <!-- /academy:tools -->
 
 <!-- academy:sources -->
 ## المصادر
 
-- REPLACE: كل مصدر يستشهد به المقرر مع عنوانه، في course.json ضمن "sources"؛ هذه القائمة تُكتب من هناك
+### المراجع الوطنية
+
+- [سدايا: الإطار الوطني لإدارة مخاطر الذكاء الاصطناعي (النص العربي الكامل)](https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/ExecutiveSummaryAr.pdf)
+- [SDAIA: National AI Risk Management Framework, executive summary (SDAIA-P145EN)](https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/ExecutiveSummaryEn.pdf)
+- [سدايا: مبادئ أخلاقيات الذكاء الاصطناعي](https://sdaia.gov.sa/ar/SDAIA/about/Documents/ai-principles.pdf)
+- [SDAIA: AI Ethics Principles (SDAIA-P114E)](https://sdaia.gov.sa/en/SDAIA/about/Documents/ai-principles.pdf)
+- [نظام حماية البيانات الشخصية](https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf)
+- [اللائحة التنفيذية لنظام حماية البيانات الشخصية](https://sdaia.gov.sa/ar/SDAIA/about/Documents/ImplementingRegulationPersonalDataProtectionLawAr.pdf)
+- [الهيئة الوطنية للأمن السيبراني: الضوابط الأساسية للأمن السيبراني](https://nca.gov.sa/ar/regulatory-documents/controls-list/ecc/)
+- [سدايا: الأنظمة والسياسات (صفحة الفهرس)](https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx)
+
+### الأطر الدولية
+
+- [NIST AI 100-1: Artificial Intelligence Risk Management Framework (AI RMF 1.0)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf)
+- [NIST AI 600-1: AI RMF Generative Artificial Intelligence Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
+- [ISO/IEC 23894:2023 Information technology, Artificial intelligence, Guidance on risk management](https://www.iso.org/standard/77304.html)
+- [NIST: Crosswalk of AI RMF 1.0 and ISO/IEC 23894:2023](https://airc.nist.gov/documents/3/ai-2025-00109_revised_ISO_IEC_23894_Crosswalk_to_the_NIST_AI_RMF.pdf)
+- [Slattery et al.: The AI Risk Repository (taxonomies of AI risk)](https://arxiv.org/abs/2408.12622)
+- [Federal Reserve, OCC, FDIC: Supervisory Guidance on Model Risk Management (SR 26-2, 2026)](https://www.federalreserve.gov/frrs/guidance/supervisory-guidance-on-model-risk-management.htm)
+
+### سجلات الحوادث العامة
+
+- [AI Incident Database](https://incidentdatabase.ai/)
+- [OECD AI Incidents and Hazards Monitor](https://oecd.ai/en/incidents)
 <!-- /academy:sources -->
 
 ### المرجعيات الوطنية
