@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="deck" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اليوم 3 · التقدير والمعايرة والمعالجة · إدارة مخاطر الذكاء الاصطناعي في التطبيق العملي</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="day3.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<div class="deck" data-course="إدارة مخاطر الذكاء الاصطناعي في التطبيق العملي" data-track="executives" data-day="اليوم 3">
+<section class="slide title" id="title" data-auto="title" data-label="الترحيب" data-n="1">
+  <div class="kicker">أكاديمية سدايا · إدارة مخاطر الذكاء الاصطناعي في التطبيق العملي</div>
+  <h1>التقدير والمعايرة والمعالجة</h1>
+  <p class="lead mt">اليوم 3: الاحتمالية والأثر على مصفوفة أربعة في أربعة، ومعايرة المقيّمين، واختيار المعالجة والضوابط، والمتبقي واعتماده</p>
+  <div class="meta"><span class="track">مسار التنفيذيين والقادة</span><span>4 أيام تدريبية + يوم للمشروع الختامي</span><span>4 جلسات · 4 مختبرات</span><span>LDS-AIG-204</span></div>
+  <aside class="notes"><p>أمس كتبنا عشرين خطرًا. اليوم نعطيها أرقامًا يمكن الدفاع عنها، ثم نقرر ماذا نفعل بكل منها، ومن يوقّع على ما يبقى. الرسالة: الرقم بلا عامل مكتوب رأي، والمتبقي بلا توقيع لم يُقبل.</p></aside>
+</section>
+
+<section class="slide" id="agenda" data-auto="agenda" data-label="جدول اليوم" data-n="2">
+  <div class="kicker">اليوم</div>
+  <h2>التقدير والمعايرة والمعالجة</h2>
+  <div class="agenda"><div class="item"><div><b>الجلسة 1 · الاحتمالية والأثر على المصفوفة</b><small>مقياسا الاحتمالية والأثر في الإطار الوطني وعواملهما، والمصفوفة أربعة في أربعة ونطاقاتها، والخطر الأصلي والمتبقي</small></div></div><div class="item"><div><b>الجلسة 2 · المعايرة بين المقيّمين والتجميع</b><small>لماذا يختلف المقيّمون، والتثبيت والانحياز، وقياس الاتفاق ومعناه، ومزالق تجميع المخاطر وخرائط الحرارة</small></div></div><div class="item"><div><b>الجلسة 3 · خيارات المعالجة والضوابط والإشراف البشري</b><small>التجنب والتخفيف والنقل والقبول، واختيار الضوابط الوقائية والكاشفة والتصحيحية وتصميمها، والإشراف البشري ضابطًا وحدوده</small></div></div><div class="item"><div><b>الجلسة 4 · التكلفة والمتبقي والاعتماد</b><small>التناسب بين تكلفة الضابط والخطر، وتقدير الخطر المتبقي ومبرره، وقرار القبول أو التصعيد بحسب بيان التقبّل</small></div></div></div>
+  <aside class="notes"><p>جلستان للتقدير وجلستان للمعالجة. المختبر الأول دون مساعد ذكي عمدًا. الاستراحات بزر B.</p></aside>
+</section>
+
+<section class="slide" id="review-day2" data-lo="LO2" data-n="3">
+  <div class="kicker">مراجعة اليوم 2</div>
+  <h2>أي مصدر يكشف هذا الخطر؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO2" data-id="review-day2-q1">
+    <p class="lead">في مساعد مواعيد لمستشفى افتراضي، الرسائل التذكيرية تُرسل إلى رقم قديم، والمريض لا يعلم أن هناك تذكيرًا، والعيادة ترى غيابًا فقط. أي أسلوب تحديد يكشف هذا الخطر قبل أن يقع؟</p>
+    <div class="opts">
+      <div class="opt" data-why="الحوادث تكشف ما وقع لغيرك، وقد لا يكون أحد سجّل حادثة مثله" data-k="أ">البحث في سجلات الحوادث العامة عن تذكيرات ضائعة</div>
+      <div class="opt" data-ok data-k="ب">تحليل أنماط الفشل خطوة بخطوة مع عمود الاكتشاف لكل خطوة</div>
+      <div class="opt" data-why="المريض لا يعرف أنه تضرر، فلن يذكره في مقابلة" data-k="ج">مقابلة المرضى وسؤالهم عن مشكلات التذكير التي واجهوها هذا العام</div>
+      <div class="opt" data-why="المسيء يقصد ضررًا، وهذا فشل غير متعمد لا يكتبه من منظوره" data-k="د">كتابة حالات إساءة الاستخدام من منظور مستخدم مسيء</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> الفشل الصامت لا يظهر في الشكاوى ولا في المقابلات. يظهر حين تسأل لكل خطوة: من يكتشف الفشل؟ والجواب «لا أحد».</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ب. هذا ما وجدناه في الخطوة السادسة من مسار «سَمْت». كل مصدر يرى ما لا يراه غيره، وهذا سبب أن السجل جاء من أربعة مصادر.</p></aside>
+</section>
+
+<!-- الجلسة 1 -->
+
+<section class="slide section" id="s1" data-auto="section" data-session="1" data-n="4">
+  <div class="kicker">الجلسة 1</div>
+  <h1>الاحتمالية والأثر على المصفوفة</h1>
+  <ul class="bullets outcomes"><li>تقدّر الاحتمالية بعوامل التعرض والضوابط وسهولة الحدوث والسوابق</li><li>تقدّر الأثر بالشدة والحجم والحساسية وسرعة التعافي</li><li>تحسب مستوى الخطر وتضعه في نطاقه وتكتب مبرره</li></ul>
+  <div class="sess-no">01</div>
+</section>
+
+<section class="slide" id="likelihood-scale" data-lo="LO3" data-n="5" data-session="1">
+  <div class="kicker">الاحتمالية</div>
+  <h2>أربعة مستويات للاحتمالية في الإطار الوطني، ولكل منها مرجع سنوي</h2>
+  <table class="t">
+    <tr><th>المستوى</th><th>الاسم</th><th>المعنى</th><th>مرجع سنوي</th></tr>
+    <tr><td>1</td><td>نادر</td><td>مستبعد بدرجة كبيرة</td><td>أقل من 1%</td></tr>
+    <tr><td>2</td><td>غير مرجح</td><td>ممكن وغير متوقع في الظروف المعتادة</td><td>1% إلى 10%</td></tr>
+    <tr><td>3</td><td>مرجح</td><td>محتمل بدرجة معتبرة بطبيعة النظام وسياقه</td><td>10% إلى 50%</td></tr>
+    <tr><td>4</td><td>شبه المؤكد</td><td>متوقع ما لم توجد ضوابط فعالة</td><td>50% فأكثر</td></tr>
+  </table>
+  <div class="callout note mt">النسب مرجع للحوار، لا حساب. نادرًا ما يملك أحد تكرارًا سنويًا لخطر في نظام ذكاء اصطناعي جديد.</div>
+  <aside class="notes"><p>اقرأ المستويات من النص العربي للإطار. نقطة دقيقة: «خلال سنة» تعني أن الخطر الذي يقع أسبوعيًا شبه مؤكد، حتى لو كان كل وقوع صغيرًا. صغر الوقوع يدخل في الأثر، لا في الاحتمالية.</p><p>المصادر: الإطار الوطني لإدارة مخاطر الذكاء الاصطناعي، جدول مستويات الاحتمالية.</p></aside>
+</section>
+
+<section class="slide" id="likelihood-factors" data-lo="LO3" data-n="6" data-session="1">
+  <div class="kicker">عوامل الاحتمالية</div>
+  <h2>أربعة عوامل ترفع الاحتمالية أو تخفضها</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal"><h4>التعرض</h4><p class="small mb0">كم مرة يمر الناس بالخطوة؟ كل حجز في المستشفى الافتراضي يمر بقائمة الأطباء.</p></div>
+    <div class="card c-cyan"><h4>الضوابط القائمة</h4><p class="small mb0">ما الذي يمنعه اليوم فعلًا؟ تأكيد العيادة قبل يوم يمنع بعضه.</p></div>
+    <div class="card c-purple"><h4>سهولة الحدوث</h4><p class="small mb0">هل يحتاج ظرفًا نادرًا أم يقع وحده؟ إجازة لا تُسجّل تكفي.</p></div>
+    <div class="card c-coral"><h4>السوابق</h4><p class="small mb0">هل وقع هنا أو في القطاع؟ ثلاث شكاوى الشهر الماضي.</p></div>
+  </div>
+  <aside class="notes"><p>العوامل من الإطار الوطني، والأمثلة من المستشفى الافتراضي. اطلب من القاعة: لخطر «موعد عند طبيب غائب»، أي عامل يحسم؟ غالبًا السوابق: إذا كانت هناك شكاوى فالاحتمالية لا تقل عن 3.</p><p>المصادر: الإطار الوطني، قسم تقييم المخاطر.</p></aside>
+</section>
+
+<section class="slide" id="impact-scale" data-lo="LO3" data-n="7" data-session="1">
+  <div class="kicker">الأثر</div>
+  <h2>أربعة مستويات للأثر، والكارثي للحالات القصوى وحدها</h2>
+  <table class="t">
+    <tr><th>المستوى</th><th>الاسم</th><th>المعنى</th></tr>
+    <tr><td>1</td><td>منخفض</td><td>ضرر محدود موضعي يعالج بسرعة</td></tr>
+    <tr><td>2</td><td>متوسط</td><td>ضرر ملموس محدود النطاق يعالج في مدة معقولة</td></tr>
+    <tr><td>3</td><td>مرتفع</td><td>ضرر كبير له تبعات جوهرية ويحتاج استجابة مؤسسية</td></tr>
+    <tr><td>4</td><td>كارثي</td><td>مساس مباشر بالسلامة البشرية أو الأمن العام، أو حرمان فعلي من حقوق أساسية، أو تسريب واسع لبيانات شديدة الحساسية</td></tr>
+  </table>
+  <div class="callout warn mt">«الخطر مزعج جدًا» ليس كارثيًا. الكارثي وصف لنوع الضرر، لا لشعور المقيّم.</div>
+  <aside class="notes"><p>الخطأ الأكثر شيوعًا في الورش: استعمال «كارثي» للتعبير عن القلق. اسأل لكل «كارثي»: أي حالة من الثلاث يبلغها؟ إن لم يبلغ واحدة فهو مرتفع على الأكثر.</p><p>المصادر: الإطار الوطني، جدول مستويات الأثر.</p></aside>
+</section>
+
+<section class="slide" id="impact-factors" data-lo="LO3" data-n="8" data-session="1">
+  <div class="kicker">عوامل الأثر</div>
+  <h2>الشدة والحجم والحساسية وسرعة التعافي</h2>
+  <table class="t small">
+    <tr><th>العامل</th><th>السؤال</th><th>في المستشفى الافتراضي</th></tr>
+    <tr><td>الشدة</td><td>ما أسوأ ما يقع على شخص واحد؟</td><td>تأجيل علاج مريض مزمن</td></tr>
+    <tr><td>الحجم</td><td>كم شخصًا يقع عليهم؟</td><td>عشرات في الأسبوع أم آلاف؟</td></tr>
+    <tr><td>الحساسية</td><td>ما نوع البيانات أو القرار؟</td><td>موعد عيادة نفسية أكثر حساسية من موعد أسنان</td></tr>
+    <tr><td>التعافي</td><td>كم يستغرق إصلاحه؟</td><td>موعد بديل خلال يوم أم بعد شهر؟</td></tr>
+  </table>
+  <aside class="notes"><p>عامل واحد يكفي لتبرير الرقم، لكن يجب أن يكون من الحالة. «حساس» وحده لا يكفي؛ «موعد عيادة نفسية يكشف تشخيصًا» يكفي.</p><p>المصادر: الإطار الوطني، قسم تقييم المخاطر.</p></aside>
+</section>
+
+<section class="slide" id="matrix" data-lo="LO3" data-read="scaled" data-n="9" data-session="1">
+  <div class="kicker">المصفوفة</div>
+  <h2>المستوى حاصل الضرب، والنطاق يحدد من يتصرف</h2>
+  <div class="cols cols-2">
+    <table class="t">
+      <tr><th>الاحتمالية ↓ الأثر ←</th><th>1</th><th>2</th><th>3</th><th>4</th></tr>
+      <tr><td>4 شبه المؤكد</td><td>4</td><td>8</td><td>12</td><td>16</td></tr>
+      <tr><td>3 مرجح</td><td>3</td><td>6</td><td>9</td><td>12</td></tr>
+      <tr><td>2 غير مرجح</td><td>2</td><td>4</td><td>6</td><td>8</td></tr>
+      <tr><td>1 نادر</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+    </table>
+    <div class="card tint c-navy"><h4>النطاقات</h4><p class="small mb0">منخفض 1 و2. متوسط 3 إلى 6. مرتفع 8 إلى 12. كارثي 16. في هذا المقرر «مرتفع أو كارثي» يعني المستوى 8 فأكثر، وهذه هي المخاطر ذات الأولوية.</p></div>
+  </div>
+  <aside class="notes"><p>لاحظوا أن 5 و7 و10 و11 و13 إلى 15 لا تقع في المصفوفة: لا توجد درجة 7 مثلًا. لذلك المتوسط بين مقيّمين قد يعطي رقمًا لا معنى له. قراءة «المرتفع أو الحرج» في دليل المقرر بأنها 8 فأكثر قرار نذكره هنا مرة واحدة.</p><p>المصادر: الإطار الوطني، مصفوفة المخاطر ونطاقاتها.</p></aside>
+</section>
+
+<section class="slide" id="inherent-residual" data-lo="LO3" data-n="10" data-session="1">
+  <div class="kicker">قبل وبعد</div>
+  <h2>نقدّر الخطر كما هو اليوم، ثم كما سيكون بعد المعالجة</h2>
+  <div class="flow">
+    <div class="step c-coral"><b>الأصلي</b>بلا أي ضابط: نظري، ولا نستعمله هنا</div>
+    <div class="arrow">←</div>
+    <div class="step c-teal"><b>الحالي</b>بالضوابط القائمة فعلًا اليوم</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>المتبقي المتوقع</b>بعد ضوابط مخطط لها، إن عملت</div>
+  </div>
+  <div class="callout warn mt">لا تقدّر الخطر بضابط لم يُنفَّذ بعد. هذا يخفي الخطر قبل أن يُعالج.</div>
+  <aside class="notes"><p>كثير من الجهات تكتب «الخطر الأصلي» بلا ضوابط، ثم تقارن به فتبدو المعالجة عظيمة. دليل التقدير في المقرر يطلب التقدير بالضوابط القائمة، والمتبقي بعد الضوابط المخططة، وهذا ما يقارنه الإطار الوطني بحد التحمّل.</p><p>المصادر: الإطار الوطني، خطوتا التقييم والمعالجة؛ <span class="en">ISO 31000</span>.</p></aside>
+</section>
+
+<section class="slide" id="one-factor" data-lo="LO3" data-n="11" data-session="1">
+  <div class="kicker">قاعدة الرقم</div>
+  <h2>لكل رقم عامل واحد مكتوب من الحالة</h2>
+  <div class="cols cols-2">
+    <div class="card c-coral"><h4>ضعيف</h4><p class="small mb0">الاحتمالية 3: «وارد». الأثر 3: «مهم جدًا للمستشفى».</p></div>
+    <div class="card c-teal"><h4>قوي</h4><p class="small mb0">الاحتمالية 3: «السوابق: ثلاث شكاوى الشهر الماضي». الأثر 2: «التعافي: موعد بديل خلال أسبوع».</p></div>
+  </div>
+  <div class="callout tip mt">العامل المكتوب هو ما يُناقش في المعايرة. رقمان مختلفان بلا عوامل لا يمكن التوفيق بينهما.</div>
+  <aside class="notes"><p>في المختبر: عامل واحد لكل رقم. ليس لأن عاملًا واحدًا يكفي دائمًا، بل لأنه يجبر المقيّم على أن يختار ما حسم رأيه. هذا ما نقارنه بعد الظهر.</p></aside>
+</section>
+
+<section class="slide" id="check-score" data-lo="LO3" data-n="12" data-session="1">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>ما الرد على هذا التقدير؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO3" data-id="check-score-q1">
+    <p class="lead">قدّر زميل خطر «موعد عند طبيب غائب» في المستشفى الافتراضي: الاحتمالية 2، والأثر 4 (كارثي)، والمستوى 8 مرتفع. عامل الأثر: «المرضى سيغضبون كثيرًا». ما الرد الأدق؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يقبل الرقم لأن له عاملًا، والعامل لا يبلغ أي حالة قصوى" data-k="أ">التقدير مقبول ما دام كل رقم معه عامل مكتوب في الورقة</div>
+      <div class="opt" data-why="يرفع الاحتمالية ليصحح أثرًا مبالغًا فيه، فيبقى الخطأ ويضاف خطأ" data-k="ب">الاحتمالية يجب أن تكون 4 فالخطأ يتكرر، والمستوى 16</div>
+      <div class="opt" data-why="المتوسط بين محورين لا معنى له ولا يقع في المصفوفة" data-k="ج">يُعتمد متوسط المحورين، 3، فالفرق بينهما كبير ولا يتفق عليه أحد</div>
+      <div class="opt" data-ok data-k="د">الغضب لا يبلغ الكارثي؛ الأثر 2، والمستوى 4</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> الكارثي يحتاج سلامة بشرية مباشرة أو حرمانًا من حق أساسي أو تسريبًا واسعًا. زيارة ضائعة تُعالج بموعد بديل: متوسط.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: د. لاحظوا أن تصحيح محور واحد غيّر النطاق من مرتفع إلى متوسط، وهذا يغيّر من يتصرف. لهذا نعطي العامل هذا الوزن.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-3-1" data-auto="lab" data-lab="3.1" data-label="المختبر 3.1" data-n="13" data-session="1">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 3.1 · 35 دقيقة</div><h2>التقدير المستقل لعشرين خطرًا</h2><p class="lead small">تقدّر عشرين خطرًا من سجل «سَمْت» على المصفوفة دون أي مساعد ذكي، مع عامل واحد يبرر كل تقدير، ثم تحسب المستوى والنطاق.</p><a class="nb" href="../labs/D3_1_scoring.html">D3_1_scoring.html</a></div><ul class="checklist"><li>اقرأ دليل التقدير والمخاطر العشرين <span class="min">5 د</span></li><li>قدّر الاحتمالية لكل خطر مع عامل واحد <span class="min">11 د</span></li><li>قدّر الأثر لكل خطر مع عامل واحد <span class="min">11 د</span></li><li>احسب المستوى والنطاق ورتّب السجل <span class="min">5 د</span></li><li>علّم الثلاثة التي ترددت فيها <span class="min">3 د</span></li><li class="stretch">✱ إضافي: أعد تقدير خطرين بافتراض أن الضابط الوقائي الرئيس توقف، ولاحظ أي المحورين تغيّر</li></ul></div>
+  <aside class="notes"><p>دون أي مساعد ذكي، ودون نقاش مع الجار. هذا التقدير المستقل هو ما نقارنه بعد الظهر. لا توزع المرجع في نهاية المختبر: اعرض الأعداد فقط في شريحة النتائج.</p></aside>
+</section>
+
+<section class="slide" id="debrief-3-1" data-lo="LO3" data-n="14" data-session="1">
+  <div class="kicker">ما أظهره المختبر 3.1</div>
+  <h2>في المرجع سبعة مخاطر مرتفعة، ولا كارثي واحد</h2>
+  <div class="cols cols-2">
+    <div class="bars">
+      <div class="row"><span>منخفض</span><div class="bar c-green" style="--w:2%"></div><span class="val">0</span></div>
+      <div class="row"><span>متوسط</span><div class="bar c-amber" style="--w:100%"></div><span class="val">13</span></div>
+      <div class="row"><span>مرتفع</span><div class="bar c-coral" style="--w:54%"></div><span class="val">7</span></div>
+      <div class="row"><span>كارثي</span><div class="bar c-purple" style="--w:2%"></div><span class="val">0</span></div>
+    </div>
+    <div class="card c-coral"><h4>المرتفعة السبعة</h4><p class="small mb0">لا نسمّيها الآن: تعايرون تقديراتكم المستقلة مع زميل في الجلسة التالية أولًا، ثم تصير هي المخاطر ذات الأولوية في الجلستين الأخيرتين.</p></div>
+  </div>
+  <aside class="notes"><p>الأعداد من <span class="ltr">check.py</span>. المرتفعة في المرجع: R02 وR06 وR09 وR10 وR12 وR13 وR15؛ لا تعرضها قبل نهاية المختبر 3.2، حتى لا تصير مرساة لمعايرة الأزواج. اسأل: كم منكم عنده سبعة مرتفعة بالضبط؟ وكم كتب «كارثي» لأي خطر؟ لا تناقش الفروق الآن؛ هي موضوع الجلسة التالية.</p></aside>
+</section>
+
+<!-- الجلسة 2 -->
+
+<section class="slide section" id="s2" data-auto="section" data-session="2" data-n="15">
+  <div class="kicker">الجلسة 2</div>
+  <h1>المعايرة بين المقيّمين والتجميع</h1>
+  <ul class="bullets outcomes"><li>تقيس اتفاق مقيّمين بالنطاق نفسه وبفارق نطاق واحد</li><li>تفسر سبب الخلاف: العامل المختلف لا الرقم المختلف</li><li>تنتقد تجميع المخاطر بالمتوسط أو بالعدّ</li></ul>
+  <div class="sess-no">02</div>
+</section>
+
+<section class="slide" id="why-differ" data-lo="LO3" data-n="16" data-session="2">
+  <div class="kicker">لماذا نختلف</div>
+  <h2>المقيّمون يختلفون في العامل قبل أن يختلفوا في الرقم</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal"><h4>الموقع</h4><p class="small mb0">مالك النظام يرى ضوابطه، وحماية البيانات ترى البيانات. كل منهما يرى نصف الصورة.</p></div>
+    <div class="card c-cyan"><h4>السوابق</h4><p class="small mb0">من لم يرَ الحادثة في جهته يخفض الاحتمالية، ولو وقعت في القطاع كله.</p></div>
+    <div class="card c-purple"><h4>المقياس</h4><p class="small mb0">«مرتفع» عند أحدهما «كارثي» عند الآخر، لأن أحدهما لم يقرأ التعريف.</p></div>
+    <div class="card c-coral"><h4>التوافر</h4><p class="small mb0">آخر حادثة في الأخبار ترفع كل ما يشبهها.</p></div>
+  </div>
+  <aside class="notes"><p>الخلاف مفيد إذا كُشف سببه. الخلاف في الرقم بلا عامل لا يُحل إلا بالأقدمية أو بالمتوسط، وكلاهما سيئ.</p><p>المصادر: <span class="en">NIST AI RMF 1.0</span>، <span class="en">MEASURE 1.3</span> عن مقيّمين داخليين لم يطوروا النظام أو مستقلين، و<span class="en">MEASURE 4.1</span> عن استشارة خبراء المجال في طرق القياس.</p></aside>
+</section>
+
+<section class="slide" id="anchoring" data-lo="LO3" data-n="17" data-session="2">
+  <div class="kicker">التثبيت</div>
+  <h2>أول رقم يُقال في الغرفة يصير مرساة للجميع</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>وحدك أولًا</b>كل مقيّم يكتب أرقامه وعوامله قبل أي نقاش</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>قارن</b>اعرض الأرقام معًا، لا واحدًا واحدًا</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>ناقش العوامل</b>في الخلافات الكبيرة وحدها</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>أعد التقدير</b>من العامل المتفق عليه</div>
+  </div>
+  <div class="callout note mt">لهذا كان المختبر الأول دون مساعد ذكي: المساعد مرساة أيضًا.</div>
+  <aside class="notes"><p>التثبيت <span class="en">(Anchoring)</span> من أكثر الانحيازات توثيقًا في التقدير. أبسط علاج: التقدير المستقل قبل النقاش، ثم كشف الأرقام معًا. يصح هذا على رأي الرئيس في الغرفة وعلى اقتراح المساعد.</p></aside>
+</section>
+
+<section class="slide" id="agreement" data-lo="LO3" data-n="18" data-session="2">
+  <div class="kicker">قياس الاتفاق</div>
+  <h2>«ضمن نطاق واحد» يتحقق بالصدفة في ثمانية من كل عشرة</h2>
+  <div class="cols cols-2">
+    <div class="bars">
+      <div class="row"><span>ضمن نطاق، صدفة</span><div class="bar c-coral" style="--w:80.5%"></div><span class="val">80.5%</span></div>
+      <div class="row"><span>النطاق نفسه، صدفة</span><div class="bar c-cyan" style="--w:32.8%"></div><span class="val">32.8%</span></div>
+    </div>
+    <div class="card tint c-navy"><h4>ماذا يعني</h4><p class="small mb0">مقيّمان يختاران الاحتمالية والأثر عشوائيًا يتفقان ضمن نطاق واحد في 80.5% من المخاطر. وفي عشرين خطرًا يبلغ 65% من الأزواج العشوائية معيار 80%.</p></div>
+  </div>
+  <div class="callout warn mt">لذلك نقرأ ثلاثة أرقام معًا: ضمن نطاق، والنطاق نفسه، والمخاطر التي يفصلها نطاقان.</div>
+  <aside class="notes"><p>الرقم الأول حساب كامل للأزواج الممكنة لتقديري خطر واحد (16 × 16 = 256 زوجًا)، والثاني محاكاة 100 ألف زوج عشوائي لعشرين خطرًا. السبب أن النطاقين المتوسط والمرتفع يأخذان معظم المصفوفة، فالنطاقان المتجاوران يغطيان أغلب الاحتمالات. معيار دليل المقرر (80% ضمن نطاق) نحسبه ونقول إنه لا يكفي وحده.</p><p>المصادر: محاكاة المقرر، موثقة في ملاحظات الإعداد.</p></aside>
+</section>
+
+<section class="slide" id="calibrate-on-factor" data-lo="LO3" data-n="19" data-session="2">
+  <div class="kicker">المعايرة</div>
+  <h2>يُحل الخلاف بالعامل، لا بالمتوسط ولا بالأقدمية</h2>
+  <table class="t small">
+    <tr><th>الطريقة</th><th>في المستشفى الافتراضي: 3 مقابل 12</th><th>المشكلة</th></tr>
+    <tr><td>المتوسط</td><td>7.5</td><td>رقم لا يقع في المصفوفة، ولا يقول أحد إنه صحيح</td></tr>
+    <tr><td>الأقدمية</td><td>رأي رئيس القسم</td><td>يضيع العامل الذي رآه الآخر</td></tr>
+    <tr><td>العامل</td><td>هل التأكيد قبل يوم يعمل فعلًا؟ نسأل العيادة</td><td>يحتاج وقتًا، ويعطي رقمًا يُدافع عنه</td></tr>
+  </table>
+  <aside class="notes"><p>في المعايرة لا يُسأل «من على حق؟» بل «ما العامل الذي رأيته ولم أره؟». إذا كان الخلاف على حقيقة (هل الضابط يعمل؟) فالجواب في البيانات لا في الغرفة.</p></aside>
+</section>
+
+<section class="slide" id="aggregation" data-lo="LO3" data-n="20" data-session="2">
+  <div class="kicker">التجميع</div>
+  <h2>ثلاث طرق لإخفاء خطر كبير داخل تقرير جميل</h2>
+  <div class="cols cols-3">
+    <div class="card c-coral"><h4>متوسط السجل</h4><p class="small mb0">«متوسط المخاطر 5.2: متوسط». خطر كارثي واحد يختفي بين تسعة عشر منخفضًا.</p></div>
+    <div class="card c-purple"><h4>عدّ الأحمر</h4><p class="small mb0">«انخفض عدد المرتفع من 7 إلى 5». ربما بسبب تقسيم خطر إلى اثنين.</p></div>
+    <div class="card c-cyan"><h4>خريطة الحرارة</h4><p class="small mb0">خانة واحدة تجمع 9 و12. المصفوفة ترتب تقريبيًا، ولا تقيس.</p></div>
+  </div>
+  <div class="callout tip mt">في التقرير: قائمة المخاطر فوق حد التحمّل بأسمائها، لا أرقامًا مجمّعة عنها.</div>
+  <aside class="notes"><p>مقالة لويس أنتوني كوكس «ما الخطأ في مصفوفات المخاطر؟» (2008) تبيّن أن المصفوفة قد ترتب خطرين ترتيبًا معكوسًا. لا نتخلى عنها لأن الإطار الوطني يعتمدها، لكن نستعملها لترتيب الحوار، لا لجمع الأرقام.</p><p>المصادر: <span class="en">Cox, L. A. (2008). What's wrong with risk matrices? Risk Analysis 28(2)</span>.</p></aside>
+</section>
+
+<section class="slide" id="assistant-challenger" data-lo="LO3" data-n="21" data-session="2">
+  <div class="kicker">المساعد في المعايرة</div>
+  <h2>المساعد معترض جيد ومقيّم سيئ</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal"><h4>اطلب منه</h4><p class="small mb0">أن يعترض على أعلى تقديراتك بالعوامل، وأن يسأل عن الحالة القصوى خلف كل «كارثي».</p></div>
+    <div class="card c-coral"><h4>لا تطلب منه</h4><p class="small mb0">أن يقدّر السجل. سيعطي أرقامًا متقاربة مقنعة، ويصير المرساة التي أردنا تجنبها.</p></div>
+  </div>
+  <div class="callout note mt">كل رقم غيّرته بعد اعتراض مساعد يُكتب في السجل مع العامل الجديد.</div>
+  <aside class="notes"><p>في المختبر نص بديل لمساعد في دور المعترض، فلا حاجة إلى نموذج. يستعمله من ينهي مبكرًا في التمرين الإضافي.</p></aside>
+</section>
+
+<section class="slide" id="check-calibration" data-lo="LO3" data-n="22" data-session="2">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>ماذا يعني هذا الاتفاق؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO3" data-id="check-calibration-q1">
+    <p class="lead">مقيّمان في المستشفى الافتراضي قدّرا عشرين خطرًا، واتفقا ضمن نطاق واحد في 85% منها، وفي النطاق نفسه في 35%. يقول مدير المشروع: «المعايرة ناجحة، نعتمد التقدير». ما الرد الأدق؟</p>
+    <div class="opts">
+      <div class="opt" data-ok data-k="أ">85% قريبة من الصدفة، و35% ضعيفة؛ نناقش الفروق الكبيرة بعواملها</div>
+      <div class="opt" data-why="يقرأ المعيار وحده ويتجاهل أن الصدفة تبلغه" data-k="ب">المعايرة ناجحة لأن 85% أعلى من معيار الدليل البالغ 80%</div>
+      <div class="opt" data-why="يحل الخلاف بالمتوسط، فيضيع العامل وتظهر أرقام خارج المصفوفة" data-k="ج">نعتمد متوسط تقديري المقيّمين لكل خطر ثم نعيد حساب الاتفاق</div>
+      <div class="opt" data-why="يرفض القياس كله بدل قراءته مع مقاييس أخرى" data-k="د">نسب الاتفاق لا معنى لها في التقدير، فالمهم رأي المقيّم الأقدم في الفريق</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> الصدفة وحدها تعطي نحو 80% ضمن نطاق ونحو 33% في النطاق نفسه. الرقمان لا يثبتان اتفاقًا، والفروق الكبيرة تحتاج نقاش العوامل.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: أ. هذا الرقم نفسه سيظهر في المختبر بقيمة أعلى، ويبقى السؤال نفسه: ماذا نقرأ معه؟</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-3-2" data-auto="lab" data-lab="3.2" data-label="المختبر 3.2" data-n="23" data-session="2">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 3.2 · 35 دقيقة</div><h2>المعايرة بين المقيّمين</h2><p class="lead small">تقارن تقديرات مقيّمَين مرجعيين لعشرين خطرًا، وتحسب الاتفاق بالنطاق نفسه وبفارق نطاق واحد، وتناقش المخاطر التي تفصلها نطاقان، ثم تعاير تقديرك المستقل من المختبر 3.1 مع زميل بعامل متفق عليه.</p><a class="nb" href="../labs/D3_2_calibration.html">D3_2_calibration.html</a></div><ul class="checklist"><li>اقرأ ورقتي المقيّمَين ودليل التقدير <span class="min">3 د</span></li><li>احسب النطاق لكل تقدير والفارق بينهما <span class="min">6 د</span></li><li>احسب نسبة الاتفاق بالنطاق نفسه وبفارق نطاق <span class="min">4 د</span></li><li>ناقش المخاطر التي يفصلها نطاقان وسمِّ العامل <span class="min">9 د</span></li><li>عايِر تقديرك المستقل من المختبر 3.1 مع زميل <span class="min">13 د</span></li><li class="stretch">✱ إضافي: اطلب من مساعد ذكي أن يعترض على أعلى ثلاثة تقديرات عندك، وقرّر أي اعتراض يغيّر رقمًا ولماذا</li></ul></div>
+  <aside class="notes"><p>الخطوات الأربع الأولى على ورقتي المقيّمَين المرجعيتين. في الخطوة الخامسة يعاير كل زوج تقديريه المستقلين من المختبر 3.1: هذه الورقة هي دليل الناتج LO3، فاطلب أن تُحفظ بالتقديرين قبل المعايرة وبعدها. راقب من يحل الخلاف بالمتوسط وأوقفه بسؤال: «أين يقع هذا الرقم في المصفوفة؟».</p></aside>
+</section>
+
+<section class="slide" id="debrief-3-2" data-lo="LO3" data-n="24" data-session="2">
+  <div class="kicker">ما أظهره المختبر 3.2</div>
+  <h2>المعيار تحقق قبل أي نقاش، والخلاف الحقيقي في خطرين</h2>
+  <div class="cols cols-2">
+    <div class="bars">
+      <div class="row"><span>ضمن نطاق</span><div class="bar c-teal" style="--w:90%"></div><span class="val">90%</span></div>
+      <div class="row"><span>صدفة</span><div class="bar c-coral" style="--w:80.5%"></div><span class="val">80.5%</span></div>
+      <div class="row"><span>النطاق نفسه</span><div class="bar c-cyan" style="--w:50%"></div><span class="val">50%</span></div>
+    </div>
+    <div class="card c-purple"><h4>الأنماط</h4><p class="small mb0">نطاقان: R07 وR19. المقيّم أ يخفض الاحتمالية حين لا سابقة داخل الهيئة. المقيّم ب يرفع الأثر في الخصوصية، ويرفع R14 إلى كارثي.</p></div>
+  </div>
+  <aside class="notes"><p>الأرقام من <span class="ltr">check.py</span>: 18 من 20 ضمن نطاق، و10 من 20 في النطاق نفسه. بعد المعايرة على العامل يُعتمد المرجع. اسأل: من وجد النمط عند المقيّم أ؟ هذا النمط هو ما يُصحح في الجهة، لا الأرقام واحدًا واحدًا.</p></aside>
+</section>
+
+<!-- الجلسة 3 -->
+
+<section class="slide section" id="s3" data-auto="section" data-session="3" data-n="25">
+  <div class="kicker">الجلسة 3</div>
+  <h1>خيارات المعالجة والضوابط والإشراف البشري</h1>
+  <ul class="bullets outcomes"><li>تختار خيار المعالجة المناسب لمستوى الخطر وسياقه</li><li>تختار ضابطًا يخفض المحور الصحيح: الاحتمالية أو الأثر</li><li>تحكم هل الإشراف البشري ضابط حقيقي أم شكلي</li></ul>
+  <div class="sess-no">03</div>
+</section>
+
+<section class="slide" id="four-options" data-lo="LO5" data-n="26" data-session="3">
+  <div class="kicker">خيارات المعالجة</div>
+  <h2>أربعة خيارات في الإطار الوطني: التجنب والتخفيف والنقل والقبول</h2>
+  <div class="cols cols-2">
+    <div class="card c-coral"><h4>التجنب</h4><p class="small mb0">إزالة النشاط أو الأداة. وكيل السفر الافتراضي لا يدفع أبدًا؛ يحجز ويترك الدفع للمسافر.</p></div>
+    <div class="card c-teal"><h4>التخفيف</h4><p class="small mb0">ضوابط تخفض الاحتمالية أو الأثر. تحديث يومي لقائمة الأطباء.</p></div>
+    <div class="card c-purple"><h4>النقل</h4><p class="small mb0">طرف آخر يتحمل جزءًا من الأثر: عقد، أو تأمين. المسؤولية أمام الناس لا تنتقل.</p></div>
+    <div class="card c-cyan"><h4>القبول</h4><p class="small mb0">قرار موقّع بأن الخطر ضمن التقبّل، بشروط وموعد مراجعة.</p></div>
+  </div>
+  <aside class="notes"><p>القبول ليس «لم نفعل شيئًا». هو قرار له موقّع وشروط وتاريخ مراجعة، ويُسجل. والنقل لا ينقل المسؤولية: إذا انقطع المورّد فالمتضرر يشتكي من الجهة لا من المورّد.</p><p>المصادر: الإطار الوطني، خطوة المعالجة؛ <span class="en">ISO 31000</span>، خيارات المعالجة.</p></aside>
+</section>
+
+<section class="slide" id="option-choice" data-lo="LO5" data-n="27" data-session="3">
+  <div class="kicker">أي خيار</div>
+  <h2>الخيار يتبع ثلاثة أسئلة، لا النطاق وحده</h2>
+  <div class="flow">
+    <div class="step c-navy"><b>هل الميزة ضرورية؟</b>إن لم تكن، فالتجنب أرخص الخيارات</div>
+    <div class="arrow">←</div>
+    <div class="step c-teal"><b>هل نتحكم في السبب؟</b>إن تحكمنا فالتخفيف</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>هل يستطيع طرف آخر أن يتحمل الأثر؟</b>إن استطاع فالنقل جزئيًا</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>هل الباقي ضمن التقبّل؟</b>إن كان فالقبول الموقّع</div>
+  </div>
+  <aside class="notes"><p>كثيرًا ما يُنسى التجنب لأن الفريق يحب الميزة. في وكيل السفر الافتراضي: الدفع الآلي يوفر دقيقة على المسافر، ويحمل خطرًا مرتفعًا. إزالته أرخص من أي ضابط.</p></aside>
+</section>
+
+<section class="slide" id="control-types" data-lo="LO5" data-n="28" data-session="3">
+  <div class="kicker">أنواع الضوابط</div>
+  <h2>الوقائي يخفض الاحتمالية، والكاشف والتصحيحي يخفضان الأثر</h2>
+  <table class="t">
+    <tr><th>النوع</th><th>متى يعمل</th><th>المحور</th><th>في المستشفى الافتراضي</th></tr>
+    <tr><td>وقائي</td><td>قبل الحدث</td><td>الاحتمالية</td><td>تأكيد العيادة لكل موعد قبل يوم</td></tr>
+    <tr><td>كاشف</td><td>بعد الحدث بقليل</td><td>الأثر (مدة الضرر)</td><td>تقرير يومي بالمواعيد عند أطباء في إجازة</td></tr>
+    <tr><td>تصحيحي</td><td>بعد الحدث</td><td>الأثر</td><td>أولوية في موعد بديل لمن تضرر</td></tr>
+  </table>
+  <div class="callout warn mt">الكاشف لا يخفض الاحتمالية. من يخفض الاحتمالية بتقرير يومي يخفي الخطر في الرقم.</div>
+  <aside class="notes"><p>هذا من أكثر الأخطاء في خطط المعالجة: مراجعة عينة تُكتب ضابطًا يخفض الاحتمالية. العينة تعرف ما وقع، ولا تمنع وقوعه.</p><p>المصادر: الإطار الوطني، خطوة المعالجة؛ <span class="en">NIST AI RMF 1.0</span>، <span class="en">MANAGE 1</span> و<span class="en">MANAGE 2</span>.</p></aside>
+</section>
+
+<section class="slide" id="control-design" data-lo="LO5" data-n="29" data-session="3">
+  <div class="kicker">تصميم الضابط</div>
+  <h2>الضابط الذي لا مالك له ولا دليل عليه نية حسنة فقط</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li>ما الذي يفعله بالضبط، ومتى</li>
+      <li>من يملكه: منصب واحد بميزانية</li>
+      <li>ما الدليل على أنه عمل هذا الأسبوع</li>
+      <li>كيف يُختبر، وما النتيجة التي تعني أنه لا يعمل</li>
+    </ul>
+    <div class="card tint c-navy"><h4>مثال</h4><p class="small mb0">«تحديث قائمة الأطباء يوميًا» يصير: «يرفع قسم الجدولة القائمة كل يوم الساعة 6، ويرسل النظام تنبيهًا إن تأخر الرفع، وتراجع الجودة عشرة مواعيد أسبوعيًا».</p></div>
+  </div>
+  <aside class="notes"><p>اختبار الضابط موضوع اليوم الرابع. هنا يكفي أن يكون للضابط مالك ودليل. الضابط الذي لا يترك دليلًا لا يمكن أن يعرف أحد أنه توقف.</p></aside>
+</section>
+
+<section class="slide" id="human-oversight" data-lo="LO5" data-n="30" data-session="3">
+  <div class="kicker">الإشراف البشري</div>
+  <h2>الإنسان ضابط حقيقي إذا رأى ما يكفي، في وقته، وملك أن يوقف</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>يرى ما يكفي</h4><p class="small mb0">عينة تكفي لرؤية الخطأ، والمعلومة التي يحتاجها ليحكم.</p></div>
+    <div class="card c-cyan"><h4>في وقته</h4><p class="small mb0">قبل ما لا يُرجع، لا بعد شهر.</p></div>
+    <div class="card c-purple"><h4>يملك أن يوقف</h4><p class="small mb0">صلاحية مكتوبة بأن يرد القرار أو يوقف الأداة.</p></div>
+  </div>
+  <div class="callout warn mt"><b>من وكيل السفر:</b> موظف يضغط «اعتمدت» على مئتي حجز في الساعة لا يشرف على شيء. هذا إشراف شكلي.</div>
+  <aside class="notes"><p>مبادئ أخلاقيات الذكاء الاصطناعي تجعل الإشراف البشري مبدأً. الإطار الوطني يطلب تحديد دور الإنسان ونقاط الاعتماد والإيقاف. السؤال هنا: هل الإنسان ضابط فعلًا، أم اسم في الخطة؟</p><p>المصادر: سدايا، مبادئ أخلاقيات الذكاء الاصطناعي؛ الإطار الوطني، نشاط الأتمتة ودور الإنسان.</p></aside>
+</section>
+
+<section class="slide" id="oversight-limits" data-lo="LO5" data-n="31" data-session="3">
+  <div class="kicker">حدود الإشراف</div>
+  <h2>الإنسان يتعب، ويثق بالآلة، ويكلف</h2>
+  <table class="t small">
+    <tr><th>الحد</th><th>ماذا يحدث</th><th>ما يساعد</th></tr>
+    <tr><td>الانحياز للأتمتة</td><td>يوافق المراجع على ما تقترحه الآلة لأنها «عادة على حق»</td><td>عينة فيها أخطاء معروفة لقياس انتباهه</td></tr>
+    <tr><td>الحجم</td><td>مراجعة كل إجابة تكلف أكثر من المساعد نفسه</td><td>مراجعة ما لا يُرجع وحده</td></tr>
+    <tr><td>الإرهاق</td><td>الدقة تنخفض بعد ساعة من التكرار</td><td>تناوب ومدة محددة</td></tr>
+  </table>
+  <aside class="notes"><p>الانحياز للأتمتة <span class="en">(Automation bias)</span> موثق في الطيران والطب. أبسط اختبار للإشراف: أدخل أخطاء معروفة في العينة، وانظر كم منها يُكتشف.</p><p>المصادر: <span class="en">NIST AI 600-1</span>، خطر إعداد الإنسان والآلة.</p></aside>
+</section>
+
+<section class="slide" id="check-option" data-lo="LO5" data-n="32" data-session="3">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أي خيار يناسب؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO5" data-id="check-option-q1">
+    <p class="lead">مساعد المواعيد الافتراضي يرسل تذكيراته عبر مورّد رسائل نصية. انقطاع المورّد يترك المرضى بلا تذكير، والمستشفى لا يتحكم في المورّد ولا يستطيع الاستغناء عن التذكير. أي خيار هو الأنسب أولًا؟</p>
+    <div class="opts">
+      <div class="opt" data-why="التذكير ضروري للخدمة، فإزالته تزيد الغياب" data-k="أ">التجنب بإيقاف التذكير النصي كليًا وترك تذكّر الموعد على المريض وأسرته</div>
+      <div class="opt" data-why="القبول يحتاج أن يكون الخطر ضمن التقبّل، ولم نعرف ذلك بعد" data-k="ب">القبول، لأن الانقطاع خارج تحكم المستشفى</div>
+      <div class="opt" data-ok data-k="ج">النقل بعقد فيه تعويض وقناة بديلة، والمسؤولية تبقى على المستشفى</div>
+      <div class="opt" data-why="الضابط الكاشف لا يمنع الانقطاع، ويأتي بعد فوات الموعد" data-k="د">مراجعة شهرية لعدد المواعيد الفائتة بعد كل انقطاع في الرسائل</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> السبب خارج التحكم والميزة ضرورية، فالنقل يحمّل المورّد جزءًا من الأثر، والقناة البديلة تخففه. المرضى يبقون مسؤولية المستشفى.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ج. «ب» تصح لاحقًا، بعد النقل، إذا بقي المتبقي ضمن التقبّل. القبول قرار على المتبقي، لا بديل عن السؤال.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-3-3" data-auto="lab" data-lab="3.3" data-label="المختبر 3.3" data-n="33" data-session="3">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 3.3 · 35 دقيقة</div><h2>اختيار المعالجة والضوابط</h2><p class="lead small">تختار للمخاطر ذات الأولوية في سجل «سَمْت» المقدَّر خيار المعالجة والضوابط من مكتبة من ثلاثين ضابطًا، وتحكم على كل ضابط إشراف بشري: حقيقي أم شكلي.</p><a class="nb" href="../labs/D3_3_treatment.html">D3_3_treatment.html</a></div><ul class="checklist"><li>اقرأ السجل المقدَّر ومكتبة الضوابط <span class="min">5 د</span></li><li>حدّد المخاطر ذات الأولوية وخيار كل منها <span class="min">8 د</span></li><li>اختر الضوابط وحدّد المحور الذي يخفضه كل منها <span class="min">12 د</span></li><li>احكم على ضوابط الإشراف البشري: حقيقي أم شكلي <span class="min">6 د</span></li><li>سجّل خطرًا واحدًا يحتاج ضابطًا ليس في المكتبة <span class="min">4 د</span></li><li class="stretch">✱ إضافي: صمّم ضابط إشراف بشري يصبح حقيقيًا: من يراجع، وكم، ومتى، وما الذي يستطيع إيقافه</li></ul></div>
+  <aside class="notes"><p>الجميع على السجل المقدَّر المرجعي. اطلب في الدقيقة العشرين أن يرفع كل من حكم على ضابط بأنه شكلي يده، واسأل عن واحد. لا تكشف الحكم المرجعي قبل نهاية الخطوة الرابعة.</p></aside>
+</section>
+
+<section class="slide" id="debrief-3-3" data-lo="LO5" data-n="34" data-session="3">
+  <div class="kicker">ما أظهره المختبر 3.3</div>
+  <h2>الخيارات الأربعة في خطة واحدة، وثلاثة ضوابط إشراف شكلية</h2>
+  <div class="cols cols-2">
+    <table class="t small">
+      <tr><th>الخيار</th><th>المرجع</th></tr>
+      <tr><td>تجنب</td><td>R09: إزالة أداة الإلغاء (CT04)</td></tr>
+      <tr><td>تخفيف</td><td>R02 وR06 وR10 وR12 وR13 وR15</td></tr>
+      <tr><td>نقل</td><td>R18: عقد بتوفر وتعويض وخطة بديلة (CT19)</td></tr>
+      <tr><td>قبول</td><td>R16: ضمن التقبّل الحذر، مع CT24</td></tr>
+    </table>
+    <div class="card c-coral"><h4>الإشراف</h4><p class="small mb0">شكلي: CT05 (عينة 1% شهريًا)، CT15 (عبارة «قد تكون خاطئة»)، CT21 (حقل «تحققت»). حقيقي: CT06 وCT17 وCT25، وCT25 بتكلفة 2.4 مليون ريال.</p></div>
+  </div>
+  <div class="callout note mt"><b>بلا ضابط في المكتبة:</b> R06. لا شيء يجعل «سَمْت» يخدم لغات أخرى بجودة مقبولة؛ خط المترجمين يخفف الأثر فقط.</div>
+  <aside class="notes"><p>المرجع في <span class="ltr">solutions/D3_3_treatment.md</span>. تُقبل بدائل معقولة، مثل CT03 بدل CT04 لـR09 (تخفيف بدل تجنب). لا يُقبل CT05 لأي خطر على أنه يخفض الاحتمالية.</p></aside>
+</section>
+
+<!-- الجلسة 4 -->
+
+<section class="slide section" id="s4" data-auto="section" data-session="4" data-n="35">
+  <div class="kicker">الجلسة 4</div>
+  <h1>التكلفة والمتبقي والاعتماد</h1>
+  <ul class="bullets outcomes"><li>توازن تكلفة الضابط مع خفض الخطر المتوقع</li><li>تقدّر الخطر المتبقي وتكتب مبرره</li><li>تحدد من يعتمد المتبقي أو إلى أين يُصعَّد</li></ul>
+  <div class="sess-no">04</div>
+</section>
+
+<section class="slide" id="proportionality" data-lo="LO5" data-n="36" data-session="4">
+  <div class="kicker">التناسب</div>
+  <h2>ضابطان يخفضان الشيء نفسه: لماذا ندفع أضعاف الثمن؟</h2>
+  <table class="t">
+    <tr><th>الضابط في المستشفى الافتراضي</th><th>التكلفة السنوية</th><th>يخفض</th></tr>
+    <tr><td>تنبيه آلي حين يتأخر رفع قائمة الأطباء</td><td>15,000 ريال</td><td>الاحتمالية من 3 إلى 2</td></tr>
+    <tr><td>موظف يراجع كل موعد يدويًا قبل تأكيده</td><td>400,000 ريال</td><td>الاحتمالية من 3 إلى 2</td></tr>
+  </table>
+  <div class="callout tip mt">التناسب لا يعني الأرخص دائمًا. يعني أن الفرق في التكلفة يقابله فرق في الخفض أو في الثقة بالضابط.</div>
+  <aside class="notes"><p>لا نحسب خسائر بالريال في هذا المقرر: التقدير بالمصفوفة. التناسب هنا مقارنة بين ضوابط للخطر نفسه. إن كان الضابط الأغلى يخفض أكثر، أو يُختبر أسهل، فقد يستحق ثمنه؛ وإلا فهو غير متناسب.</p></aside>
+</section>
+
+<section class="slide" id="residual-rules" data-lo="LO5" data-n="37" data-session="4">
+  <div class="kicker">المتبقي</div>
+  <h2>ثلاث قواعد تمنع المتبقي المتفائل</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>المحور الصحيح</h4><p class="small mb0">خفّض المحور الذي يخفضه الضابط فقط.</p></div>
+    <div class="card c-cyan"><h4>بقدر معقول</h4><p class="small mb0">مستوى أو مستويان لضابط واحد، لا من 4 إلى 1.</p></div>
+    <div class="card c-purple"><h4>مبرر بما يبقى</h4><p class="small mb0">اكتب ما لا يغطيه الضابط، لا ما يفعله فقط.</p></div>
+  </div>
+  <div class="callout warn mt">متبقٍ «منخفض» لكل خطر في الخطة علامة على تفاؤل، لا على معالجة ممتازة.</div>
+  <aside class="notes"><p>مثال المستشفى: التنبيه الآلي يخفض الاحتمالية من 3 إلى 2، ولا يغير الأثر: إن وقع الموعد الخاطئ فالزيارة ضائعة كما كانت. المتبقي <span class="ltr">2×2=4</span>. المبرر: «يمنع التأخر في الرفع، ويبقى الطبيب الذي يغيب دون إبلاغ».</p></aside>
+</section>
+
+<section class="slide" id="acceptance-route" data-lo="LO5 LO4" data-n="38" data-session="4">
+  <div class="kicker">من يوقّع</div>
+  <h2>حد الفئة أولًا، ثم النطاق</h2>
+  <div class="flow">
+    <div class="step c-coral"><b>فوق حد الفئة؟</b>يُصعَّد إلى اللجنة مهما كان نطاقه</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>كارثي</b>اللجنة والرئيس التنفيذي</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>مرتفع</b>الرئيسة التنفيذية للمخاطر</div>
+    <div class="arrow">←</div>
+    <div class="step c-teal"><b>منخفض أو متوسط</b>مالك النظام</div>
+  </div>
+  <div class="callout tip mt">هذا ما كتبناه في بيان التقبّل والتحمّل في اليوم الأول. المتبقي يُقارن بالحد الذي اعتمدته الجهة، لا بشعور الفريق.</div>
+  <aside class="notes"><p>المسار في الشريحة هو مسار سياسة مِقوَد الافتراضية، ومثله في معظم الجهات. الترتيب مهم: من يقرأ النطاق أولًا يعتمد متبقيًا متوسطًا فوق حد فئة «متجنّبة»، وهذا ما تمنعه قاعدة التصعيد.</p><p>المصادر: الإطار الوطني، خطوة المعالجة وقرار القبول أو التصعيد.</p></aside>
+</section>
+
+<section class="slide" id="acceptance-record" data-lo="LO5" data-n="39" data-session="4">
+  <div class="kicker">سجل القبول</div>
+  <h2>القبول قرار مكتوب له شروط وتاريخ انتهاء</h2>
+  <table class="t small">
+    <tr><th>البند</th><th>في وكيل السفر الافتراضي</th></tr>
+    <tr><td>الخطر والمتبقي</td><td>تأخر تأكيد الحجز في الموسم، <span class="ltr">2×2=4</span></td></tr>
+    <tr><td>من قبل، ومتى</td><td>مالك النظام، 3 مارس</td></tr>
+    <tr><td>الشروط</td><td>لا يزيد التأخر عن ساعتين، ورسالة للمسافر بالحالة</td></tr>
+    <tr><td>ما يعيد فتحه</td><td>شكويان في أسبوع، أو تغيير المورّد</td></tr>
+    <tr><td>موعد المراجعة</td><td>بعد ستة أشهر</td></tr>
+  </table>
+  <aside class="notes"><p>القبول بلا شروط ولا موعد مراجعة يصير قبولًا دائمًا دون أن يقرره أحد. «ما يعيد فتحه» يربط القبول بالمؤشرات في اليوم الرابع.</p></aside>
+</section>
+
+<section class="slide" id="check-signoff" data-lo="LO5" data-n="40" data-session="4">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>من يوقّع هذا المتبقي؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO5" data-id="check-signoff-q1">
+    <p class="lead">في المستشفى الافتراضي: مالك النظام يعتمد المنخفض والمتوسط، والرئيس التنفيذي للمخاطر المرتفع، وحد فئة الخصوصية والأمن 4، وما فوق الحد يُصعَّد إلى لجنة المخاطر. متبقي خطر خصوصية بعد الضوابط <span class="ltr">3×2=6</span>. من يوقّع؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يقرأ النطاق وينسى حد الفئة" data-k="أ">مالك النظام، لأن 6 في النطاق المتوسط الذي يعتمده</div>
+      <div class="opt" data-ok data-k="ب">لجنة المخاطر، لأن 6 فوق حد الفئة مهما كان نطاق المتبقي</div>
+      <div class="opt" data-why="يظن أن تجاوز الحد يرفع النطاق إلى المرتفع" data-k="ج">الرئيس التنفيذي للمخاطر، لأن تجاوز الحد يجعل الخطر مرتفعًا في السجل</div>
+      <div class="opt" data-why="يجعل كل تجاوز سببًا لإضافة ضوابط، والقرار قد يكون القبول من الجهة المختصة" data-k="د">لا أحد، ويعود الفريق ليضيف ضوابط حتى يصل المتبقي إلى 4</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> حد الفئة يُقرأ قبل النطاق. ما فوقه يُصعَّد إلى اللجنة، واللجنة قد تقبله أو تطلب معالجة أخرى.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ب. «د» خيار تستطيع اللجنة أن تطلبه، لكن القرار لها. الفريق لا يحق له أن يقرر وحده أن المتبقي غير مقبول ولا أن يقبله.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-3-4" data-auto="lab" data-lab="3.4" data-label="المختبر 3.4" data-n="41" data-session="4">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 3.4 · 30 دقيقة</div><h2>المتبقي والاعتماد</h2><p class="lead small">تبدأ من خطة معالجة مرجعية، وتضيف لكل خطر مرتفع أو كارثي مالكًا وتكلفة ودرجة متبقية مع مبررها، ثم تقرر بحسب بيان التقبّل: قبول أو تصعيد.</p><a class="nb" href="../labs/D3_4_residual.html">D3_4_residual.html</a></div><ul class="checklist"><li>اقرأ خطة المعالجة وبيان التقبّل المرجعيين <span class="min">4 د</span></li><li>أضف المالك والتكلفة لكل خطر ذي أولوية <span class="min">6 د</span></li><li>قدّر الدرجة المتبقية واكتب مبررها <span class="min">10 د</span></li><li>قرّر القبول أو التصعيد ومن يوقّع <span class="min">6 د</span></li><li>جد الضابط الذي لا تتناسب تكلفته <span class="min">4 د</span></li><li class="stretch">✱ إضافي: اكتب شروط القبول لخطر واحد مقبول: حدود الاستخدام وموعد المراجعة وما يعيد فتحه</li></ul></div>
+  <aside class="notes"><p>الجميع على الخطة المرجعية. المختبر ثلاثون دقيقة: من يتأخر في الخطوة الثالثة يكتب المتبقي لأربعة مخاطر فقط ويكمل القرار. ناقش R06 في النتائج.</p></aside>
+</section>
+
+<section class="slide" id="debrief-3-4" data-lo="LO5 LO4" data-n="42" data-session="4">
+  <div class="kicker">ما أظهره المختبر 3.4</div>
+  <h2>خطر متوسط يذهب إلى اللجنة، وضابط يكلف سبعة أضعاف بديله</h2>
+  <table class="t small">
+    <tr><th>الخطر (المستوى)</th><th>المتبقي</th><th>حد الفئة</th><th>يوقّع</th></tr>
+    <tr><td>R06 (8)</td><td><span class="ltr">3×2=6</span></td><td>4</td><td>اللجنة</td></tr>
+    <tr><td>R02 وR09 (9)</td><td><span class="ltr">1×3=3</span></td><td>4 و6</td><td>مالك النظام</td></tr>
+    <tr><td>R10 وR12 وR13 وR15 (9)</td><td><span class="ltr">2×3=6</span></td><td>6</td><td>مالك النظام</td></tr>
+  </table>
+  <div class="callout note mt"><b>غير متناسب:</b> فريق رصد على مدار الساعة (CT12) لخطر الانتحال R13 يكلف تسعمائة ألف ريال في السنة، أي سبعة أضعاف حملة التوعية (CT11) للخفض نفسه.</div>
+  <aside class="notes"><p>الأرقام من <span class="ltr">check.py</span>. R06 هو الخطر الذي حملناه من المختبر 2.1 (الفئة الغائبة) إلى 3.3 (لا ضابط في المكتبة) إلى هنا. هذه سلسلة نعرضها غدًا في ورقة اللجنة.</p></aside>
+</section>
+
+<section class="slide" id="wrap-up" data-n="43" data-session="4">
+  <div class="kicker">خلاصة اليوم 3</div>
+  <h2>ثلاثة أمور تبقى معك</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>رقم وعامل</h4><p class="small mb0">كل رقم بعامل من الحالة، والكارثي للحالات القصوى وحدها.</p></div>
+    <div class="card c-coral"><h4>اتفاق يُقرأ بحذر</h4><p class="small mb0">ضمن نطاق يتحقق بالصدفة غالبًا. اقرأ النطاق نفسه والفروق الكبيرة، وحل الخلاف بالعامل.</p></div>
+    <div class="card c-purple"><h4>متبقٍ موقّع</h4><p class="small mb0">ضابط يخفض المحور الصحيح، وإشراف بشري حقيقي، وحد الفئة قبل النطاق.</p></div>
+  </div>
+  <aside class="notes"><p>اسأل: في سجل جهتك، كم خطرًا قُبل دون توقيع ودون موعد مراجعة؟</p></aside>
+</section>
+
+<section class="slide dark" id="next" data-label="التالي" data-n="44" data-session="4">
+  <div class="kicker">التالي</div>
+  <h2>اليوم 4: المراقبة وإعادة التقييم واللجنة</h2>
+  <p class="lead">اقرأ قاموس بيانات المراقبة في <span class="ltr">monitoring_dictionary.txt</span>: ما الذي يُسجل عن «سَمْت» كل أسبوع. غدًا نختار ما يُراقب، ونقرأ ستة وعشرين أسبوعًا، ونقف أمام اللجنة.</p>
+  <aside class="notes"><p>ذكّر المشاركين بأن موجز المشروع الختامي يُعطى غدًا في الجلسة الأخيرة.</p></aside>
+</section>
+</div>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T23:50:54Z","version":"2027.1.0","commit":"be30c5b"},"course":{"id":"lds-aig-204","code":"LDS-AIG-204","title":"إدارة مخاطر الذكاء الاصطناعي في التطبيق العملي","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-aig-204/","repo":"SDAIAAcademy/lds-aig-204","home":"../index.html"},"deck":{"id":"day3","kind":"day","day":3,"label":"اليوم 3","title":"التقدير والمعايرة والمعالجة","prev":"day2.html","next":"day4.html","md":"day3.md","alt":{}},"sessions":[{"n":1,"label":"الجلسة 1","title":"الاحتمالية والأثر على المصفوفة","slide":"s1","outcomes":["تقدّر الاحتمالية بعوامل التعرض والضوابط وسهولة الحدوث والسوابق","تقدّر الأثر بالشدة والحجم والحساسية وسرعة التعافي","تحسب مستوى الخطر وتضعه في نطاقه وتكتب مبرره"],"minutes":65,"lab":{"id":"3.1","title":"التقدير المستقل لعشرين خطرًا","minutes":35,"href":"../labs/D3_1_scoring.html"}},{"n":2,"label":"الجلسة 2","title":"المعايرة بين المقيّمين والتجميع","slide":"s2","outcomes":["تقيس اتفاق مقيّمين بالنطاق نفسه وبفارق نطاق واحد","تفسر سبب الخلاف: العامل المختلف لا الرقم المختلف","تنتقد تجميع المخاطر بالمتوسط أو بالعدّ"],"minutes":65,"lab":{"id":"3.2","title":"المعايرة بين المقيّمين","minutes":35,"href":"../labs/D3_2_calibration.html"}},{"n":3,"label":"الجلسة 3","title":"خيارات المعالجة والضوابط والإشراف البشري","slide":"s3","outcomes":["تختار خيار المعالجة المناسب لمستوى الخطر وسياقه","تختار ضابطًا يخفض المحور الصحيح: الاحتمالية أو الأثر","تحكم هل الإشراف البشري ضابط حقيقي أم شكلي"],"minutes":65,"lab":{"id":"3.3","title":"اختيار المعالجة والضوابط","minutes":35,"href":"../labs/D3_3_treatment.html"}},{"n":4,"label":"الجلسة 4","title":"التكلفة والمتبقي والاعتماد","slide":"s4","outcomes":["توازن تكلفة الضابط مع خفض الخطر المتوقع","تقدّر الخطر المتبقي وتكتب مبرره","تحدد من يعتمد المتبقي أو إلى أين يُصعَّد"],"minutes":60,"lab":{"id":"3.4","title":"المتبقي والاعتماد","minutes":30,"href":"../labs/D3_4_residual.html"}}],"slides":[{"id":"title","n":1,"title":"التقدير والمعايرة والمعالجة","kind":"title","session":0,"hash":"814efff8","md":"#### [day3#title] التقدير والمعايرة والمعالجة\n\n*أكاديمية سدايا · إدارة مخاطر الذكاء الاصطناعي في التطبيق العملي*\n\nاليوم 3: الاحتمالية والأثر على مصفوفة أربعة في أربعة، ومعايرة المقيّمين، واختيار المعالجة والضوابط، والمتبقي واعتماده\n\nمسار التنفيذيين والقادة · 4 أيام تدريبية + يوم للمشروع الختامي · 4 جلسات · 4 مختبرات · LDS-AIG-204","notes":"أمس كتبنا عشرين خطرًا. اليوم نعطيها أرقامًا يمكن الدفاع عنها، ثم نقرر ماذا نفعل بكل منها، ومن يوقّع على ما يبقى. الرسالة: الرقم بلا عامل مكتوب رأي، والمتبقي بلا توقيع لم يُقبل.","minutes":null,"lo":[]},{"id":"agenda","n":2,"title":"التقدير والمعايرة والمعالجة","kind":"content","session":0,"hash":"6fd2d2ae","md":"#### [day3#agenda] التقدير والمعايرة والمعالجة\n\n*اليوم*\n\n- **الجلسة 1 · الاحتمالية والأثر على المصفوفة**: مقياسا الاحتمالية والأثر في الإطار الوطني وعواملهما، والمصفوفة أربعة في أربعة ونطاقاتها، والخطر الأصلي والمتبقي\n- **الجلسة 2 · المعايرة بين المقيّمين والتجميع**: لماذا يختلف المقيّمون، والتثبيت والانحياز، وقياس الاتفاق ومعناه، ومزالق تجميع المخاطر وخرائط الحرارة\n- **الجلسة 3 · خيارات المعالجة والضوابط والإشراف البشري**: التجنب والتخفيف والنقل والقبول، واختيار الضوابط الوقائية والكاشفة والتصحيحية وتصميمها، والإشراف البشري ضابطًا وحدوده\n- **الجلسة 4 · التكلفة والمتبقي والاعتماد**: التناسب بين تكلفة الضابط والخطر، وتقدير الخطر المتبقي ومبرره، وقرار القبول أو التصعيد بحسب بيان التقبّل","notes":"جلستان للتقدير وجلستان للمعالجة. المختبر الأول دون مساعد ذكي عمدًا. الاستراحات بزر B.","minutes":null,"lo":[]},{"id":"review-day2","n":3,"title":"أي مصدر يكشف هذا الخطر؟","kind":"quiz","session":0,"hash":"6590f496","md":"#### [day3#review-day2] أي مصدر يكشف هذا الخطر؟\n\n*مراجعة اليوم 2*\n\n**سؤال:** في مساعد مواعيد لمستشفى افتراضي، الرسائل التذكيرية تُرسل إلى رقم قديم، والمريض لا يعلم أن هناك تذكيرًا، والعيادة ترى غيابًا فقط. أي أسلوب تحديد يكشف هذا الخطر قبل أن يقع؟\n\n- أ. البحث في سجلات الحوادث العامة عن تذكيرات ضائعة\n- ب. تحليل أنماط الفشل خطوة بخطوة مع عمود الاكتشاف لكل خطوة\n- ج. مقابلة المرضى وسؤالهم عن مشكلات التذكير التي واجهوها هذا العام\n- د. كتابة حالات إساءة الاستخدام من منظور مستخدم مسيء","notes":"الإجابة: ب. هذا ما وجدناه في الخطوة السادسة من مسار «سَمْت». كل مصدر يرى ما لا يراه غيره، وهذا سبب أن السجل جاء من أربعة مصادر.","minutes":null,"lo":["LO2"]},{"id":"s1","n":4,"title":"الاحتمالية والأثر على المصفوفة","kind":"section","session":1,"hash":"b832215c","md":"#### [day3#s1] الاحتمالية والأثر على المصفوفة\n\n*الجلسة 1*\n\n- تقدّر الاحتمالية بعوامل التعرض والضوابط وسهولة الحدوث والسوابق\n- تقدّر الأثر بالشدة والحجم والحساسية وسرعة التعافي\n- تحسب مستوى الخطر وتضعه في نطاقه وتكتب مبرره","notes":"","minutes":null,"lo":["LO3"]},{"id":"likelihood-scale","n":5,"title":"أربعة مستويات للاحتمالية في الإطار الوطني، ولكل منها مرجع سنوي","kind":"content","session":1,"hash":"404c2d58","md":"#### [day3#likelihood-scale] أربعة مستويات للاحتمالية في الإطار الوطني، ولكل منها مرجع سنوي\n\n*الاحتمالية*\n\n| المستوى | الاسم | المعنى | مرجع سنوي |\n| --- | --- | --- | --- |\n| 1 | نادر | مستبعد بدرجة كبيرة | أقل من 1% |\n| 2 | غير مرجح | ممكن وغير متوقع في الظروف المعتادة | 1% إلى 10% |\n| 3 | مرجح | محتمل بدرجة معتبرة بطبيعة النظام وسياقه | 10% إلى 50% |\n| 4 | شبه المؤكد | متوقع ما لم توجد ضوابط فعالة | 50% فأكثر |\n\n> النسب مرجع للحوار، لا حساب. نادرًا ما يملك أحد تكرارًا سنويًا لخطر في نظام ذكاء اصطناعي جديد.","notes":"اقرأ المستويات من النص العربي للإطار. نقطة دقيقة: «خلال سنة» تعني أن الخطر الذي يقع أسبوعيًا شبه مؤكد، حتى لو كان كل وقوع صغيرًا. صغر الوقوع يدخل في الأثر، لا في الاحتمالية.\n\nالمصادر: الإطار الوطني لإدارة مخاطر الذكاء الاصطناعي، جدول مستويات الاحتمالية.","minutes":null,"lo":["LO3"]},{"id":"likelihood-factors","n":6,"title":"أربعة عوامل ترفع الاحتمالية أو تخفضها","kind":"content","session":1,"hash":"1cfc1956","md":"#### [day3#likelihood-factors] أربعة عوامل ترفع الاحتمالية أو تخفضها\n\n*عوامل الاحتمالية*\n\n- **التعرض.** كم مرة يمر الناس بالخطوة؟ كل حجز في المستشفى الافتراضي يمر بقائمة الأطباء.\n- **الضوابط القائمة.** ما الذي يمنعه اليوم فعلًا؟ تأكيد العيادة قبل يوم يمنع بعضه.\n- **سهولة الحدوث.** هل يحتاج ظرفًا نادرًا أم يقع وحده؟ إجازة لا تُسجّل تكفي.\n- **السوابق.** هل وقع هنا أو في القطاع؟ ثلاث شكاوى الشهر الماضي.","notes":"العوامل من الإطار الوطني، والأمثلة من المستشفى الافتراضي. اطلب من القاعة: لخطر «موعد عند طبيب غائب»، أي عامل يحسم؟ غالبًا السوابق: إذا كانت هناك شكاوى فالاحتمالية لا تقل عن 3.\n\nالمصادر: الإطار الوطني، قسم تقييم المخاطر.","minutes":null,"lo":["LO3"]},{"id":"impact-scale","n":7,"title":"أربعة مستويات للأثر، والكارثي للحالات القصوى وحدها","kind":"content","session":1,"hash":"b5258ea5","md":"#### [day3#impact-scale] أربعة مستويات للأثر، والكارثي للحالات القصوى وحدها\n\n*الأثر*\n\n| المستوى | الاسم | المعنى |\n| --- | --- | --- |\n| 1 | منخفض | ضرر محدود موضعي يعالج بسرعة |\n| 2 | متوسط | ضرر ملموس محدود النطاق يعالج في مدة معقولة |\n| 3 | مرتفع | ضرر كبير له تبعات جوهرية ويحتاج استجابة مؤسسية |\n| 4 | كارثي | مساس مباشر بالسلامة البشرية أو الأمن العام، أو حرمان فعلي من حقوق أساسية، أو تسريب واسع لبيانات شديدة الحساسية |\n\n> «الخطر مزعج جدًا» ليس كارثيًا. الكارثي وصف لنوع الضرر، لا لشعور المقيّم.","notes":"الخطأ الأكثر شيوعًا في الورش: استعمال «كارثي» للتعبير عن القلق. اسأل لكل «كارثي»: أي حالة من الثلاث يبلغها؟ إن لم يبلغ واحدة فهو مرتفع على الأكثر.\n\nالمصادر: الإطار الوطني، جدول مستويات الأثر.","minutes":null,"lo":["LO3"]},{"id":"impact-factors","n":8,"title":"الشدة والحجم والحساسية وسرعة التعافي","kind":"content","session":1,"hash":"340f4f72","md":"#### [day3#impact-factors] الشدة والحجم والحساسية وسرعة التعافي\n\n*عوامل الأثر*\n\n| العامل | السؤال | في المستشفى الافتراضي |\n| --- | --- | --- |\n| الشدة | ما أسوأ ما يقع على شخص واحد؟ | تأجيل علاج مريض مزمن |\n| الحجم | كم شخصًا يقع عليهم؟ | عشرات في الأسبوع أم آلاف؟ |\n| الحساسية | ما نوع البيانات أو القرار؟ | موعد عيادة نفسية أكثر حساسية من موعد أسنان |\n| التعافي | كم يستغرق إصلاحه؟ | موعد بديل خلال يوم أم بعد شهر؟ |","notes":"عامل واحد يكفي لتبرير الرقم، لكن يجب أن يكون من الحالة. «حساس» وحده لا يكفي؛ «موعد عيادة نفسية يكشف تشخيصًا» يكفي.\n\nالمصادر: الإطار الوطني، قسم تقييم المخاطر.","minutes":null,"lo":["LO3"]},{"id":"matrix","n":9,"title":"المستوى حاصل الضرب، والنطاق يحدد من يتصرف","kind":"content","session":1,"hash":"091d96fe","md":"#### [day3#matrix] المستوى حاصل الضرب، والنطاق يحدد من يتصرف\n\n*المصفوفة*\n\n| الاحتمالية ↓ الأثر ← | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- |\n| 4 شبه المؤكد | 4 | 8 | 12 | 16 |\n| 3 مرجح | 3 | 6 | 9 | 12 |\n| 2 غير مرجح | 2 | 4 | 6 | 8 |\n| 1 نادر | 1 | 2 | 3 | 4 |\n\n- **النطاقات.** منخفض 1 و2. متوسط 3 إلى 6. مرتفع 8 إلى 12. كارثي 16. في هذا المقرر «مرتفع أو كارثي» يعني المستوى 8 فأكثر، وهذه هي المخاطر ذات الأولوية.","notes":"لاحظوا أن 5 و7 و10 و11 و13 إلى 15 لا تقع في المصفوفة: لا توجد درجة 7 مثلًا. لذلك المتوسط بين مقيّمين قد يعطي رقمًا لا معنى له. قراءة «المرتفع أو الحرج» في دليل المقرر بأنها 8 فأكثر قرار نذكره هنا مرة واحدة.\n\nالمصادر: الإطار الوطني، مصفوفة المخاطر ونطاقاتها.","minutes":null,"lo":["LO3"]},{"id":"inherent-residual","n":10,"title":"نقدّر الخطر كما هو اليوم، ثم كما سيكون بعد المعالجة","kind":"content","session":1,"hash":"c825e686","md":"#### [day3#inherent-residual] نقدّر الخطر كما هو اليوم، ثم كما سيكون بعد المعالجة\n\n*قبل وبعد*\n\n1. **الأصلي** بلا أي ضابط: نظري، ولا نستعمله هنا\n2. **الحالي** بالضوابط القائمة فعلًا اليوم\n3. **المتبقي المتوقع** بعد ضوابط مخطط لها، إن عملت\n\n> لا تقدّر الخطر بضابط لم يُنفَّذ بعد. هذا يخفي الخطر قبل أن يُعالج.","notes":"كثير من الجهات تكتب «الخطر الأصلي» بلا ضوابط، ثم تقارن به فتبدو المعالجة عظيمة. دليل التقدير في المقرر يطلب التقدير بالضوابط القائمة، والمتبقي بعد الضوابط المخططة، وهذا ما يقارنه الإطار الوطني بحد التحمّل.\n\nالمصادر: الإطار الوطني، خطوتا التقييم والمعالجة؛ ISO 31000.","minutes":null,"lo":["LO3"]},{"id":"one-factor","n":11,"title":"لكل رقم عامل واحد مكتوب من الحالة","kind":"content","session":1,"hash":"5d221c0a","md":"#### [day3#one-factor] لكل رقم عامل واحد مكتوب من الحالة\n\n*قاعدة الرقم*\n\n- **ضعيف.** الاحتمالية 3: «وارد». الأثر 3: «مهم جدًا للمستشفى».\n- **قوي.** الاحتمالية 3: «السوابق: ثلاث شكاوى الشهر الماضي». الأثر 2: «التعافي: موعد بديل خلال أسبوع».\n\n> العامل المكتوب هو ما يُناقش في المعايرة. رقمان مختلفان بلا عوامل لا يمكن التوفيق بينهما.","notes":"في المختبر: عامل واحد لكل رقم. ليس لأن عاملًا واحدًا يكفي دائمًا، بل لأنه يجبر المقيّم على أن يختار ما حسم رأيه. هذا ما نقارنه بعد الظهر.","minutes":null,"lo":["LO3"]},{"id":"check-score","n":12,"title":"ما الرد على هذا التقدير؟","kind":"quiz","session":1,"hash":"a8c74eb1","md":"#### [day3#check-score] ما الرد على هذا التقدير؟\n\n*نقطة تحقق*\n\n**سؤال:** قدّر زميل خطر «موعد عند طبيب غائب» في المستشفى الافتراضي: الاحتمالية 2، والأثر 4 (كارثي)، والمستوى 8 مرتفع. عامل الأثر: «المرضى سيغضبون كثيرًا». ما الرد الأدق؟\n\n- أ. التقدير مقبول ما دام كل رقم معه عامل مكتوب في الورقة\n- ب. الاحتمالية يجب أن تكون 4 فالخطأ يتكرر، والمستوى 16\n- ج. يُعتمد متوسط المحورين، 3، فالفرق بينهما كبير ولا يتفق عليه أحد\n- د. الغضب لا يبلغ الكارثي؛ الأثر 2، والمستوى 4","notes":"الإجابة: د. لاحظوا أن تصحيح محور واحد غيّر النطاق من مرتفع إلى متوسط، وهذا يغيّر من يتصرف. لهذا نعطي العامل هذا الوزن.","minutes":null,"lo":["LO3"]},{"id":"lab-3-1","n":13,"title":"التقدير المستقل لعشرين خطرًا","kind":"lab","session":1,"hash":"cb0282de","md":"#### [day3#lab-3-1] التقدير المستقل لعشرين خطرًا\n\nالمختبر 3.1 · 35 دقيقة\n\nتقدّر عشرين خطرًا من سجل «سَمْت» على المصفوفة دون أي مساعد ذكي، مع عامل واحد يبرر كل تقدير، ثم تحسب المستوى والنطاق.\n\n[D3_1_scoring.html](https://sdaiaacademy.github.io/lds-aig-204/labs/D3_1_scoring.html)\n\n- [ ] اقرأ دليل التقدير والمخاطر العشرين (5 د)\n- [ ] قدّر الاحتمالية لكل خطر مع عامل واحد (11 د)\n- [ ] قدّر الأثر لكل خطر مع عامل واحد (11 د)\n- [ ] احسب المستوى والنطاق ورتّب السجل (5 د)\n- [ ] علّم الثلاثة التي ترددت فيها (3 د)\n- [ ] ✱ إضافي: أعد تقدير خطرين بافتراض أن الضابط الوقائي الرئيس توقف، ولاحظ أي المحورين تغيّر","notes":"دون أي مساعد ذكي، ودون نقاش مع الجار. هذا التقدير المستقل هو ما نقارنه بعد الظهر. لا توزع المرجع في نهاية المختبر: اعرض الأعداد فقط في شريحة النتائج.","minutes":null,"lo":[]},{"id":"debrief-3-1","n":14,"title":"في المرجع سبعة مخاطر مرتفعة، ولا كارثي واحد","kind":"content","session":1,"hash":"66da0d6d","md":"#### [day3#debrief-3-1] في المرجع سبعة مخاطر مرتفعة، ولا كارثي واحد\n\n*ما أظهره المختبر 3.1*\n\n| البند | القيمة |\n| --- | --- |\n| منخفض | 0 |\n| متوسط | 13 |\n| مرتفع | 7 |\n| كارثي | 0 |\n\n- **المرتفعة السبعة.** لا نسمّيها الآن: تعايرون تقديراتكم المستقلة مع زميل في الجلسة التالية أولًا، ثم تصير هي المخاطر ذات الأولوية في الجلستين الأخيرتين.","notes":"الأعداد من check.py. المرتفعة في المرجع: R02 وR06 وR09 وR10 وR12 وR13 وR15؛ لا تعرضها قبل نهاية المختبر 3.2، حتى لا تصير مرساة لمعايرة الأزواج. اسأل: كم منكم عنده سبعة مرتفعة بالضبط؟ وكم كتب «كارثي» لأي خطر؟ لا تناقش الفروق الآن؛ هي موضوع الجلسة التالية.","minutes":null,"lo":["LO3"]},{"id":"s2","n":15,"title":"المعايرة بين المقيّمين والتجميع","kind":"section","session":2,"hash":"6d860f14","md":"#### [day3#s2] المعايرة بين المقيّمين والتجميع\n\n*الجلسة 2*\n\n- تقيس اتفاق مقيّمين بالنطاق نفسه وبفارق نطاق واحد\n- تفسر سبب الخلاف: العامل المختلف لا الرقم المختلف\n- تنتقد تجميع المخاطر بالمتوسط أو بالعدّ","notes":"","minutes":null,"lo":["LO3"]},{"id":"why-differ","n":16,"title":"المقيّمون يختلفون في العامل قبل أن يختلفوا في الرقم","kind":"content","session":2,"hash":"6cb39893","md":"#### [day3#why-differ] المقيّمون يختلفون في العامل قبل أن يختلفوا في الرقم\n\n*لماذا نختلف*\n\n- **الموقع.** مالك النظام يرى ضوابطه، وحماية البيانات ترى البيانات. كل منهما يرى نصف الصورة.\n- **السوابق.** من لم يرَ الحادثة في جهته يخفض الاحتمالية، ولو وقعت في القطاع كله.\n- **المقياس.** «مرتفع» عند أحدهما «كارثي» عند الآخر، لأن أحدهما لم يقرأ التعريف.\n- **التوافر.** آخر حادثة في الأخبار ترفع كل ما يشبهها.","notes":"الخلاف مفيد إذا كُشف سببه. الخلاف في الرقم بلا عامل لا يُحل إلا بالأقدمية أو بالمتوسط، وكلاهما سيئ.\n\nالمصادر: NIST AI RMF 1.0، MEASURE 1.3 عن مقيّمين داخليين لم يطوروا النظام أو مستقلين، وMEASURE 4.1 عن استشارة خبراء المجال في طرق القياس.","minutes":null,"lo":["LO3"]},{"id":"anchoring","n":17,"title":"أول رقم يُقال في الغرفة يصير مرساة للجميع","kind":"content","session":2,"hash":"5a20d02d","md":"#### [day3#anchoring] أول رقم يُقال في الغرفة يصير مرساة للجميع\n\n*التثبيت*\n\n1. **وحدك أولًا** كل مقيّم يكتب أرقامه وعوامله قبل أي نقاش\n2. **قارن** اعرض الأرقام معًا، لا واحدًا واحدًا\n3. **ناقش العوامل** في الخلافات الكبيرة وحدها\n4. **أعد التقدير** من العامل المتفق عليه\n\n> لهذا كان المختبر الأول دون مساعد ذكي: المساعد مرساة أيضًا.","notes":"التثبيت (Anchoring) من أكثر الانحيازات توثيقًا في التقدير. أبسط علاج: التقدير المستقل قبل النقاش، ثم كشف الأرقام معًا. يصح هذا على رأي الرئيس في الغرفة وعلى اقتراح المساعد.","minutes":null,"lo":["LO3"]},{"id":"agreement","n":18,"title":"«ضمن نطاق واحد» يتحقق بالصدفة في ثمانية من كل عشرة","kind":"content","session":2,"hash":"39732253","md":"#### [day3#agreement] «ضمن نطاق واحد» يتحقق بالصدفة في ثمانية من كل عشرة\n\n*قياس الاتفاق*\n\n| البند | القيمة |\n| --- | --- |\n| ضمن نطاق، صدفة | 80.5% |\n| النطاق نفسه، صدفة | 32.8% |\n\n- **ماذا يعني.** مقيّمان يختاران الاحتمالية والأثر عشوائيًا يتفقان ضمن نطاق واحد في 80.5% من المخاطر. وفي عشرين خطرًا يبلغ 65% من الأزواج العشوائية معيار 80%.\n\n> لذلك نقرأ ثلاثة أرقام معًا: ضمن نطاق، والنطاق نفسه، والمخاطر التي يفصلها نطاقان.","notes":"الرقم الأول حساب كامل للأزواج الممكنة لتقديري خطر واحد (16 × 16 = 256 زوجًا)، والثاني محاكاة 100 ألف زوج عشوائي لعشرين خطرًا. السبب أن النطاقين المتوسط والمرتفع يأخذان معظم المصفوفة، فالنطاقان المتجاوران يغطيان أغلب الاحتمالات. معيار دليل المقرر (80% ضمن نطاق) نحسبه ونقول إنه لا يكفي وحده.\n\nالمصادر: محاكاة المقرر، موثقة في ملاحظات الإعداد.","minutes":null,"lo":["LO3"]},{"id":"calibrate-on-factor","n":19,"title":"يُحل الخلاف بالعامل، لا بالمتوسط ولا بالأقدمية","kind":"content","session":2,"hash":"0131e19f","md":"#### [day3#calibrate-on-factor] يُحل الخلاف بالعامل، لا بالمتوسط ولا بالأقدمية\n\n*المعايرة*\n\n| الطريقة | في المستشفى الافتراضي: 3 مقابل 12 | المشكلة |\n| --- | --- | --- |\n| المتوسط | 7.5 | رقم لا يقع في المصفوفة، ولا يقول أحد إنه صحيح |\n| الأقدمية | رأي رئيس القسم | يضيع العامل الذي رآه الآخر |\n| العامل | هل التأكيد قبل يوم يعمل فعلًا؟ نسأل العيادة | يحتاج وقتًا، ويعطي رقمًا يُدافع عنه |","notes":"في المعايرة لا يُسأل «من على حق؟» بل «ما العامل الذي رأيته ولم أره؟». إذا كان الخلاف على حقيقة (هل الضابط يعمل؟) فالجواب في البيانات لا في الغرفة.","minutes":null,"lo":["LO3"]},{"id":"aggregation","n":20,"title":"ثلاث طرق لإخفاء خطر كبير داخل تقرير جميل","kind":"content","session":2,"hash":"da3f68b4","md":"#### [day3#aggregation] ثلاث طرق لإخفاء خطر كبير داخل تقرير جميل\n\n*التجميع*\n\n- **متوسط السجل.** «متوسط المخاطر 5.2: متوسط». خطر كارثي واحد يختفي بين تسعة عشر منخفضًا.\n- **عدّ الأحمر.** «انخفض عدد المرتفع من 7 إلى 5». ربما بسبب تقسيم خطر إلى اثنين.\n- **خريطة الحرارة.** خانة واحدة تجمع 9 و12. المصفوفة ترتب تقريبيًا، ولا تقيس.\n\n> في التقرير: قائمة المخاطر فوق حد التحمّل بأسمائها، لا أرقامًا مجمّعة عنها.","notes":"مقالة لويس أنتوني كوكس «ما الخطأ في مصفوفات المخاطر؟» (2008) تبيّن أن المصفوفة قد ترتب خطرين ترتيبًا معكوسًا. لا نتخلى عنها لأن الإطار الوطني يعتمدها، لكن نستعملها لترتيب الحوار، لا لجمع الأرقام.\n\nالمصادر: Cox, L. A. (2008). What's wrong with risk matrices? Risk Analysis 28(2).","minutes":null,"lo":["LO3"]},{"id":"assistant-challenger","n":21,"title":"المساعد معترض جيد ومقيّم سيئ","kind":"content","session":2,"hash":"310b9a43","md":"#### [day3#assistant-challenger] المساعد معترض جيد ومقيّم سيئ\n\n*المساعد في المعايرة*\n\n- **اطلب منه.** أن يعترض على أعلى تقديراتك بالعوامل، وأن يسأل عن الحالة القصوى خلف كل «كارثي».\n- **لا تطلب منه.** أن يقدّر السجل. سيعطي أرقامًا متقاربة مقنعة، ويصير المرساة التي أردنا تجنبها.\n\n> كل رقم غيّرته بعد اعتراض مساعد يُكتب في السجل مع العامل الجديد.","notes":"في المختبر نص بديل لمساعد في دور المعترض، فلا حاجة إلى نموذج. يستعمله من ينهي مبكرًا في التمرين الإضافي.","minutes":null,"lo":["LO3"]},{"id":"check-calibration","n":22,"title":"ماذا يعني هذا الاتفاق؟","kind":"quiz","session":2,"hash":"490c4c80","md":"#### [day3#check-calibration] ماذا يعني هذا الاتفاق؟\n\n*نقطة تحقق*\n\n**سؤال:** مقيّمان في المستشفى الافتراضي قدّرا عشرين خطرًا، واتفقا ضمن نطاق واحد في 85% منها، وفي النطاق نفسه في 35%. يقول مدير المشروع: «المعايرة ناجحة، نعتمد التقدير». ما الرد الأدق؟\n\n- أ. 85% قريبة من الصدفة، و35% ضعيفة؛ نناقش الفروق الكبيرة بعواملها\n- ب. المعايرة ناجحة لأن 85% أعلى من معيار الدليل البالغ 80%\n- ج. نعتمد متوسط تقديري المقيّمين لكل خطر ثم نعيد حساب الاتفاق\n- د. نسب الاتفاق لا معنى لها في التقدير، فالمهم رأي المقيّم الأقدم في الفريق","notes":"الإجابة: أ. هذا الرقم نفسه سيظهر في المختبر بقيمة أعلى، ويبقى السؤال نفسه: ماذا نقرأ معه؟","minutes":null,"lo":["LO3"]},{"id":"lab-3-2","n":23,"title":"المعايرة بين المقيّمين","kind":"lab","session":2,"hash":"d372a79c","md":"#### [day3#lab-3-2] المعايرة بين المقيّمين\n\nالمختبر 3.2 · 35 دقيقة\n\nتقارن تقديرات مقيّمَين مرجعيين لعشرين خطرًا، وتحسب الاتفاق بالنطاق نفسه وبفارق نطاق واحد، وتناقش المخاطر التي تفصلها نطاقان، ثم تعاير تقديرك المستقل من المختبر 3.1 مع زميل بعامل متفق عليه.\n\n[D3_2_calibration.html](https://sdaiaacademy.github.io/lds-aig-204/labs/D3_2_calibration.html)\n\n- [ ] اقرأ ورقتي المقيّمَين ودليل التقدير (3 د)\n- [ ] احسب النطاق لكل تقدير والفارق بينهما (6 د)\n- [ ] احسب نسبة الاتفاق بالنطاق نفسه وبفارق نطاق (4 د)\n- [ ] ناقش المخاطر التي يفصلها نطاقان وسمِّ العامل (9 د)\n- [ ] عايِر تقديرك المستقل من المختبر 3.1 مع زميل (13 د)\n- [ ] ✱ إضافي: اطلب من مساعد ذكي أن يعترض على أعلى ثلاثة تقديرات عندك، وقرّر أي اعتراض يغيّر رقمًا ولماذا","notes":"الخطوات الأربع الأولى على ورقتي المقيّمَين المرجعيتين. في الخطوة الخامسة يعاير كل زوج تقديريه المستقلين من المختبر 3.1: هذه الورقة هي دليل الناتج LO3، فاطلب أن تُحفظ بالتقديرين قبل المعايرة وبعدها. راقب من يحل الخلاف بالمتوسط وأوقفه بسؤال: «أين يقع هذا الرقم في المصفوفة؟».","minutes":null,"lo":[]},{"id":"debrief-3-2","n":24,"title":"المعيار تحقق قبل أي نقاش، والخلاف الحقيقي في خطرين","kind":"content","session":2,"hash":"3b8c330b","md":"#### [day3#debrief-3-2] المعيار تحقق قبل أي نقاش، والخلاف الحقيقي في خطرين\n\n*ما أظهره المختبر 3.2*\n\n| البند | القيمة |\n| --- | --- |\n| ضمن نطاق | 90% |\n| صدفة | 80.5% |\n| النطاق نفسه | 50% |\n\n- **الأنماط.** نطاقان: R07 وR19. المقيّم أ يخفض الاحتمالية حين لا سابقة داخل الهيئة. المقيّم ب يرفع الأثر في الخصوصية، ويرفع R14 إلى كارثي.","notes":"الأرقام من check.py: 18 من 20 ضمن نطاق، و10 من 20 في النطاق نفسه. بعد المعايرة على العامل يُعتمد المرجع. اسأل: من وجد النمط عند المقيّم أ؟ هذا النمط هو ما يُصحح في الجهة، لا الأرقام واحدًا واحدًا.","minutes":null,"lo":["LO3"]},{"id":"s3","n":25,"title":"خيارات المعالجة والضوابط والإشراف البشري","kind":"section","session":3,"hash":"db0047c1","md":"#### [day3#s3] خيارات المعالجة والضوابط والإشراف البشري\n\n*الجلسة 3*\n\n- تختار خيار المعالجة المناسب لمستوى الخطر وسياقه\n- تختار ضابطًا يخفض المحور الصحيح: الاحتمالية أو الأثر\n- تحكم هل الإشراف البشري ضابط حقيقي أم شكلي","notes":"","minutes":null,"lo":["LO5"]},{"id":"four-options","n":26,"title":"أربعة خيارات في الإطار الوطني: التجنب والتخفيف والنقل والقبول","kind":"content","session":3,"hash":"7e361407","md":"#### [day3#four-options] أربعة خيارات في الإطار الوطني: التجنب والتخفيف والنقل والقبول\n\n*خيارات المعالجة*\n\n- **التجنب.** إزالة النشاط أو الأداة. وكيل السفر الافتراضي لا يدفع أبدًا؛ يحجز ويترك الدفع للمسافر.\n- **التخفيف.** ضوابط تخفض الاحتمالية أو الأثر. تحديث يومي لقائمة الأطباء.\n- **النقل.** طرف آخر يتحمل جزءًا من الأثر: عقد، أو تأمين. المسؤولية أمام الناس لا تنتقل.\n- **القبول.** قرار موقّع بأن الخطر ضمن التقبّل، بشروط وموعد مراجعة.","notes":"القبول ليس «لم نفعل شيئًا». هو قرار له موقّع وشروط وتاريخ مراجعة، ويُسجل. والنقل لا ينقل المسؤولية: إذا انقطع المورّد فالمتضرر يشتكي من الجهة لا من المورّد.\n\nالمصادر: الإطار الوطني، خطوة المعالجة؛ ISO 31000، خيارات المعالجة.","minutes":null,"lo":["LO5"]},{"id":"option-choice","n":27,"title":"الخيار يتبع ثلاثة أسئلة، لا النطاق وحده","kind":"content","session":3,"hash":"40133d51","md":"#### [day3#option-choice] الخيار يتبع ثلاثة أسئلة، لا النطاق وحده\n\n*أي خيار*\n\n1. **هل الميزة ضرورية؟** إن لم تكن، فالتجنب أرخص الخيارات\n2. **هل نتحكم في السبب؟** إن تحكمنا فالتخفيف\n3. **هل يستطيع طرف آخر أن يتحمل الأثر؟** إن استطاع فالنقل جزئيًا\n4. **هل الباقي ضمن التقبّل؟** إن كان فالقبول الموقّع","notes":"كثيرًا ما يُنسى التجنب لأن الفريق يحب الميزة. في وكيل السفر الافتراضي: الدفع الآلي يوفر دقيقة على المسافر، ويحمل خطرًا مرتفعًا. إزالته أرخص من أي ضابط.","minutes":null,"lo":["LO5"]},{"id":"control-types","n":28,"title":"الوقائي يخفض الاحتمالية، والكاشف والتصحيحي يخفضان الأثر","kind":"content","session":3,"hash":"d3b5cacb","md":"#### [day3#control-types] الوقائي يخفض الاحتمالية، والكاشف والتصحيحي يخفضان الأثر\n\n*أنواع الضوابط*\n\n| النوع | متى يعمل | المحور | في المستشفى الافتراضي |\n| --- | --- | --- | --- |\n| وقائي | قبل الحدث | الاحتمالية | تأكيد العيادة لكل موعد قبل يوم |\n| كاشف | بعد الحدث بقليل | الأثر (مدة الضرر) | تقرير يومي بالمواعيد عند أطباء في إجازة |\n| تصحيحي | بعد الحدث | الأثر | أولوية في موعد بديل لمن تضرر |\n\n> الكاشف لا يخفض الاحتمالية. من يخفض الاحتمالية بتقرير يومي يخفي الخطر في الرقم.","notes":"هذا من أكثر الأخطاء في خطط المعالجة: مراجعة عينة تُكتب ضابطًا يخفض الاحتمالية. العينة تعرف ما وقع، ولا تمنع وقوعه.\n\nالمصادر: الإطار الوطني، خطوة المعالجة؛ NIST AI RMF 1.0، MANAGE 1 وMANAGE 2.","minutes":null,"lo":["LO5"]},{"id":"control-design","n":29,"title":"الضابط الذي لا مالك له ولا دليل عليه نية حسنة فقط","kind":"content","session":3,"hash":"7a3c5512","md":"#### [day3#control-design] الضابط الذي لا مالك له ولا دليل عليه نية حسنة فقط\n\n*تصميم الضابط*\n\n- ما الذي يفعله بالضبط، ومتى\n- من يملكه: منصب واحد بميزانية\n- ما الدليل على أنه عمل هذا الأسبوع\n- كيف يُختبر، وما النتيجة التي تعني أنه لا يعمل\n\n- **مثال.** «تحديث قائمة الأطباء يوميًا» يصير: «يرفع قسم الجدولة القائمة كل يوم الساعة 6، ويرسل النظام تنبيهًا إن تأخر الرفع، وتراجع الجودة عشرة مواعيد أسبوعيًا».","notes":"اختبار الضابط موضوع اليوم الرابع. هنا يكفي أن يكون للضابط مالك ودليل. الضابط الذي لا يترك دليلًا لا يمكن أن يعرف أحد أنه توقف.","minutes":null,"lo":["LO5"]},{"id":"human-oversight","n":30,"title":"الإنسان ضابط حقيقي إذا رأى ما يكفي، في وقته، وملك أن يوقف","kind":"content","session":3,"hash":"b1186cae","md":"#### [day3#human-oversight] الإنسان ضابط حقيقي إذا رأى ما يكفي، في وقته، وملك أن يوقف\n\n*الإشراف البشري*\n\n- **يرى ما يكفي.** عينة تكفي لرؤية الخطأ، والمعلومة التي يحتاجها ليحكم.\n- **في وقته.** قبل ما لا يُرجع، لا بعد شهر.\n- **يملك أن يوقف.** صلاحية مكتوبة بأن يرد القرار أو يوقف الأداة.\n\n> **من وكيل السفر:** موظف يضغط «اعتمدت» على مئتي حجز في الساعة لا يشرف على شيء. هذا إشراف شكلي.","notes":"مبادئ أخلاقيات الذكاء الاصطناعي تجعل الإشراف البشري مبدأً. الإطار الوطني يطلب تحديد دور الإنسان ونقاط الاعتماد والإيقاف. السؤال هنا: هل الإنسان ضابط فعلًا، أم اسم في الخطة؟\n\nالمصادر: سدايا، مبادئ أخلاقيات الذكاء الاصطناعي؛ الإطار الوطني، نشاط الأتمتة ودور الإنسان.","minutes":null,"lo":["LO5"]},{"id":"oversight-limits","n":31,"title":"الإنسان يتعب، ويثق بالآلة، ويكلف","kind":"content","session":3,"hash":"f47501e9","md":"#### [day3#oversight-limits] الإنسان يتعب، ويثق بالآلة، ويكلف\n\n*حدود الإشراف*\n\n| الحد | ماذا يحدث | ما يساعد |\n| --- | --- | --- |\n| الانحياز للأتمتة | يوافق المراجع على ما تقترحه الآلة لأنها «عادة على حق» | عينة فيها أخطاء معروفة لقياس انتباهه |\n| الحجم | مراجعة كل إجابة تكلف أكثر من المساعد نفسه | مراجعة ما لا يُرجع وحده |\n| الإرهاق | الدقة تنخفض بعد ساعة من التكرار | تناوب ومدة محددة |","notes":"الانحياز للأتمتة (Automation bias) موثق في الطيران والطب. أبسط اختبار للإشراف: أدخل أخطاء معروفة في العينة، وانظر كم منها يُكتشف.\n\nالمصادر: NIST AI 600-1، خطر إعداد الإنسان والآلة.","minutes":null,"lo":["LO5"]},{"id":"check-option","n":32,"title":"أي خيار يناسب؟","kind":"quiz","session":3,"hash":"6ecb0108","md":"#### [day3#check-option] أي خيار يناسب؟\n\n*نقطة تحقق*\n\n**سؤال:** مساعد المواعيد الافتراضي يرسل تذكيراته عبر مورّد رسائل نصية. انقطاع المورّد يترك المرضى بلا تذكير، والمستشفى لا يتحكم في المورّد ولا يستطيع الاستغناء عن التذكير. أي خيار هو الأنسب أولًا؟\n\n- أ. التجنب بإيقاف التذكير النصي كليًا وترك تذكّر الموعد على المريض وأسرته\n- ب. القبول، لأن الانقطاع خارج تحكم المستشفى\n- ج. النقل بعقد فيه تعويض وقناة بديلة، والمسؤولية تبقى على المستشفى\n- د. مراجعة شهرية لعدد المواعيد الفائتة بعد كل انقطاع في الرسائل","notes":"الإجابة: ج. «ب» تصح لاحقًا، بعد النقل، إذا بقي المتبقي ضمن التقبّل. القبول قرار على المتبقي، لا بديل عن السؤال.","minutes":null,"lo":["LO5"]},{"id":"lab-3-3","n":33,"title":"اختيار المعالجة والضوابط","kind":"lab","session":3,"hash":"15b96c0d","md":"#### [day3#lab-3-3] اختيار المعالجة والضوابط\n\nالمختبر 3.3 · 35 دقيقة\n\nتختار للمخاطر ذات الأولوية في سجل «سَمْت» المقدَّر خيار المعالجة والضوابط من مكتبة من ثلاثين ضابطًا، وتحكم على كل ضابط إشراف بشري: حقيقي أم شكلي.\n\n[D3_3_treatment.html](https://sdaiaacademy.github.io/lds-aig-204/labs/D3_3_treatment.html)\n\n- [ ] اقرأ السجل المقدَّر ومكتبة الضوابط (5 د)\n- [ ] حدّد المخاطر ذات الأولوية وخيار كل منها (8 د)\n- [ ] اختر الضوابط وحدّد المحور الذي يخفضه كل منها (12 د)\n- [ ] احكم على ضوابط الإشراف البشري: حقيقي أم شكلي (6 د)\n- [ ] سجّل خطرًا واحدًا يحتاج ضابطًا ليس في المكتبة (4 د)\n- [ ] ✱ إضافي: صمّم ضابط إشراف بشري يصبح حقيقيًا: من يراجع، وكم، ومتى، وما الذي يستطيع إيقافه","notes":"الجميع على السجل المقدَّر المرجعي. اطلب في الدقيقة العشرين أن يرفع كل من حكم على ضابط بأنه شكلي يده، واسأل عن واحد. لا تكشف الحكم المرجعي قبل نهاية الخطوة الرابعة.","minutes":null,"lo":[]},{"id":"debrief-3-3","n":34,"title":"الخيارات الأربعة في خطة واحدة، وثلاثة ضوابط إشراف شكلية","kind":"content","session":3,"hash":"7bb9c18a","md":"#### [day3#debrief-3-3] الخيارات الأربعة في خطة واحدة، وثلاثة ضوابط إشراف شكلية\n\n*ما أظهره المختبر 3.3*\n\n| الخيار | المرجع |\n| --- | --- |\n| تجنب | R09: إزالة أداة الإلغاء (CT04) |\n| تخفيف | R02 وR06 وR10 وR12 وR13 وR15 |\n| نقل | R18: عقد بتوفر وتعويض وخطة بديلة (CT19) |\n| قبول | R16: ضمن التقبّل الحذر، مع CT24 |\n\n- **الإشراف.** شكلي: CT05 (عينة 1% شهريًا)، CT15 (عبارة «قد تكون خاطئة»)، CT21 (حقل «تحققت»). حقيقي: CT06 وCT17 وCT25، وCT25 بتكلفة 2.4 مليون ريال.\n\n> **بلا ضابط في المكتبة:** R06. لا شيء يجعل «سَمْت» يخدم لغات أخرى بجودة مقبولة؛ خط المترجمين يخفف الأثر فقط.","notes":"المرجع في solutions/D3_3_treatment.md. تُقبل بدائل معقولة، مثل CT03 بدل CT04 لـR09 (تخفيف بدل تجنب). لا يُقبل CT05 لأي خطر على أنه يخفض الاحتمالية.","minutes":null,"lo":["LO5"]},{"id":"s4","n":35,"title":"التكلفة والمتبقي والاعتماد","kind":"section","session":4,"hash":"234fb83d","md":"#### [day3#s4] التكلفة والمتبقي والاعتماد\n\n*الجلسة 4*\n\n- توازن تكلفة الضابط مع خفض الخطر المتوقع\n- تقدّر الخطر المتبقي وتكتب مبرره\n- تحدد من يعتمد المتبقي أو إلى أين يُصعَّد","notes":"","minutes":null,"lo":["LO5","LO4"]},{"id":"proportionality","n":36,"title":"ضابطان يخفضان الشيء نفسه: لماذا ندفع أضعاف الثمن؟","kind":"content","session":4,"hash":"8d40bb66","md":"#### [day3#proportionality] ضابطان يخفضان الشيء نفسه: لماذا ندفع أضعاف الثمن؟\n\n*التناسب*\n\n| الضابط في المستشفى الافتراضي | التكلفة السنوية | يخفض |\n| --- | --- | --- |\n| تنبيه آلي حين يتأخر رفع قائمة الأطباء | 15,000 ريال | الاحتمالية من 3 إلى 2 |\n| موظف يراجع كل موعد يدويًا قبل تأكيده | 400,000 ريال | الاحتمالية من 3 إلى 2 |\n\n> التناسب لا يعني الأرخص دائمًا. يعني أن الفرق في التكلفة يقابله فرق في الخفض أو في الثقة بالضابط.","notes":"لا نحسب خسائر بالريال في هذا المقرر: التقدير بالمصفوفة. التناسب هنا مقارنة بين ضوابط للخطر نفسه. إن كان الضابط الأغلى يخفض أكثر، أو يُختبر أسهل، فقد يستحق ثمنه؛ وإلا فهو غير متناسب.","minutes":null,"lo":["LO5"]},{"id":"residual-rules","n":37,"title":"ثلاث قواعد تمنع المتبقي المتفائل","kind":"content","session":4,"hash":"ee301eb0","md":"#### [day3#residual-rules] ثلاث قواعد تمنع المتبقي المتفائل\n\n*المتبقي*\n\n- **المحور الصحيح.** خفّض المحور الذي يخفضه الضابط فقط.\n- **بقدر معقول.** مستوى أو مستويان لضابط واحد، لا من 4 إلى 1.\n- **مبرر بما يبقى.** اكتب ما لا يغطيه الضابط، لا ما يفعله فقط.\n\n> متبقٍ «منخفض» لكل خطر في الخطة علامة على تفاؤل، لا على معالجة ممتازة.","notes":"مثال المستشفى: التنبيه الآلي يخفض الاحتمالية من 3 إلى 2، ولا يغير الأثر: إن وقع الموعد الخاطئ فالزيارة ضائعة كما كانت. المتبقي 2×2=4. المبرر: «يمنع التأخر في الرفع، ويبقى الطبيب الذي يغيب دون إبلاغ».","minutes":null,"lo":["LO5"]},{"id":"acceptance-route","n":38,"title":"حد الفئة أولًا، ثم النطاق","kind":"content","session":4,"hash":"4c9ece4d","md":"#### [day3#acceptance-route] حد الفئة أولًا، ثم النطاق\n\n*من يوقّع*\n\n1. **فوق حد الفئة؟** يُصعَّد إلى اللجنة مهما كان نطاقه\n2. **كارثي** اللجنة والرئيس التنفيذي\n3. **مرتفع** الرئيسة التنفيذية للمخاطر\n4. **منخفض أو متوسط** مالك النظام\n\n> هذا ما كتبناه في بيان التقبّل والتحمّل في اليوم الأول. المتبقي يُقارن بالحد الذي اعتمدته الجهة، لا بشعور الفريق.","notes":"المسار في الشريحة هو مسار سياسة مِقوَد الافتراضية، ومثله في معظم الجهات. الترتيب مهم: من يقرأ النطاق أولًا يعتمد متبقيًا متوسطًا فوق حد فئة «متجنّبة»، وهذا ما تمنعه قاعدة التصعيد.\n\nالمصادر: الإطار الوطني، خطوة المعالجة وقرار القبول أو التصعيد.","minutes":null,"lo":["LO5","LO4"]},{"id":"acceptance-record","n":39,"title":"القبول قرار مكتوب له شروط وتاريخ انتهاء","kind":"content","session":4,"hash":"90f9c9a3","md":"#### [day3#acceptance-record] القبول قرار مكتوب له شروط وتاريخ انتهاء\n\n*سجل القبول*\n\n| البند | في وكيل السفر الافتراضي |\n| --- | --- |\n| الخطر والمتبقي | تأخر تأكيد الحجز في الموسم، 2×2=4 |\n| من قبل، ومتى | مالك النظام، 3 مارس |\n| الشروط | لا يزيد التأخر عن ساعتين، ورسالة للمسافر بالحالة |\n| ما يعيد فتحه | شكويان في أسبوع، أو تغيير المورّد |\n| موعد المراجعة | بعد ستة أشهر |","notes":"القبول بلا شروط ولا موعد مراجعة يصير قبولًا دائمًا دون أن يقرره أحد. «ما يعيد فتحه» يربط القبول بالمؤشرات في اليوم الرابع.","minutes":null,"lo":["LO5"]},{"id":"check-signoff","n":40,"title":"من يوقّع هذا المتبقي؟","kind":"quiz","session":4,"hash":"2b513b44","md":"#### [day3#check-signoff] من يوقّع هذا المتبقي؟\n\n*نقطة تحقق*\n\n**سؤال:** في المستشفى الافتراضي: مالك النظام يعتمد المنخفض والمتوسط، والرئيس التنفيذي للمخاطر المرتفع، وحد فئة الخصوصية والأمن 4، وما فوق الحد يُصعَّد إلى لجنة المخاطر. متبقي خطر خصوصية بعد الضوابط 3×2=6. من يوقّع؟\n\n- أ. مالك النظام، لأن 6 في النطاق المتوسط الذي يعتمده\n- ب. لجنة المخاطر، لأن 6 فوق حد الفئة مهما كان نطاق المتبقي\n- ج. الرئيس التنفيذي للمخاطر، لأن تجاوز الحد يجعل الخطر مرتفعًا في السجل\n- د. لا أحد، ويعود الفريق ليضيف ضوابط حتى يصل المتبقي إلى 4","notes":"الإجابة: ب. «د» خيار تستطيع اللجنة أن تطلبه، لكن القرار لها. الفريق لا يحق له أن يقرر وحده أن المتبقي غير مقبول ولا أن يقبله.","minutes":null,"lo":["LO5"]},{"id":"lab-3-4","n":41,"title":"المتبقي والاعتماد","kind":"lab","session":4,"hash":"0f3f5cb9","md":"#### [day3#lab-3-4] المتبقي والاعتماد\n\nالمختبر 3.4 · 30 دقيقة\n\nتبدأ من خطة معالجة مرجعية، وتضيف لكل خطر مرتفع أو كارثي مالكًا وتكلفة ودرجة متبقية مع مبررها، ثم تقرر بحسب بيان التقبّل: قبول أو تصعيد.\n\n[D3_4_residual.html](https://sdaiaacademy.github.io/lds-aig-204/labs/D3_4_residual.html)\n\n- [ ] اقرأ خطة المعالجة وبيان التقبّل المرجعيين (4 د)\n- [ ] أضف المالك والتكلفة لكل خطر ذي أولوية (6 د)\n- [ ] قدّر الدرجة المتبقية واكتب مبررها (10 د)\n- [ ] قرّر القبول أو التصعيد ومن يوقّع (6 د)\n- [ ] جد الضابط الذي لا تتناسب تكلفته (4 د)\n- [ ] ✱ إضافي: اكتب شروط القبول لخطر واحد مقبول: حدود الاستخدام وموعد المراجعة وما يعيد فتحه","notes":"الجميع على الخطة المرجعية. المختبر ثلاثون دقيقة: من يتأخر في الخطوة الثالثة يكتب المتبقي لأربعة مخاطر فقط ويكمل القرار. ناقش R06 في النتائج.","minutes":null,"lo":[]},{"id":"debrief-3-4","n":42,"title":"خطر متوسط يذهب إلى اللجنة، وضابط يكلف سبعة أضعاف بديله","kind":"content","session":4,"hash":"d9c1ae2c","md":"#### [day3#debrief-3-4] خطر متوسط يذهب إلى اللجنة، وضابط يكلف سبعة أضعاف بديله\n\n*ما أظهره المختبر 3.4*\n\n| الخطر (المستوى) | المتبقي | حد الفئة | يوقّع |\n| --- | --- | --- | --- |\n| R06 (8) | 3×2=6 | 4 | اللجنة |\n| R02 وR09 (9) | 1×3=3 | 4 و6 | مالك النظام |\n| R10 وR12 وR13 وR15 (9) | 2×3=6 | 6 | مالك النظام |\n\n> **غير متناسب:** فريق رصد على مدار الساعة (CT12) لخطر الانتحال R13 يكلف تسعمائة ألف ريال في السنة، أي سبعة أضعاف حملة التوعية (CT11) للخفض نفسه.","notes":"الأرقام من check.py. R06 هو الخطر الذي حملناه من المختبر 2.1 (الفئة الغائبة) إلى 3.3 (لا ضابط في المكتبة) إلى هنا. هذه سلسلة نعرضها غدًا في ورقة اللجنة.","minutes":null,"lo":["LO5","LO4"]},{"id":"wrap-up","n":43,"title":"ثلاثة أمور تبقى معك","kind":"content","session":4,"hash":"9cbe51b5","md":"#### [day3#wrap-up] ثلاثة أمور تبقى معك\n\n*خلاصة اليوم 3*\n\n- **رقم وعامل.** كل رقم بعامل من الحالة، والكارثي للحالات القصوى وحدها.\n- **اتفاق يُقرأ بحذر.** ضمن نطاق يتحقق بالصدفة غالبًا. اقرأ النطاق نفسه والفروق الكبيرة، وحل الخلاف بالعامل.\n- **متبقٍ موقّع.** ضابط يخفض المحور الصحيح، وإشراف بشري حقيقي، وحد الفئة قبل النطاق.","notes":"اسأل: في سجل جهتك، كم خطرًا قُبل دون توقيع ودون موعد مراجعة؟","minutes":null,"lo":[]},{"id":"next","n":44,"title":"اليوم 4: المراقبة وإعادة التقييم واللجنة","kind":"content","session":4,"hash":"ebd310e6","md":"#### [day3#next] اليوم 4: المراقبة وإعادة التقييم واللجنة\n\n*التالي*\n\nاقرأ قاموس بيانات المراقبة في monitoring_dictionary.txt: ما الذي يُسجل عن «سَمْت» كل أسبوع. غدًا نختار ما يُراقب، ونقرأ ستة وعشرين أسبوعًا، ونقف أمام اللجنة.","notes":"ذكّر المشاركين بأن موجز المشروع الختامي يُعطى غدًا في الجلسة الأخيرة.","minutes":null,"lo":[]}],"activities":[{"id":"review-day2-q1","slide":"review-day2","type":"single","prompt":"في مساعد مواعيد لمستشفى افتراضي، الرسائل التذكيرية تُرسل إلى رقم قديم، والمريض لا يعلم أن هناك تذكيرًا، والعيادة ترى غيابًا فقط. أي أسلوب تحديد يكشف هذا الخطر قبل أن يقع؟","options":[{"key":"أ","text":"البحث في سجلات الحوادث العامة عن تذكيرات ضائعة"},{"key":"ب","text":"تحليل أنماط الفشل خطوة بخطوة مع عمود الاكتشاف لكل خطوة"},{"key":"ج","text":"مقابلة المرضى وسؤالهم عن مشكلات التذكير التي واجهوها هذا العام"},{"key":"د","text":"كتابة حالات إساءة الاستخدام من منظور مستخدم مسيء"}],"correct":[1],"explanation":"الفشل الصامت لا يظهر في الشكاوى ولا في المقابلات. يظهر حين تسأل لكل خطوة: من يكتشف الفشل؟ والجواب «لا أحد».","misconceptions":["الحوادث تكشف ما وقع لغيرك، وقد لا يكون أحد سجّل حادثة مثله","","المريض لا يعرف أنه تضرر، فلن يذكره في مقابلة","المسيء يقصد ضررًا، وهذا فشل غير متعمد لا يكتبه من منظوره"],"lo":["LO2"]},{"id":"check-score-q1","slide":"check-score","type":"single","prompt":"قدّر زميل خطر «موعد عند طبيب غائب» في المستشفى الافتراضي: الاحتمالية 2، والأثر 4 (كارثي)، والمستوى 8 مرتفع. عامل الأثر: «المرضى سيغضبون كثيرًا». ما الرد الأدق؟","options":[{"key":"أ","text":"التقدير مقبول ما دام كل رقم معه عامل مكتوب في الورقة"},{"key":"ب","text":"الاحتمالية يجب أن تكون 4 فالخطأ يتكرر، والمستوى 16"},{"key":"ج","text":"يُعتمد متوسط المحورين، 3، فالفرق بينهما كبير ولا يتفق عليه أحد"},{"key":"د","text":"الغضب لا يبلغ الكارثي؛ الأثر 2، والمستوى 4"}],"correct":[3],"explanation":"الكارثي يحتاج سلامة بشرية مباشرة أو حرمانًا من حق أساسي أو تسريبًا واسعًا. زيارة ضائعة تُعالج بموعد بديل: متوسط.","misconceptions":["يقبل الرقم لأن له عاملًا، والعامل لا يبلغ أي حالة قصوى","يرفع الاحتمالية ليصحح أثرًا مبالغًا فيه، فيبقى الخطأ ويضاف خطأ","المتوسط بين محورين لا معنى له ولا يقع في المصفوفة",""],"lo":["LO3"]},{"id":"check-calibration-q1","slide":"check-calibration","type":"single","prompt":"مقيّمان في المستشفى الافتراضي قدّرا عشرين خطرًا، واتفقا ضمن نطاق واحد في 85% منها، وفي النطاق نفسه في 35%. يقول مدير المشروع: «المعايرة ناجحة، نعتمد التقدير». ما الرد الأدق؟","options":[{"key":"أ","text":"85% قريبة من الصدفة، و35% ضعيفة؛ نناقش الفروق الكبيرة بعواملها"},{"key":"ب","text":"المعايرة ناجحة لأن 85% أعلى من معيار الدليل البالغ 80%"},{"key":"ج","text":"نعتمد متوسط تقديري المقيّمين لكل خطر ثم نعيد حساب الاتفاق"},{"key":"د","text":"نسب الاتفاق لا معنى لها في التقدير، فالمهم رأي المقيّم الأقدم في الفريق"}],"correct":[0],"explanation":"الصدفة وحدها تعطي نحو 80% ضمن نطاق ونحو 33% في النطاق نفسه. الرقمان لا يثبتان اتفاقًا، والفروق الكبيرة تحتاج نقاش العوامل.","misconceptions":["","يقرأ المعيار وحده ويتجاهل أن الصدفة تبلغه","يحل الخلاف بالمتوسط، فيضيع العامل وتظهر أرقام خارج المصفوفة","يرفض القياس كله بدل قراءته مع مقاييس أخرى"],"lo":["LO3"]},{"id":"check-option-q1","slide":"check-option","type":"single","prompt":"مساعد المواعيد الافتراضي يرسل تذكيراته عبر مورّد رسائل نصية. انقطاع المورّد يترك المرضى بلا تذكير، والمستشفى لا يتحكم في المورّد ولا يستطيع الاستغناء عن التذكير. أي خيار هو الأنسب أولًا؟","options":[{"key":"أ","text":"التجنب بإيقاف التذكير النصي كليًا وترك تذكّر الموعد على المريض وأسرته"},{"key":"ب","text":"القبول، لأن الانقطاع خارج تحكم المستشفى"},{"key":"ج","text":"النقل بعقد فيه تعويض وقناة بديلة، والمسؤولية تبقى على المستشفى"},{"key":"د","text":"مراجعة شهرية لعدد المواعيد الفائتة بعد كل انقطاع في الرسائل"}],"correct":[2],"explanation":"السبب خارج التحكم والميزة ضرورية، فالنقل يحمّل المورّد جزءًا من الأثر، والقناة البديلة تخففه. المرضى يبقون مسؤولية المستشفى.","misconceptions":["التذكير ضروري للخدمة، فإزالته تزيد الغياب","القبول يحتاج أن يكون الخطر ضمن التقبّل، ولم نعرف ذلك بعد","","الضابط الكاشف لا يمنع الانقطاع، ويأتي بعد فوات الموعد"],"lo":["LO5"]},{"id":"check-signoff-q1","slide":"check-signoff","type":"single","prompt":"في المستشفى الافتراضي: مالك النظام يعتمد المنخفض والمتوسط، والرئيس التنفيذي للمخاطر المرتفع، وحد فئة الخصوصية والأمن 4، وما فوق الحد يُصعَّد إلى لجنة المخاطر. متبقي خطر خصوصية بعد الضوابط 3×2=6. من يوقّع؟","options":[{"key":"أ","text":"مالك النظام، لأن 6 في النطاق المتوسط الذي يعتمده"},{"key":"ب","text":"لجنة المخاطر، لأن 6 فوق حد الفئة مهما كان نطاق المتبقي"},{"key":"ج","text":"الرئيس التنفيذي للمخاطر، لأن تجاوز الحد يجعل الخطر مرتفعًا في السجل"},{"key":"د","text":"لا أحد، ويعود الفريق ليضيف ضوابط حتى يصل المتبقي إلى 4"}],"correct":[1],"explanation":"حد الفئة يُقرأ قبل النطاق. ما فوقه يُصعَّد إلى اللجنة، واللجنة قد تقبله أو تطلب معالجة أخرى.","misconceptions":["يقرأ النطاق وينسى حد الفئة","","يظن أن تجاوز الحد يرفع النطاق إلى المرتفع","يجعل كل تجاوز سببًا لإضافة ضوابط، والقرار قد يكون القبول من الجهة المختصة"],"lo":["LO5"]}],"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":"day3.md","llms":"../llms.txt"},"tasks":[],"tools":[]},"bridge":{"allowedOrigins":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

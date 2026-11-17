@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="deck" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اليوم 2 · تحديد المخاطر · إدارة مخاطر الذكاء الاصطناعي في التطبيق العملي</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="day2.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<div class="deck" data-course="إدارة مخاطر الذكاء الاصطناعي في التطبيق العملي" data-track="executives" data-day="اليوم 2">
+<section class="slide title" id="title" data-auto="title" data-label="الترحيب" data-n="1">
+  <div class="kicker">أكاديمية سدايا · إدارة مخاطر الذكاء الاصطناعي في التطبيق العملي</div>
+  <h1>تحديد المخاطر</h1>
+  <p class="lead mt">اليوم 2: أصحاب المصلحة والمتأثرون، وحالات إساءة الاستخدام، وتحليل أنماط الفشل، والتعلم من سجلات الحوادث، حتى سجل من خمسة عشر خطرًا يغطي الفئات السبع</p>
+  <div class="meta"><span class="track">مسار التنفيذيين والقادة</span><span>4 أيام تدريبية + يوم للمشروع الختامي</span><span>4 جلسات · 4 مختبرات</span><span>LDS-AIG-204</span></div>
+  <aside class="notes"><p>اليوم كله تحديد. في آخره يملك كل مشارك سجلًا من عشرين خطرًا في الفئات السبع، جاءت من أربعة مصادر: الناس، ومن يسيء الاستخدام، والمسار، والحوادث. لا تقدير اليوم: من يسأل «كم درجته؟» نؤجله إلى الغد عمدًا.</p></aside>
+</section>
+
+<section class="slide" id="agenda" data-auto="agenda" data-label="جدول اليوم" data-n="2">
+  <div class="kicker">اليوم</div>
+  <h2>تحديد المخاطر</h2>
+  <div class="agenda"><div class="item"><div><b>الجلسة 1 · أصحاب المصلحة والمتأثرون</b><small>المستخدم المباشر والمتأثر غير المباشر والمشغّل، وخريطة الأضرار لكل فئة، والفئة التي تغفلها الملاحظات</small></div></div><div class="item"><div><b>الجلسة 2 · صياغة الخطر وحالات إساءة الاستخدام</b><small>الخطر بأربعة أجزاء: السبب والحدث والنتيجة والطرف المتأثر، والأنواع السبعة والوصف السببي، وحالات إساءة الاستخدام، ومخاطر الأنظمة التوليدية والوكلاء</small></div></div><div class="item"><div><b>الجلسة 3 · تحليل أنماط الفشل ومخاطر المورّد</b><small>تحليل أنماط الفشل وآثارها على مسار خدمة، ومخطط ربطة العنق، والمخاطر التي تأتي من طرف ثالث: النموذج المستضاف وشروط المورّد</small></div></div><div class="item"><div><b>الجلسة 4 · من سجلات الحوادث إلى السجل</b><small>التعلم من السجلات العامة للحوادث، وتحويل الحادثة إلى خطر، ونظافة السجل: التكرار والتغطية والوصف السببي</small></div></div></div>
+  <aside class="notes"><p>أربعة مصادر للمخاطر في أربع جلسات. كل جلسة تضيف إلى السجل من زاوية لا تراها الأخرى. الاستراحات بزر B.</p></aside>
+</section>
+
+<section class="slide" id="review-day1" data-lo="LO2" data-n="3">
+  <div class="kicker">مراجعة اليوم 1</div>
+  <h2>من أين يبدأ التحديد؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO2" data-id="review-day1-q1">
+    <p class="lead">وصف مساعد مواعيد في مستشفى افتراضي يقول: «لا يحجز إلا بعد تأكيد المريض»، وتقرير التشغيل يقول: «مواعيد المتابعة تُحجز تلقائيًا». ماذا تفعل بهذا قبل ورشة التحديد؟</p>
+    <div class="opts">
+      <div class="opt" data-ok data-k="أ">تكتبه تعارضًا في ورقة النطاق، فهو مصدر خطر يُكتب في السجل</div>
+      <div class="opt" data-why="يثق بالوثيقة المعتمدة ويتجاهل ما يحدث فعلًا في التشغيل" data-k="ب">تعتمد الوصف لأنه الوثيقة الرسمية المعتمدة من الإدارة، وتترك تقرير التشغيل جانبًا</div>
+      <div class="opt" data-why="يقفز إلى المعالجة قبل أن يُكتب الخطر ويُقدَّر" data-k="ج">توصي بإيقاف الحجز التلقائي فورًا قبل أي ورشة أو تقدير</div>
+      <div class="opt" data-why="يظن أن التعارض خطأ توثيق فقط، وهو يدل على سلوك لم يُقيَّم" data-k="د">تطلب تصحيح الوصف ثم تبدأ الورشة كأن شيئًا لم يكن</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> التعارض بين وثيقتين معلومة عن سلوك لم يُقيَّم. يُكتب في ورقة النطاق، ويصير خطرًا في السجل.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: أ. هذا ما فعلناه في المختبر 1.4: التعارضات الأربعة تصير اليوم مخاطر في السجل المرجعي. من اختار «ج» نذكّره بأن المعالجة يوم الغد، بعد التقدير.</p></aside>
+</section>
+
+<!-- الجلسة 1 -->
+
+<section class="slide section" id="s1" data-auto="section" data-session="1" data-n="4">
+  <div class="kicker">الجلسة 1</div>
+  <h1>أصحاب المصلحة والمتأثرون</h1>
+  <ul class="bullets outcomes"><li>تميّز المستخدم المباشر من المتأثر غير المباشر والمشغّل</li><li>ترسم الضرر المحتمل على كل فئة متأثرة</li><li>تجد الفئة التي لا يذكرها أحد قبل الإطلاق</li></ul>
+  <div class="sess-no">01</div>
+</section>
+
+<section class="slide" id="three-kinds" data-lo="LO2" data-n="5" data-session="1">
+  <div class="kicker">من يتأثر</div>
+  <h2>ثلاثة أنواع من أصحاب المصلحة، والسجل يحتاجها كلها</h2>
+  <table class="t">
+    <tr><th>النوع</th><th>من هو</th><th>في مساعد مواعيد لمستشفى افتراضي</th></tr>
+    <tr><td>مستخدم مباشر</td><td>يحادث النظام</td><td>المريض الذي يحجز موعده</td></tr>
+    <tr><td>متأثر غير مباشر</td><td>لا يحادثه ويتأثر بقراره أو خطئه</td><td>مريض الطوارئ الذي يتأخر لأن المواعيد امتلأت خطأً</td></tr>
+    <tr><td>مشغّل</td><td>يعمل معه أو بعده</td><td>موظف الاستقبال الذي يستلم الحالات المحوّلة</td></tr>
+  </table>
+  <div class="callout tip mt"><b>الإطار الوطني</b> يطلب في السياق والنطاق تحديد المستخدمين والفئات المتأثرة معًا، لا المستخدمين وحدهم.</div>
+  <aside class="notes"><p>اسأل القاعة: في سجلات جهاتكم، كم خطرًا يقع على من لا يستخدم النظام؟ غالبًا صفر. هذا لأن ورش التحديد تُدعى إليها فرق النظام، وهي تفكر في مستخدميه.</p><p>المصادر: الإطار الوطني لإدارة مخاطر الذكاء الاصطناعي، قسم السياق والنطاق؛ <span class="en">NIST AI RMF 1.0</span>، الوظيفة <span class="en">MAP 5</span>.</p></aside>
+</section>
+
+<section class="slide" id="harm-to-people" data-lo="LO2" data-n="6" data-session="1">
+  <div class="kicker">الضرر</div>
+  <h2>الضرر يقع على شخص، والسمعة تأتي بعده</h2>
+  <div class="cols cols-3">
+    <div class="card c-coral"><h4>مال ووقت</h4><p class="small mb0">رسم مدفوع خطأً، موعد ضائع، زيارة بلا فائدة.</p></div>
+    <div class="card c-purple"><h4>خصوصية وكرامة</h4><p class="small mb0">بيانات مكشوفة، عبارة مهينة، قرار لا يُفسَّر.</p></div>
+    <div class="card c-teal"><h4>سلامة ووصول</h4><p class="small mb0">علاج مؤجل، خدمة لا يصل إليها من لا يملك القناة.</p></div>
+  </div>
+  <div class="callout warn mt"><b>علامة سجل ضعيف:</b> كل نتائجه «ضرر بسمعة الجهة». السمعة نتيجة لضرر وقع على أحد، فاكتب الضرر أولًا.</div>
+  <aside class="notes"><p>يقول الإطار الوطني إن آثار المخاطر تمس الأفراد في حقوقهم وسلامتهم وفرصهم الاقتصادية، والجهات بتعطل العمليات والخسائر المالية والسمعة والمخاطر التنظيمية، والمجتمع والبيئة. نبدأ بالأفراد لأن السجلات تميل إلى البدء بالجهة.</p><p>المصادر: الإطار الوطني، قسم «مخاطر الذكاء الاصطناعي»؛ <span class="en">NIST AI RMF 1.0</span>، الشكل 1 في الجزء الأول: أمثلة الأضرار على الأفراد والمنظمات والمنظومات.</p></aside>
+</section>
+
+<section class="slide" id="harm-map" data-lo="LO2" data-n="7" data-session="1">
+  <div class="kicker">خريطة الأضرار</div>
+  <h2>سطر لكل فئة: من هي، وما ضررها، وأي خطر يحمله</h2>
+  <table class="t small">
+    <tr><th>الفئة</th><th>النوع</th><th>الضرر</th><th>الخطر من منظورها</th></tr>
+    <tr><td>المرضى المراجعون</td><td>مستخدم مباشر</td><td>موعد عند طبيب غائب</td><td>القائمة لا تُحدَّث، فيُحجز موعد لا يُقام</td></tr>
+    <tr><td>مرضى الطوارئ</td><td>متأثر غير مباشر</td><td>انتظار أطول</td><td>حجوزات مكررة تملأ العيادات</td></tr>
+    <tr><td>موظفو الاستقبال</td><td>مشغّل</td><td>إعادة جدولة يدوية</td><td>المساعد يحوّل الحالات الصعبة وحدها</td></tr>
+    <tr><td>الأطباء</td><td>متأثر غير مباشر</td><td>جدول مزدحم دون علمهم</td><td>المساعد لا يعرف حدود الحجز لكل طبيب</td></tr>
+  </table>
+  <aside class="notes"><p>المثال الموازي هو نفسه طوال الجلسة. لاحظوا أن لكل فئة خطرًا، حتى الأطباء الذين لا يحادثون المساعد أبدًا. الخطر يُكتب من منظور الفئة: «ماذا يحدث لي إن أخطأ النظام؟».</p></aside>
+</section>
+
+<section class="slide" id="find-the-missing" data-lo="LO2" data-n="8" data-session="1">
+  <div class="kicker">من لم يُذكر</div>
+  <h2>الفئة الغائبة تختبئ في الأرقام وفي القنوات</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>الأرقام</b>كل نسبة من الناس في الملاحظات: من الباقون؟</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>القنوات</b>من لا يصل إلى القناة أصلًا لا يشتكي منها</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>المقابلات</b>من لم يُدعَ؟ ومن لم يحضر؟</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>ما بعد الحدث</b>من يدفع ثمن الخطأ ولم يكن طرفًا فيه؟</div>
+  </div>
+  <div class="callout tip mt"><b>في المستشفى الافتراضي:</b> المرضى المحوَّلون من مدن أخرى لا تظهر إحالاتهم في نظام المواعيد، فلا يجدون موعدًا ولا يذكرهم أحد في المقابلات.</div>
+  <aside class="notes"><p>الشكاوى لا تكشف الفئة الغائبة: من لا يستخدم القناة لا يشتكي منها. لذلك نسأل عن الأرقام: «ثلث المراجعين من خارج المدينة» يعني أن هناك فئة لها مسار مختلف.</p><p>المصادر: الإطار الوطني، قسم السياق والنطاق؛ مبادئ أخلاقيات الذكاء الاصطناعي، مبدأ الإنصاف والشمول.</p></aside>
+</section>
+
+<section class="slide" id="one-risk-per-group" data-lo="LO2" data-n="9" data-session="1">
+  <div class="kicker">قاعدة المكتب</div>
+  <h2>لكل فئة متأثرة خطر واحد على الأقل في السجل</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li>الفئة بلا خطر تعني أن أحدًا لم يسأل عنها</li>
+      <li>الخطر يُكتب باسم الفئة في عمود الطرف المتأثر</li>
+      <li>إن لم تجد خطرًا للفئة فاكتب لماذا، ووقّع</li>
+    </ul>
+    <div class="card tint c-navy"><h4>الاستخدام المسؤول</h4><p class="small mb0">مبدأ الإنصاف في مبادئ الأخلاقيات يطلب ألا تتحمل فئة الضرر وحدها. السجل هو المكان الذي يظهر فيه ذلك أو يختفي.</p></div>
+  </div>
+  <aside class="notes"><p>هذه قاعدة نضعها في المكتب، وليست نصًا في الإطار. الإطار يطلب تحديد الفئات المتأثرة، والقاعدة تجعل ذلك قابلًا للتحقق: عمود الطرف المتأثر يُقارن بالخريطة.</p></aside>
+</section>
+
+<section class="slide" id="interview-questions" data-lo="LO2" data-n="10" data-session="1">
+  <div class="kicker">المقابلة</div>
+  <h2>أربعة أسئلة تكشف أكثر من «ما المخاطر التي تراها؟»</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal"><h4>ماذا تفعل حين يخطئ النظام؟</h4><p class="small mb0">يكشف الالتفاف حوله، وهو ضابط غير مكتوب.</p></div>
+    <div class="card c-cyan"><h4>من يتصل بك بعد الخطأ؟</h4><p class="small mb0">يكشف المتأثر الذي لا يحادث النظام.</p></div>
+    <div class="card c-purple"><h4>ما الذي تغير في عملك؟</h4><p class="small mb0">يكشف أثر النظام على المشغّلين.</p></div>
+    <div class="card c-coral"><h4>من لا يأتي إلينا أصلًا؟</h4><p class="small mb0">يكشف الفئة الغائبة.</p></div>
+  </div>
+  <aside class="notes"><p>سؤال «ما المخاطر؟» يعطي قائمة عامة يعرفها الجميع. الأسئلة عن الوقائع تعطي مخاطر خاصة بالنظام. في المختبر لن تقابلوا أحدًا: الملاحظات جاهزة، والأسئلة الأربعة هي طريقة قراءتها.</p></aside>
+</section>
+
+<section class="slide" id="check-stakeholders" data-lo="LO2" data-n="11" data-session="1">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أي فئة غائبة؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO2" data-id="check-stakeholders-q1">
+    <p class="lead">ملاحظات مقابلات مساعد المواعيد الافتراضي تذكر المرضى والأطباء وموظفي الاستقبال، وتقول: «40% من المواعيد لمراجعين يرافقهم شخص». من الفئة التي لم تُذكر ويحمل النظام خطرًا عليها؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يذكر فئة موجودة في الملاحظات، والسؤال عن الغائبة" data-k="أ">موظفو الاستقبال الذين يستلمون الحالات المحوّلة</div>
+      <div class="opt" data-why="يختار طرفًا خارج نطاق مساعد المواعيد لا يتأثر بقراراته" data-k="ب">مورّد أجهزة المختبر في المستشفى وفنيو الصيانة الذين يعملون لديه</div>
+      <div class="opt" data-why="يخلط بين صاحب مصلحة وفريق يملك النظام ويعرف مخاطره" data-k="ج">فريق تقنية المعلومات الذي يشغّل المساعد يوميًا</div>
+      <div class="opt" data-ok data-k="د">المرافقون الذين يحجزون أو يُبلَّغون نيابة عن المريض</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> الرقم يدل على فئة لها دور في الحجز ولم يقابلها أحد: المرافق قد يتلقى الموعد ولا يبلغه، أو يحجز بهوية غيره.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: د. الطريقة نفسها في المختبر: ابحثوا في الأرقام عن الناس. فريق التقنية مالك للنظام لا فئة متأثرة، وخطره يُكتب من زاوية التشغيل.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-2-1" data-auto="lab" data-lab="2.1" data-label="المختبر 2.1" data-n="12" data-session="1">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 2.1 · 30 دقيقة</div><h2>خريطة أضرار أصحاب المصلحة</h2><p class="lead small">تبني من ملاحظات المقابلات خريطة لأصحاب المصلحة في «سَمْت» وأضرارهم، وتكتب خطرًا واحدًا على الأقل من منظور كل فئة متأثرة، وتسمّي الفئة التي أغفلتها الملاحظات.</p><a class="nb" href="../labs/D2_1_stakeholders.html">D2_1_stakeholders.html</a></div><ul class="checklist"><li>اقرأ ملاحظات المقابلات الست <span class="min">6 د</span></li><li>صنّف أصحاب المصلحة في ثلاث فئات <span class="min">6 د</span></li><li>اكتب لكل فئة متأثرة ضررًا محتملًا <span class="min">8 د</span></li><li>اكتب خطرًا من منظور كل فئة <span class="min">6 د</span></li><li>سمِّ الفئة الغائبة وسبب غيابها <span class="min">4 د</span></li><li class="stretch">✱ إضافي: اسأل: من يستخدم «سَمْت» نيابة عن غيره؟ وأضف خطرًا من منظوره</li></ul></div>
+  <aside class="notes"><p>دون مساعد ذكي. في الدقيقة الخامسة عشرة اسأل بصوت عالٍ: من وجد فئة غير مباشرة؟ لا تقل ما الفئة الغائبة قبل النهاية. من ينهي مبكرًا ينتقل إلى التمرين الإضافي.</p></aside>
+</section>
+
+<section class="slide" id="debrief-2-1" data-lo="LO2" data-n="13" data-session="1">
+  <div class="kicker">ما أظهره المختبر 2.1</div>
+  <h2>ثماني فئات، وفئة واحدة لا تذكرها أي مقابلة</h2>
+  <div class="cols cols-2">
+    <table class="t small">
+      <tr><th>النوع</th><th>الفئات في المرجع</th></tr>
+      <tr><td>مستخدم مباشر</td><td>المتقدمون للتجديد، الناطقون بالإنجليزية، مستخدمو قارئ الشاشة، كبار السن</td></tr>
+      <tr><td>مشغّل</td><td>موظفو مركز الاتصال</td></tr>
+      <tr><td>متأثر غير مباشر</td><td>مدارس القيادة وطلابها، مستخدمو الطريق</td></tr>
+    </table>
+    <div class="card c-coral"><h4>الفئة الغائبة</h4><p class="small mb0">المقيمون الذين لا يقرؤون العربية ولا الإنجليزية. ثلث الحجوزات لمقيمين، و«سَمْت» يخدم لغتين فقط. يصير هذا الخطر R06.</p></div>
+  </div>
+  <div class="callout note mt"><b>خطر جديد:</b> أزرار الحجز بلا وصف، فيتعذر الحجز على مستخدم قارئ الشاشة.</div>
+  <aside class="notes"><p>المرجع في <span class="ltr">solutions/D2_1_stakeholders.md</span>. يُقبل أيضًا مستخدمو الطريق وموظفو الفحص فئةً غائبة ثانية، لأن ملاحظة المكتب تقول إنهم لم يُقابَلوا. اسأل: كم منكم كتب خطرًا على موظفي مركز الاتصال؟</p></aside>
+</section>
+
+<!-- الجلسة 2 -->
+
+<section class="slide section" id="s2" data-auto="section" data-session="2" data-n="14">
+  <div class="kicker">الجلسة 2</div>
+  <h1>صياغة الخطر وحالات إساءة الاستخدام</h1>
+  <ul class="bullets outcomes"><li>تصوغ الخطر بالسبب والحدث والنتيجة والطرف المتأثر</li><li>تكتب حالة إساءة استخدام من منظور من يسيء الاستخدام</li><li>تراجع اقتراحات مساعد ذكي وتحذف المكرر والخارج عن النطاق</li></ul>
+  <div class="sess-no">02</div>
+</section>
+
+<section class="slide" id="four-part-statement" data-lo="LO2" data-n="15" data-session="2">
+  <div class="kicker">صياغة الخطر</div>
+  <h2>الخطر بأربعة أجزاء: السبب والحدث والنتيجة والطرف المتأثر</h2>
+  <div class="flow">
+    <div class="step c-navy"><b>السبب</b>قائمة الأطباء تُحدَّث أسبوعيًا</div>
+    <div class="arrow">←</div>
+    <div class="step c-teal"><b>الحدث</b>يحجز المساعد عند طبيب في إجازة</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>النتيجة</b>زيارة ضائعة وعلاج مؤجل</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>الطرف المتأثر</b>المرضى المراجعون</div>
+  </div>
+  <div class="callout warn mt"><b>ليست مخاطر:</b> «بيانات قديمة» (سبب وحده)، و«خطأ في المساعد» (لا سبب ولا متأثر)، و«ضرر بالسمعة» (نتيجة وحدها).</div>
+  <aside class="notes"><p>بالأجزاء الأربعة يمكن أن يُقدَّر الخطر غدًا: الاحتمالية تتبع السبب، والأثر يتبع النتيجة والطرف المتأثر. الخطر الذي ينقصه جزء لا يُقدَّر، أو يُقدَّر كل واحد له تقديرًا مختلفًا.</p><p>المصادر: الإطار الوطني، خطوة تحديد المخاطر؛ <span class="en">ISO 31000</span> في تعريف الخطر.</p></aside>
+</section>
+
+<section class="slide" id="causal-tags" data-lo="LO2" data-n="16" data-session="2">
+  <div class="kicker">الوصف السببي</div>
+  <h2>ثلاثة أوسمة لكل خطر: المسبب والقصد والتوقيت</h2>
+  <table class="t">
+    <tr><th>الوسم</th><th>القيم</th><th>لماذا يهم</th></tr>
+    <tr><td>المسبب <span class="en">(Entity)</span></td><td>النظام، أو الإنسان، أو تفاعلهما</td><td>يحدد نوع الضابط: تقني أم إجرائي</td></tr>
+    <tr><td>القصد <span class="en">(Intent)</span></td><td>متعمد، أو غير متعمد</td><td>المتعمد يتكيف مع ضوابطك، والخطأ لا</td></tr>
+    <tr><td>التوقيت <span class="en">(Timing)</span></td><td>قبل الإطلاق، أو بعده</td><td>ما قبل الإطلاق يُمنع بالتصميم، وما بعده يُراقب</td></tr>
+  </table>
+  <div class="callout tip mt">الإطار الوطني يصنف المخاطر سببيًا بالأبعاد الثلاثة نفسها، وهي في مستودع مخاطر الذكاء الاصطناعي في <span class="en">MIT</span> أيضًا.</div>
+  <aside class="notes"><p>الفئة من الأنواع السبعة تقول ما الضرر، والأوسمة تقول كيف يقع. خطران في فئة واحدة قد يحتاجان ضوابط مختلفة تمامًا: خطأ غير متعمد وإساءة متعمدة.</p><p>المصادر: الإطار الوطني، التصنيف السببي؛ <span class="en">MIT AI Risk Repository</span> (<span class="en">CC BY 4.0</span>).</p></aside>
+</section>
+
+<section class="slide" id="misuse-kinds" data-lo="LO2" data-n="17" data-session="2">
+  <div class="kicker">من منظور المستخدم</div>
+  <h2>المسيء والمخطئ يصلان إلى الضرر من بابين مختلفين</h2>
+  <div class="cols cols-2">
+    <div class="card c-coral"><h4>إساءة متعمدة</h4><p class="small mb0">شخص يريد شيئًا لا يُسمح به: يحجز بالجملة ليبيع، أو يخدع النظام ليكشف ما لا يُكشف. يتكيف مع ضوابطك.</p></div>
+    <div class="card c-teal"><h4>استخدام خاطئ غير متعمد</h4><p class="small mb0">شخص حسن النية يفعل ما لم يتوقعه المصمم: جملة مبهمة، أو ثقة زائدة بإجابة. لا يعرف أنه أخطأ.</p></div>
+  </div>
+  <div class="callout note mt">ورش التحديد تحب المهاجمين. الاستخدام الخاطئ أكثر وقوعًا، وأقل ذكرًا في السجلات.</div>
+  <aside class="notes"><p>حالة إساءة الاستخدام مأخوذة من هندسة المتطلبات: نكتب قصة استخدام من منظور من يسيء. في المستشفى الافتراضي: مريض يحجز خمسة مواعيد ليختار منها (متعمد)، ومريض يكتب التاريخ بالهجري فيُحجز له يوم آخر (غير متعمد).</p></aside>
+</section>
+
+<section class="slide" id="misuse-case" data-lo="LO2" data-n="18" data-session="2">
+  <div class="kicker">حالة إساءة الاستخدام</div>
+  <h2>اكتبها بخطوات من يسيء، واربطها بخطوة في المسار</h2>
+  <table class="t small">
+    <tr><th>البند</th><th>في المستشفى الافتراضي</th></tr>
+    <tr><td>من يسيء</td><td>مريض يريد موعدًا أقرب</td></tr>
+    <tr><td>ما يفعله</td><td>يحجز خمسة مواعيد بأسماء أفراد أسرته، ثم يلغي أربعة في اليوم نفسه</td></tr>
+    <tr><td>خطوة المسار</td><td>الحجز: لا حد لعدد المواعيد لكل رقم جوال</td></tr>
+    <tr><td>ما يحصل عليه</td><td>أقرب موعد</td></tr>
+    <tr><td>من يتضرر</td><td>المرضى الذين لم يجدوا موعدًا، والعيادة بمواعيد فارغة</td></tr>
+  </table>
+  <aside class="notes"><p>ربط الحالة بخطوة في المسار هو ما يجعلها قابلة للمعالجة: الضابط يوضع على تلك الخطوة. حالة بلا خطوة غالبًا مبهمة أو خارج النطاق.</p></aside>
+</section>
+
+<section class="slide" id="genai-risks" data-lo="LO2" data-n="19" data-session="2">
+  <div class="kicker">الأنظمة التوليدية</div>
+  <h2>مخاطر تخص النماذج التوليدية في الملف التعريفي من NIST</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li>اختلاق المعلومات <span class="en">(Confabulation)</span>: إجابة واثقة لا أصل لها</li>
+      <li>أمن المعلومات: تعليمات مخفية في المدخلات</li>
+      <li>خصوصية البيانات: ما يُحفظ وما يُكشف في المحادثة</li>
+      <li>التحيز الضار والتجانس</li>
+    </ul>
+    <ul class="bullets">
+      <li>إعداد الإنسان والآلة: الثقة الزائدة والتشبيه بالبشر</li>
+      <li>سلامة المعلومات: محتوى يُنسب إلى جهة رسمية</li>
+      <li>سلسلة القيمة وتكامل المكونات: نموذج من طرف ثالث</li>
+      <li>المحتوى الخطر والعنيف والمهين</li>
+    </ul>
+  </div>
+  <div class="callout tip mt">في الملف التعريفي اثنا عشر خطرًا؛ هذه ثمانية تخص المساعدات. كل منها يقع في فئة من الفئات الوطنية السبع.</div>
+  <aside class="notes"><p>الأربعة الباقية: المعلومات الكيميائية والبيولوجية والإشعاعية والنووية، والملكية الفكرية، والأثر البيئي، والمحتوى الفاحش. لا تخص مساعد خدمة عامة غالبًا، وتُذكر حين يُسأل عنها.</p><p>المصادر: <span class="en">NIST AI 600-1, Generative AI Profile</span> (2024)، القسم 2.</p></aside>
+</section>
+
+<section class="slide" id="agent-risks" data-lo="LO2" data-n="20" data-session="2">
+  <div class="kicker">الوكلاء</div>
+  <h2>الوكيل الذي ينفذ يضيف مخاطر لا يعرفها المساعد الذي يجيب</h2>
+  <div class="cols cols-3">
+    <div class="card c-coral"><h4>فعل لا يُرجع</h4><p class="small mb0">وكيل حجز سفر افتراضي يدفع تذكرة غير قابلة للاسترداد بعد فهم خاطئ.</p></div>
+    <div class="card c-purple"><h4>صلاحية أوسع من المهمة</h4><p class="small mb0">يملك صلاحية الإلغاء لأن الواجهة البرمجية تمنحها مع الحجز.</p></div>
+    <div class="card c-cyan"><h4>سلسلة خطوات</h4><p class="small mb0">خطأ صغير في الخطوة الأولى يتضاعف في الخامسة، ولا يراه أحد بينهما.</p></div>
+  </div>
+  <div class="callout note mt">السؤال لكل أداة: هل يوصي أم يقرر أم ينفذ؟ وأين نقطة الاعتماد البشري قبل ما لا يُرجع؟</div>
+  <aside class="notes"><p>وكيل السفر مثال موازٍ نستعمله للوكلاء طوال المقرر. هذا ما بدأناه في المختبر 1.4 بمستوى الأتمتة لكل أداة. مخاطر الوكلاء تظهر كثيرًا في فئتي السلامة والمحدودية وتفاعل الإنسان والآلة.</p><p>المصادر: الإطار الوطني، نشاط الأتمتة ودور الإنسان؛ <span class="en">NIST AI 600-1</span>.</p></aside>
+</section>
+
+<section class="slide" id="review-suggestions" data-lo="LO2" data-n="21" data-session="2">
+  <div class="kicker">ما يقترحه مساعد</div>
+  <h2>كل اقتراح من مساعد يمر بأربعة أسئلة قبل أن يدخل السجل</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>داخل النطاق؟</b>هل يستطيع هذا النظام أن يفعل ذلك؟</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>محدد؟</b>هل فيه سبب وحدث ومتأثر؟</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>جديد؟</b>أليس خطرًا موجودًا بكلمات أخرى؟</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>موسوم</b>«اقترحه مساعد: نعم» وسبب القبول</div>
+  </div>
+  <div class="callout warn mt"><b>من وكيل السفر:</b> «قد يسيطر الوكيل على أنظمة شركة الطيران» خارج النطاق، و«قد يخطئ الوكيل أحيانًا» مبهم.</div>
+  <aside class="notes"><p>المساعد يكثر ويكرر ويبالغ. لا نمنعه، بل نراجعه ونعلّم ما قبلناه منه. عمود «اقترحه مساعد» في السجل يسمح للمراجع أن يرى نسبة ما جاء من المساعد ويسأل عنه.</p></aside>
+</section>
+
+<section class="slide" id="check-statement" data-lo="LO2" data-n="22" data-session="2">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أي خطر مكتمل؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO2" data-id="check-statement-q1">
+    <p class="lead">أربع صيغ من سجل مساعد المواعيد الافتراضي. أيها خطر مكتمل يمكن أن يُقدَّر غدًا؟</p>
+    <div class="opts">
+      <div class="opt" data-ok data-k="أ">تاريخ هجري يُقرأ ميلاديًا، فيُحجز يوم خاطئ ويفوت المريض موعده</div>
+      <div class="opt" data-why="يكتب السبب وحده، فلا حدث ولا نتيجة ولا متأثر" data-k="ب">قائمة الأطباء في المساعد لا تُحدَّث إلا مرة في الأسبوع</div>
+      <div class="opt" data-why="يكتب نتيجة على الجهة وحدها دون سبب ولا حدث" data-k="ج">ضرر بسمعة المستشفى إن أخطأ المساعد في المواعيد</div>
+      <div class="opt" data-why="عام إلى حد لا يُقدَّر: لا سبب ولا متأثر محدد" data-k="د">قد يرتكب المساعد أخطاء متكررة في التعامل مع المرضى ومواعيدهم في العيادات</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> الأولى فيها السبب (تاريخ هجري يُقرأ ميلاديًا)، والحدث (حجز يوم خاطئ)، والنتيجة (موعد فائت)، والطرف المتأثر (المريض).</div>
+  </div>
+  <aside class="notes"><p>الإجابة: أ. اطلب من القاعة أن تكمل «ب» إلى خطر كامل: بسبب التحديث الأسبوعي، قد يُحجز موعد عند طبيب في إجازة، فيأتي المريض بلا فائدة.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-2-2" data-auto="lab" data-lab="2.2" data-label="المختبر 2.2" data-n="23" data-session="2">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 2.2 · 35 دقيقة</div><h2>حالات إساءة الاستخدام</h2><p class="lead small">تكتب حالات إساءة استخدام لـ«سَمْت» من منظور المستخدم المسيء والمستخدم المخطئ، وتراجع ثماني حالات اقترحها مساعد، وتحوّل الصالح منها إلى مخاطر مصوغة بأربعة أجزاء.</p><a class="nb" href="../labs/D2_2_misuse.html">D2_2_misuse.html</a></div><ul class="checklist"><li>اقرأ مسار الخدمة وقالب الحالة <span class="min">4 د</span></li><li>اكتب ثلاث حالات إساءة متعمدة <span class="min">9 د</span></li><li>اكتب حالتين لاستخدام خاطئ غير متعمد <span class="min">6 د</span></li><li>راجع الحالات الثماني المقترحة واحذف ما لا يصلح <span class="min">8 د</span></li><li>حوّل خمس حالات إلى مخاطر بأربعة أجزاء ووسمها <span class="min">8 د</span></li><li class="stretch">✱ إضافي: اكتب حالة إساءة تجمع خطوتين من المسار لا تكفي إحداهما وحدها</li></ul></div>
+  <aside class="notes"><p>النص البديل للمساعد في الملفات، فلا حاجة إلى أي نموذج. إن استعمل مشارك مساعدًا معتمدًا في جهته فليراجع اقتراحاته بالأسئلة الأربعة نفسها. وزّع المرجع بعد الخطوة الرابعة.</p></aside>
+</section>
+
+<section class="slide" id="debrief-2-2" data-lo="LO2" data-n="24" data-session="2">
+  <div class="kicker">ما أظهره المختبر 2.2</div>
+  <h2>من ثماني حالات اقترحها المساعد، أربع فقط تدخل السجل</h2>
+  <div class="bars">
+    <div class="row"><span>تُقبل</span><div class="bar c-teal" style="--w:100%"></div><span class="val">4</span></div>
+    <div class="row"><span>مكررة</span><div class="bar c-purple" style="--w:50%"></div><span class="val">2</span></div>
+    <div class="row"><span>خارج النطاق</span><div class="bar c-coral" style="--w:25%"></div><span class="val">1</span></div>
+    <div class="row"><span>مبهمة</span><div class="bar c-cyan" style="--w:25%"></div><span class="val">1</span></div>
+  </div>
+  <div class="callout note mt">M4 تكرار لـM1 بكلمات أخرى، وM8 تكرار لـM3 من زاوية الأداة. المقبولة الأربع تصير مخاطر في السجل، وكل منها موسوم «اقترحه مساعد: نعم».</div>
+  <aside class="notes"><p>المرجع في <span class="ltr">solutions/D2_2_misuse.md</span>. اسأل: من قبل M5؟ لماذا؟ الخطورة لا تجعلها داخل النطاق. وكم حالة غير متعمدة كتبتم؟ الأمثلة المرجعية: «لن أستطيع الحضور» تُفهم إلغاءً (R09)، والثقة بإجابة الفحص الطبي (R07).</p></aside>
+</section>
+
+<!-- الجلسة 3 -->
+
+<section class="slide section" id="s3" data-auto="section" data-session="3" data-n="25">
+  <div class="kicker">الجلسة 3</div>
+  <h1>تحليل أنماط الفشل ومخاطر المورّد</h1>
+  <ul class="bullets outcomes"><li>تحلل خطوة من مسار خدمة: نمط الفشل وأثره وسببه والضابط الحالي</li><li>ترسم مخطط ربطة عنق لخطر واحد</li><li>تحدد مخاطر المورّد من شروطه وبطاقة نموذجه</li></ul>
+  <div class="sess-no">03</div>
+</section>
+
+<section class="slide" id="fmea-columns" data-lo="LO2" data-n="26" data-session="3">
+  <div class="kicker">تحليل أنماط الفشل</div>
+  <h2>خطوة بخطوة: كيف تفشل، وما أثر الفشل، ومن يكتشفه</h2>
+  <table class="t small">
+    <tr><th>العمود</th><th>خطوة: اختيار العيادة</th><th>خطوة: التحويل</th></tr>
+    <tr><td>نمط الفشل</td><td>عيادة خاطئة للأعراض</td><td>ملخص ناقص</td></tr>
+    <tr><td>الأثر</td><td>موعد بلا فائدة</td><td>يُسأل المريض من جديد</td></tr>
+    <tr><td>السبب</td><td>وصف مختصر</td><td>حد لطول الملخص</td></tr>
+    <tr><td>الضابط</td><td>سؤال تأكيد</td><td>لا شيء</td></tr>
+    <tr><td>الاكتشاف</td><td>الطبيب عند الزيارة</td><td>شكوى المريض</td></tr>
+  </table>
+  <div class="callout tip mt">تحليل أنماط الفشل وآثارها <span class="en">(FMEA)</span> يمر على المسار كله، فيجد ما لا تجده ورشة تبدأ من الأفكار.</div>
+  <aside class="notes"><p>الأداة قديمة في الهندسة والجودة، وتصلح للخدمات. نستعمل الأعمدة لا الدرجة: درجة الأولوية التقليدية (الشدة × الوقوع × الاكتشاف) لا نستعملها، لأن التقدير غدًا بمصفوفة الإطار الوطني.</p><p>المصادر: <span class="en">IEC 60812</span> لتحليل أنماط الفشل (يُذكر اسمًا فقط)؛ الإطار الوطني، خطوة تحديد المخاطر.</p></aside>
+</section>
+
+<section class="slide" id="detection" data-lo="LO2" data-n="27" data-session="3">
+  <div class="kicker">الاكتشاف</div>
+  <h2>الفشل الأخطر هو الذي لا يراه أحد</h2>
+  <table class="t">
+    <tr><th>طريقة الاكتشاف</th><th>متى نعرف</th><th>من يدفع الثمن قبلها</th></tr>
+    <tr><td>فحص قبل الإجابة</td><td>قبل الحدث</td><td>لا أحد</td></tr>
+    <tr><td>عينة مراجعة دورية</td><td>بعد أيام</td><td>بعض المستخدمين</td></tr>
+    <tr><td>شكوى</td><td>بعد الضرر، إن اشتكى أحد</td><td>المتضرر نفسه</td></tr>
+    <tr><td>لا شيء</td><td>لا نعرف</td><td>كل من وقع عليه</td></tr>
+  </table>
+  <div class="callout warn mt">إذا كان المتضرر لا يعرف أنه تضرر، فلن يشتكي. هنا يفشل النظام بصمت.</div>
+  <aside class="notes"><p>اسأل: متى لا يعرف المتضرر أنه تضرر؟ حين لا يملك المعلومة الصحيحة ليقارن بها. في المستشفى الافتراضي: مريض أُرسل إلى عيادة خاطئة يظن أن هذا هو المسار.</p></aside>
+</section>
+
+<section class="slide" id="bow-tie" data-lo="LO2" data-n="28" data-session="3">
+  <div class="kicker">ربطة العنق</div>
+  <h2>الأسباب على جانب، والنتائج على الآخر، والضوابط بينهما</h2>
+  <div class="flow">
+    <div class="step c-navy"><b>الأسباب</b>قائمة قديمة، إجازة غير مسجلة</div>
+    <div class="arrow">←</div>
+    <div class="step c-teal"><b>ضوابط وقائية</b>تحديث يومي، تأكيد من العيادة</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>الحدث</b>موعد عند طبيب غائب</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>ضوابط مخففة</b>رسالة إلغاء قبل يوم، أولوية في الحجز</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>النتائج</b>زيارة ضائعة، علاج مؤجل</div>
+  </div>
+  <aside class="notes"><p>مخطط ربطة العنق <span class="en">(Bow-tie)</span> يجعل الخطر الواحد صورة: هل الضوابط كلها على جانب واحد؟ غالبًا نعم، الوقائية فقط. هذا المخطط يعود غدًا حين نختار الضوابط.</p></aside>
+</section>
+
+<section class="slide" id="third-party" data-lo="LO2" data-n="29" data-session="3">
+  <div class="kicker">المورّد</div>
+  <h2>النموذج المستضاف ينقل بعض الخطر إليك ولا ينقل المسؤولية عنه</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li>التحديث: من يقرر متى يتغير النموذج؟</li>
+      <li>الاحتفاظ: ماذا يُحفظ من المدخلات، وأين، وكم؟</li>
+      <li>التوفر: ماذا يحدث حين ينقطع، ومن يعوّض؟</li>
+      <li>المعالجون الفرعيون: من غيرهم يرى البيانات؟</li>
+    </ul>
+    <div class="card tint c-navy"><h4>الإطار الوطني</h4><p class="small mb0">يضع سلسلة القيمة والأطراف الخارجية في السياق والنطاق، ويجعل مخاطرها جزءًا من سجل الجهة لا سجل المورّد.</p></div>
+  </div>
+  <aside class="notes"><p>في <span class="en">NIST AI RMF</span> يقابل ذلك <span class="en">GOVERN 6</span> عن مخاطر الأطراف الخارجية وسلسلة الإمداد، و<span class="en">MAP 4</span>. صياغة البنود في العقد موضوع مقرر LDS-AIG-203، وهنا نكتفي بالخطر.</p><p>المصادر: الإطار الوطني، قسم السياق والنطاق؛ <span class="en">NIST AI RMF 1.0</span>.</p></aside>
+</section>
+
+<section class="slide" id="read-the-contract" data-lo="LO2" data-n="30" data-session="3">
+  <div class="kicker">ورقة المورّد</div>
+  <h2>كل شرط يُقرأ بسؤال: ماذا يحدث لنا إن وقع؟</h2>
+  <table class="t small">
+    <tr><th>شرط في عقد افتراضي لوكيل السفر</th><th>السؤال</th><th>الخطر</th></tr>
+    <tr><td>واجهة الحجز تتغير بإشعار 7 أيام</td><td>هل نختبر قبلها؟</td><td>حجوزات تفشل بعد التغيير ولا يعرف أحد</td></tr>
+    <tr><td>الأسعار تُخزَّن مؤقتًا ساعة</td><td>ماذا لو تغير السعر؟</td><td>يعرض الوكيل سعرًا لا يُدفع به</td></tr>
+    <tr><td>لا التزام بزمن الاستجابة</td><td>ماذا في الموسم؟</td><td>تعليق الحجز والدفع مرتين</td></tr>
+  </table>
+  <aside class="notes"><p>المثال الموازي هو وكيل السفر. في المختبر تقرؤون ورقة مورّد «سَمْت» بالسؤال نفسه. كل شرط يُترجم إلى خطر بأربعة أجزاء، والمتأثر غالبًا ليس المورّد.</p></aside>
+</section>
+
+<section class="slide" id="check-fmea" data-lo="LO2" data-n="31" data-session="3">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أين يفشل المسار بصمت؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO2" data-id="check-fmea-q1">
+    <p class="lead">مسار مساعد المواعيد الافتراضي: (1) يختار المريض العيادة، (2) يحجز المساعد، (3) يرسل تذكيرًا إلى الجوال المسجل، (4) يحوّل إلى موظف عند الطلب. أي خطوة يفشل فيها النظام دون أن يعرف أحد؟</p>
+    <div class="opts">
+      <div class="opt" data-why="الفشل هنا يظهر للموظف أو للمريض في المحادثة نفسها" data-k="أ">التحويل إلى موظف، لأنه قد يتأخر في أوقات الذروة</div>
+      <div class="opt" data-why="الخطأ في العيادة يكتشفه الطبيب عند الزيارة، وإن كان متأخرًا" data-k="ب">اختيار العيادة، لأن المريض قد يصف أعراضه باختصار</div>
+      <div class="opt" data-ok data-k="ج">التذكير: الرقم القديم لا يرد ولا يُبلِغ أحدًا</div>
+      <div class="opt" data-why="الحجز الناجح يظهر للمريض فورًا ويؤكده، فالخطأ يُرى" data-k="د">الحجز نفسه، لأن الأداة قد تحجز في موعد ممتلئ أو مغلق</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> لا ضابط ولا اكتشاف: الرسالة تصل إلى رقم لا يملكه المريض، والمريض لا يعرف أنه كان هناك تذكير، والعيادة ترى غيابًا فقط.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ج. الطريقة في المختبر: ابحثوا عن خطوة «لا شيء» في الضابط و«لا شيء» في الاكتشاف معًا، وأثرها لا يعرفه المتضرر في الحال.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-2-3" data-auto="lab" data-lab="2.3" data-label="المختبر 2.3" data-n="32" data-session="3">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 2.3 · 35 دقيقة</div><h2>تحليل أنماط الفشل في مسار الخدمة</h2><p class="lead small">تملأ ورقة تحليل أنماط الفشل لخطوات مسار «سَمْت» التسع، وتجد الخطوة التي يفشل فيها النظام دون أن يكتشفه أحد، وتضيف مخاطر المورّد من ورقته.</p><a class="nb" href="../labs/D2_3_fmea.html">D2_3_fmea.html</a></div><ul class="checklist"><li>اقرأ مسار الخدمة وورقة المورّد <span class="min">5 د</span></li><li>املأ نمط الفشل وأثره لكل خطوة <span class="min">11 د</span></li><li>أضف السبب والضابط الحالي وطريقة الاكتشاف <span class="min">8 د</span></li><li>حدّد الخطوة التي لا يُكتشف فيها الفشل <span class="min">4 د</span></li><li>أضف مخاطر المورّد في سطرين أو ثلاثة <span class="min">7 د</span></li><li class="stretch">✱ إضافي: ارسم مخطط ربطة عنق لخطر الرسوم الخاطئة: الأسباب على جانب، والنتائج على الآخر، والضوابط بينهما</li></ul></div>
+  <aside class="notes"><p>دون مساعد ذكي. من يتعثر في الخطوة الثانية يكتب نمطًا واحدًا لكل خطوة ويكمل. وزّع المرجع بعد الخطوة الرابعة، وناقش الخطوة الصامتة قبل مخاطر المورّد.</p></aside>
+</section>
+
+<section class="slide" id="debrief-2-3" data-lo="LO2" data-n="33" data-session="3">
+  <div class="kicker">ما أظهره المختبر 2.3</div>
+  <h2>الخطوة السادسة تفشل بصمت: رسم قديم من مقال، ولا أحد يعرف</h2>
+  <div class="cols cols-2">
+    <div class="bars">
+      <div class="row"><span>لا اكتشاف</span><div class="bar c-coral" style="--w:100%"></div><span class="val">4</span></div>
+      <div class="row"><span>شكوى</span><div class="bar c-purple" style="--w:75%"></div><span class="val">3</span></div>
+      <div class="row"><span>عينة</span><div class="bar c-cyan" style="--w:25%"></div><span class="val">1</span></div>
+      <div class="row"><span>تدقيق</span><div class="bar c-teal" style="--w:25%"></div><span class="val">1</span></div>
+    </div>
+    <div class="card c-coral"><h4>الخطوة 6</h4><p class="small mb0">الرسم من المقال، والحاسبة لا تُستدعى إلا بطلب صريح. لا ضابط ولا اكتشاف، والمتقدم لا يعرف أن الرسم خاطئ حتى يدفع. هذا الخطر R01.</p></div>
+  </div>
+  <div class="callout note mt"><b>من ورقة المورّد:</b> لا تثبيت للإصدار وإشعار 14 يومًا (R10)، ومنطقة نسخ احتياطي غير مؤكدة، ولا تعويض عند الانقطاع.</div>
+  <aside class="notes"><p>الأعداد من المرجع لتسع خطوات. أربع خطوات بلا اكتشاف: 3 و4 و6 و8. الخطوة 6 هي الأخطر لأن أثرها مالي وواسع. هذا الخطر نفسه نراقبه في اليوم الرابع.</p></aside>
+</section>
+
+<!-- الجلسة 4 -->
+
+<section class="slide section" id="s4" data-auto="section" data-session="4" data-n="34">
+  <div class="kicker">الجلسة 4</div>
+  <h1>من سجلات الحوادث إلى السجل</h1>
+  <ul class="bullets outcomes"><li>تحوّل حادثة عامة إلى خطر مصوغ في سياق نظامك</li><li>تميّز الخطر الجديد من المكرر</li><li>تتحقق من تغطية الفئات السبع في سجل واحد</li></ul>
+  <div class="sess-no">04</div>
+</section>
+
+<section class="slide" id="incident-records" data-lo="LO2" data-n="35" data-session="4">
+  <div class="kicker">سجلات الحوادث</div>
+  <h2>ما وقع لغيرك هو أرخص درس في التحديد</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal"><h4>AI Incident Database</h4><p class="small mb0">قاعدة مفتوحة لتقارير حوادث الذكاء الاصطناعي، يُبحث فيها بالكلمة والقطاع.</p></div>
+    <div class="card c-cyan"><h4>OECD AI Incidents Monitor</h4><p class="small mb0">مرصد يجمع الحوادث من الأخبار ويصنفها بالقطاع والضرر.</p></div>
+  </div>
+  <div class="callout warn mt"><b>رابط لا نسخة.</b> بيانات القاعدة الأولى مرخصة بشرط المشاركة بالمثل، ونصوص التقارير لأصحابها. نذكر الرابط في السجل ولا ننسخ النص.</div>
+  <aside class="notes"><p>لهذا كتبنا في المختبر بطاقات اصطناعية على أنماط الحوادث العامة، لا نسخًا منها. الحادثة الحقيقية يُنقل رابطها فقط في عمود المصدر.</p><p>المصادر: <span class="ltr">incidentdatabase.ai</span>؛ <span class="ltr">oecd.ai/en/incidents</span>.</p></aside>
+</section>
+
+<section class="slide" id="incident-to-risk" data-lo="LO2" data-n="36" data-session="4">
+  <div class="kicker">من حادثة إلى خطر</div>
+  <h2>الحادثة تقع لغيرك؛ الخطر يُكتب في نظامك</h2>
+  <div class="flow">
+    <div class="step c-navy"><b>ما وقع</b>مساعد حجز في جهة أخرى حجز للشخص نفسه مرتين</div>
+    <div class="arrow">←</div>
+    <div class="step c-teal"><b>هل يقع عندنا؟</b>هل في نظامنا الخطوة نفسها؟</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>بأربعة أجزاء</b>سبب في نظامنا، وحدث، ونتيجة، ومتأثر عندنا</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>المصدر</b>«الحوادث» ورابط الحادثة</div>
+  </div>
+  <aside class="notes"><p>الخطأ الشائع: نسخ عنوان الحادثة في السجل («مساعد أخطأ في جهة أخرى»). هذا لا يُقدَّر ولا يُعالج عندنا. الحادثة دليل على أن الخطر ممكن، وتفيد غدًا في تقدير الاحتمالية.</p></aside>
+</section>
+
+<section class="slide" id="new-dup-out" data-lo="LO2" data-n="37" data-session="4">
+  <div class="kicker">ثلاثة أحكام</div>
+  <h2>جديد، أو مكرر، أو خارج النطاق</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>جديد</h4><p class="small mb0">يمكن أن يقع في نظامك، وليس في السجل خطر له السبب والحدث نفساهما.</p></div>
+    <div class="card c-purple"><h4>مكرر</h4><p class="small mb0">السبب والحدث موجودان في خطر في السجل. اكتب رقمه، وأضف الحادثة إلى مصدره.</p></div>
+    <div class="card c-coral"><h4>خارج النطاق</h4><p class="small mb0">نظامك لا يملك القدرة أو البيانات أو الخطوة التي وقعت فيها الحادثة.</p></div>
+  </div>
+  <div class="callout tip mt">الحادثة المكررة ليست بلا فائدة: هي دليل على احتمالية خطر موجود.</div>
+  <aside class="notes"><p>السبب والحدث هما ما يحدد هوية الخطر. نتيجتان مختلفتان لحدث واحد تُكتبان في الخطر نفسه، لا في خطرين. سبب مختلف قليلًا لحدث واحد يُدمج غالبًا، إلا إذا احتاج ضابطًا مختلفًا.</p></aside>
+</section>
+
+<section class="slide" id="register-hygiene" data-lo="LO2" data-n="38" data-session="4">
+  <div class="kicker">نظافة السجل</div>
+  <h2>سجل يُستعمل: سطر لكل خطر، وأعمدة لا تُترك فارغة</h2>
+  <table class="t small">
+    <tr><th>العمود</th><th>لماذا</th></tr>
+    <tr><td>الرقم الثابت</td><td>يبقى للخطر وإن تغيرت صياغته، فتُتبع قراراته</td></tr>
+    <tr><td>الأجزاء الأربعة</td><td>ليُقدَّر ويُعالج</td></tr>
+    <tr><td>الفئة والأوسمة الثلاثة</td><td>ليُعدّ ويُختار له الضابط المناسب</td></tr>
+    <tr><td>المصدر</td><td>ليُعرف من أين جاء ومن يسأل عنه</td></tr>
+    <tr><td>اقترحه مساعد؟</td><td>ليرى المراجع ما قُبل من مساعد ولماذا</td></tr>
+    <tr><td>الإصدار والتاريخ</td><td>ليُعرف ما تغير بين مراجعتين</td></tr>
+  </table>
+  <aside class="notes"><p>عمودا الإصدار والتاريخ يعودان في اليوم الرابع عند إعادة التقييم، وفي المشروع الختامي حيث يُقيَّم انضباط السجل. لا تحذفوا خطرًا من السجل: أغلقوه بتاريخ وسبب.</p></aside>
+</section>
+
+<section class="slide" id="coverage" data-lo="LO2" data-n="39" data-session="4">
+  <div class="kicker">التغطية</div>
+  <h2>فئة فارغة في السجل سؤال، لا جواب</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li>عُدّ المخاطر في كل فئة من الفئات السبع</li>
+      <li>الفئة الفارغة تعني: لم نسأل، أو سألنا ولا خطر. اكتب أيهما</li>
+      <li>قارن عمود الطرف المتأثر بخريطة أصحاب المصلحة</li>
+      <li>عُدّ المصادر: سجل من مصدر واحد يرى زاوية واحدة</li>
+    </ul>
+    <div class="card c-purple"><h4>في المستشفى الافتراضي</h4><p class="small mb0">سجل من اثني عشر خطرًا، ولا شيء في الآثار الاجتماعية والاقتصادية والبيئية. السؤال: ماذا يحدث لموظفي الاستقبال بعد عام من المساعد؟</p></div>
+  </div>
+  <aside class="notes"><p>التغطية لا تعني أن لكل فئة العدد نفسه. تعني أن الفراغ مقصود ومكتوب. الحد الأدنى في هذا المقرر خمسة عشر خطرًا متمايزًا في الفئات السبع، كما في دليل المقرر.</p></aside>
+</section>
+
+<section class="slide" id="check-incident" data-lo="LO2" data-n="40" data-session="4">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أي حادثة مكررة؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO2" data-id="check-incident-q1">
+    <p class="lead">في سجل مساعد المواعيد الافتراضي خطر: «القائمة لا تُحدَّث، فيُحجز موعد عند طبيب غائب، فيأتي المريض بلا فائدة». أي حادثة من سجل عام مكررة لهذا الخطر، فتُضاف إلى مصدره ولا تُكتب خطرًا جديدًا؟</p>
+    <div class="opts">
+      <div class="opt" data-why="الحدث مختلف: كشف بيانات لا حجز خاطئ" data-k="أ">مساعد عيادة أرسل تذكيرًا فيه تشخيص المريض إلى رقم قريبه</div>
+      <div class="opt" data-ok data-k="ب">مساعد عيادة حجز مواعيد عند طبيب انتهى عقده لأن جدوله لم يُحدَّث</div>
+      <div class="opt" data-why="خارج النطاق ليس تكرارًا: المساعد لا يقرأ لوحات السيارات أصلًا" data-k="ج">نظام مواقف في مستشفى أخطأ في قراءة لوحات سيارات المراجعين</div>
+      <div class="opt" data-why="الحدث مختلف: إقصاء عن القناة لا موعد خاطئ" data-k="د">مستشفى أغلق خط الهاتف للمواعيد بعد إطلاق مساعد المواعيد بشهر واحد فقط</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> السبب (جدول لا يُحدَّث) والحدث (موعد عند طبيب غير موجود) هما الخطر نفسه. الحادثة تُضاف دليلًا إلى مصدره.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ب. «ج» لا تُكتب أيضًا، لكن لأنها خارج النطاق لا لأنها مكررة. ناقش الفرق: المكررة تُضاف إلى مصدر خطر، وخارج النطاق لا تُكتب.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-2-4" data-auto="lab" data-lab="2.4" data-label="المختبر 2.4" data-n="41" data-session="4">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 2.4 · 35 دقيقة</div><h2>من الحوادث إلى السجل</h2><p class="lead small">تبدأ من سجل مرجعي من أحد عشر خطرًا، وتقرأ اثنتي عشرة بطاقة حادثة اصطناعية، وتضيف منها ما يكمل السجل إلى خمسة عشر خطرًا متمايزًا على الأقل تغطي الفئات السبع.</p><a class="nb" href="../labs/D2_4_register.html">D2_4_register.html</a></div><ul class="checklist"><li>اقرأ السجل المرجعي وعدّ الفئات المغطاة <span class="min">5 د</span></li><li>اقرأ البطاقات الاثنتي عشرة وعلّم المكرر <span class="min">9 د</span></li><li>أضف المخاطر الجديدة بأربعة أجزاء ووصف سببي <span class="min">12 د</span></li><li>تحقق من الفئات السبع والفئات المتأثرة <span class="min">5 د</span></li><li>ابحث في سجل عام عن حادثة واحدة تدعم خطرًا <span class="min">4 د</span></li><li class="stretch">✱ إضافي: أضف عمودًا لمصدر كل خطر: مقابلة أو إساءة استخدام أو تحليل فشل أو حادثة، وعدّ ما جاء من كل مصدر</li></ul></div>
+  <aside class="notes"><p>يبدأ الجميع من السجل المرجعي ذي الأحد عشر خطرًا. الخطوة الخامسة تحتاج الإنترنت: من لا يصل إلى القاعدتين يكتب «تعذر الوصول» ويكمل. لا تُنسخ نصوص التقارير.</p></aside>
+</section>
+
+<section class="slide" id="debrief-2-4" data-lo="LO2" data-n="42" data-session="4">
+  <div class="kicker">ما أظهره المختبر 2.4</div>
+  <h2>من أحد عشر خطرًا في خمس فئات إلى عشرين في الفئات السبع</h2>
+  <div class="cols cols-2">
+    <div class="bars">
+      <div class="row"><span>الخصوصية والأمن</span><div class="bar c-purple" style="--w:100%"></div><span class="val">4</span></div>
+      <div class="row"><span>التحيز والتمييز</span><div class="bar c-coral" style="--w:75%"></div><span class="val">3</span></div>
+      <div class="row"><span>الإنسان والآلة</span><div class="bar c-cyan" style="--w:75%"></div><span class="val">3</span></div>
+      <div class="row"><span>السلامة والمحدودية</span><div class="bar c-teal" style="--w:75%"></div><span class="val">3</span></div>
+      <div class="row"><span>الاستخدام الضار</span><div class="bar c-navy" style="--w:75%"></div><span class="val">3</span></div>
+      <div class="row"><span>المعلومات المضللة</span><div class="bar c-amber" style="--w:50%"></div><span class="val">2</span></div>
+      <div class="row"><span>الآثار الاجتماعية</span><div class="bar c-green" style="--w:50%"></div><span class="val">2</span></div>
+    </div>
+    <div class="card c-coral"><h4>البطاقات</h4><p class="small mb0">تسع جديدة. I03 مكررة (R11)، وI07 مكررة (R02)، وI11 خارج النطاق: «سَمْت» لا يقرأ صورًا.</p></div>
+  </div>
+  <aside class="notes"><p>الأرقام من <span class="ltr">check.py</span>. الفئتان الفارغتان في البداية جاءتا كلتاهما من الحوادث: الاستخدام الضار والآثار الاجتماعية. هذا جواب التمرين الإضافي: لو حُذف مصدر الحوادث لغابت فئتان. هذا السجل ذو العشرين خطرًا هو نقطة بداية الغد.</p></aside>
+</section>
+
+<section class="slide" id="wrap-up" data-n="43" data-session="4">
+  <div class="kicker">خلاصة اليوم 2</div>
+  <h2>ثلاثة أمور تبقى معك</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>أربعة مصادر</h4><p class="small mb0">الناس، ومن يسيء، والمسار، والحوادث. كل مصدر يرى ما لا يراه غيره.</p></div>
+    <div class="card c-coral"><h4>أربعة أجزاء</h4><p class="small mb0">سبب وحدث ونتيجة وطرف متأثر، وثلاثة أوسمة. ما ينقصه جزء لا يُقدَّر.</p></div>
+    <div class="card c-purple"><h4>سجل نظيف</h4><p class="small mb0">لا تكرار، ولا فئة فارغة دون سبب، وكل ما جاء من مساعد موسوم.</p></div>
+  </div>
+  <aside class="notes"><p>اطلب من كل مشارك أن يعدّ مصادر سجل جهته: من أي مصدر جاءت معظم المخاطر؟ وأي مصدر غائب؟</p></aside>
+</section>
+
+<section class="slide dark" id="next" data-label="التالي" data-n="44" data-session="4">
+  <div class="kicker">التالي</div>
+  <h2>اليوم 3: التقدير والمعالجة</h2>
+  <p class="lead">اقرأ دليل التقدير في <span class="ltr">scoring_guide.txt</span>: مستويات الاحتمالية والأثر الأربعة وما يعنيه كل منها في «سَمْت». غدًا يقدّر كل مشارك عشرين خطرًا وحده قبل أن يرى تقدير غيره.</p>
+  <aside class="notes"><p>التقدير الأول غدًا دون مساعد ذكي، عمدًا: نريد أن نرى اختلاف المقدّرين قبل أن يوحّده مساعد.</p></aside>
+</section>
+</div>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T23:50:54Z","version":"2027.1.0","commit":"be30c5b"},"course":{"id":"lds-aig-204","code":"LDS-AIG-204","title":"إدارة مخاطر الذكاء الاصطناعي في التطبيق العملي","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-aig-204/","repo":"SDAIAAcademy/lds-aig-204","home":"../index.html"},"deck":{"id":"day2","kind":"day","day":2,"label":"اليوم 2","title":"تحديد المخاطر","prev":"day1.html","next":"day3.html","md":"day2.md","alt":{}},"sessions":[{"n":1,"label":"الجلسة 1","title":"أصحاب المصلحة والمتأثرون","slide":"s1","outcomes":["تميّز المستخدم المباشر من المتأثر غير المباشر والمشغّل","ترسم الضرر المحتمل على كل فئة متأثرة","تجد الفئة التي لا يذكرها أحد قبل الإطلاق"],"minutes":60,"lab":{"id":"2.1","title":"خريطة أضرار أصحاب المصلحة","minutes":30,"href":"../labs/D2_1_stakeholders.html"}},{"n":2,"label":"الجلسة 2","title":"صياغة الخطر وحالات إساءة الاستخدام","slide":"s2","outcomes":["تصوغ الخطر بالسبب والحدث والنتيجة والطرف المتأثر","تكتب حالة إساءة استخدام من منظور من يسيء الاستخدام","تراجع اقتراحات مساعد ذكي وتحذف المكرر والخارج عن النطاق"],"minutes":65,"lab":{"id":"2.2","title":"حالات إساءة الاستخدام","minutes":35,"href":"../labs/D2_2_misuse.html"}},{"n":3,"label":"الجلسة 3","title":"تحليل أنماط الفشل ومخاطر المورّد","slide":"s3","outcomes":["تحلل خطوة من مسار خدمة: نمط الفشل وأثره وسببه والضابط الحالي","ترسم مخطط ربطة عنق لخطر واحد","تحدد مخاطر المورّد من شروطه وبطاقة نموذجه"],"minutes":65,"lab":{"id":"2.3","title":"تحليل أنماط الفشل في مسار الخدمة","minutes":35,"href":"../labs/D2_3_fmea.html"}},{"n":4,"label":"الجلسة 4","title":"من سجلات الحوادث إلى السجل","slide":"s4","outcomes":["تحوّل حادثة عامة إلى خطر مصوغ في سياق نظامك","تميّز الخطر الجديد من المكرر","تتحقق من تغطية الفئات السبع في سجل واحد"],"minutes":65,"lab":{"id":"2.4","title":"من الحوادث إلى السجل","minutes":35,"href":"../labs/D2_4_register.html"}}],"slides":[{"id":"title","n":1,"title":"تحديد المخاطر","kind":"title","session":0,"hash":"5cae266f","md":"#### [day2#title] تحديد المخاطر\n\n*أكاديمية سدايا · إدارة مخاطر الذكاء الاصطناعي في التطبيق العملي*\n\nاليوم 2: أصحاب المصلحة والمتأثرون، وحالات إساءة الاستخدام، وتحليل أنماط الفشل، والتعلم من سجلات الحوادث، حتى سجل من خمسة عشر خطرًا يغطي الفئات السبع\n\nمسار التنفيذيين والقادة · 4 أيام تدريبية + يوم للمشروع الختامي · 4 جلسات · 4 مختبرات · LDS-AIG-204","notes":"اليوم كله تحديد. في آخره يملك كل مشارك سجلًا من عشرين خطرًا في الفئات السبع، جاءت من أربعة مصادر: الناس، ومن يسيء الاستخدام، والمسار، والحوادث. لا تقدير اليوم: من يسأل «كم درجته؟» نؤجله إلى الغد عمدًا.","minutes":null,"lo":[]},{"id":"agenda","n":2,"title":"تحديد المخاطر","kind":"content","session":0,"hash":"48ff8d55","md":"#### [day2#agenda] تحديد المخاطر\n\n*اليوم*\n\n- **الجلسة 1 · أصحاب المصلحة والمتأثرون**: المستخدم المباشر والمتأثر غير المباشر والمشغّل، وخريطة الأضرار لكل فئة، والفئة التي تغفلها الملاحظات\n- **الجلسة 2 · صياغة الخطر وحالات إساءة الاستخدام**: الخطر بأربعة أجزاء: السبب والحدث والنتيجة والطرف المتأثر، والأنواع السبعة والوصف السببي، وحالات إساءة الاستخدام، ومخاطر الأنظمة التوليدية والوكلاء\n- **الجلسة 3 · تحليل أنماط الفشل ومخاطر المورّد**: تحليل أنماط الفشل وآثارها على مسار خدمة، ومخطط ربطة العنق، والمخاطر التي تأتي من طرف ثالث: النموذج المستضاف وشروط المورّد\n- **الجلسة 4 · من سجلات الحوادث إلى السجل**: التعلم من السجلات العامة للحوادث، وتحويل الحادثة إلى خطر، ونظافة السجل: التكرار والتغطية والوصف السببي","notes":"أربعة مصادر للمخاطر في أربع جلسات. كل جلسة تضيف إلى السجل من زاوية لا تراها الأخرى. الاستراحات بزر B.","minutes":null,"lo":[]},{"id":"review-day1","n":3,"title":"من أين يبدأ التحديد؟","kind":"quiz","session":0,"hash":"4466a7a8","md":"#### [day2#review-day1] من أين يبدأ التحديد؟\n\n*مراجعة اليوم 1*\n\n**سؤال:** وصف مساعد مواعيد في مستشفى افتراضي يقول: «لا يحجز إلا بعد تأكيد المريض»، وتقرير التشغيل يقول: «مواعيد المتابعة تُحجز تلقائيًا». ماذا تفعل بهذا قبل ورشة التحديد؟\n\n- أ. تكتبه تعارضًا في ورقة النطاق، فهو مصدر خطر يُكتب في السجل\n- ب. تعتمد الوصف لأنه الوثيقة الرسمية المعتمدة من الإدارة، وتترك تقرير التشغيل جانبًا\n- ج. توصي بإيقاف الحجز التلقائي فورًا قبل أي ورشة أو تقدير\n- د. تطلب تصحيح الوصف ثم تبدأ الورشة كأن شيئًا لم يكن","notes":"الإجابة: أ. هذا ما فعلناه في المختبر 1.4: التعارضات الأربعة تصير اليوم مخاطر في السجل المرجعي. من اختار «ج» نذكّره بأن المعالجة يوم الغد، بعد التقدير.","minutes":null,"lo":["LO2"]},{"id":"s1","n":4,"title":"أصحاب المصلحة والمتأثرون","kind":"section","session":1,"hash":"9ea12fb4","md":"#### [day2#s1] أصحاب المصلحة والمتأثرون\n\n*الجلسة 1*\n\n- تميّز المستخدم المباشر من المتأثر غير المباشر والمشغّل\n- ترسم الضرر المحتمل على كل فئة متأثرة\n- تجد الفئة التي لا يذكرها أحد قبل الإطلاق","notes":"","minutes":null,"lo":["LO2"]},{"id":"three-kinds","n":5,"title":"ثلاثة أنواع من أصحاب المصلحة، والسجل يحتاجها كلها","kind":"content","session":1,"hash":"a7b6f380","md":"#### [day2#three-kinds] ثلاثة أنواع من أصحاب المصلحة، والسجل يحتاجها كلها\n\n*من يتأثر*\n\n| النوع | من هو | في مساعد مواعيد لمستشفى افتراضي |\n| --- | --- | --- |\n| مستخدم مباشر | يحادث النظام | المريض الذي يحجز موعده |\n| متأثر غير مباشر | لا يحادثه ويتأثر بقراره أو خطئه | مريض الطوارئ الذي يتأخر لأن المواعيد امتلأت خطأً |\n| مشغّل | يعمل معه أو بعده | موظف الاستقبال الذي يستلم الحالات المحوّلة |\n\n> **الإطار الوطني** يطلب في السياق والنطاق تحديد المستخدمين والفئات المتأثرة معًا، لا المستخدمين وحدهم.","notes":"اسأل القاعة: في سجلات جهاتكم، كم خطرًا يقع على من لا يستخدم النظام؟ غالبًا صفر. هذا لأن ورش التحديد تُدعى إليها فرق النظام، وهي تفكر في مستخدميه.\n\nالمصادر: الإطار الوطني لإدارة مخاطر الذكاء الاصطناعي، قسم السياق والنطاق؛ NIST AI RMF 1.0، الوظيفة MAP 5.","minutes":null,"lo":["LO2"]},{"id":"harm-to-people","n":6,"title":"الضرر يقع على شخص، والسمعة تأتي بعده","kind":"content","session":1,"hash":"4d257514","md":"#### [day2#harm-to-people] الضرر يقع على شخص، والسمعة تأتي بعده\n\n*الضرر*\n\n- **مال ووقت.** رسم مدفوع خطأً، موعد ضائع، زيارة بلا فائدة.\n- **خصوصية وكرامة.** بيانات مكشوفة، عبارة مهينة، قرار لا يُفسَّر.\n- **سلامة ووصول.** علاج مؤجل، خدمة لا يصل إليها من لا يملك القناة.\n\n> **علامة سجل ضعيف:** كل نتائجه «ضرر بسمعة الجهة». السمعة نتيجة لضرر وقع على أحد، فاكتب الضرر أولًا.","notes":"يقول الإطار الوطني إن آثار المخاطر تمس الأفراد في حقوقهم وسلامتهم وفرصهم الاقتصادية، والجهات بتعطل العمليات والخسائر المالية والسمعة والمخاطر التنظيمية، والمجتمع والبيئة. نبدأ بالأفراد لأن السجلات تميل إلى البدء بالجهة.\n\nالمصادر: الإطار الوطني، قسم «مخاطر الذكاء الاصطناعي»؛ NIST AI RMF 1.0، الشكل 1 في الجزء الأول: أمثلة الأضرار على الأفراد والمنظمات والمنظومات.","minutes":null,"lo":["LO2"]},{"id":"harm-map","n":7,"title":"سطر لكل فئة: من هي، وما ضررها، وأي خطر يحمله","kind":"content","session":1,"hash":"81facea9","md":"#### [day2#harm-map] سطر لكل فئة: من هي، وما ضررها، وأي خطر يحمله\n\n*خريطة الأضرار*\n\n| الفئة | النوع | الضرر | الخطر من منظورها |\n| --- | --- | --- | --- |\n| المرضى المراجعون | مستخدم مباشر | موعد عند طبيب غائب | القائمة لا تُحدَّث، فيُحجز موعد لا يُقام |\n| مرضى الطوارئ | متأثر غير مباشر | انتظار أطول | حجوزات مكررة تملأ العيادات |\n| موظفو الاستقبال | مشغّل | إعادة جدولة يدوية | المساعد يحوّل الحالات الصعبة وحدها |\n| الأطباء | متأثر غير مباشر | جدول مزدحم دون علمهم | المساعد لا يعرف حدود الحجز لكل طبيب |","notes":"المثال الموازي هو نفسه طوال الجلسة. لاحظوا أن لكل فئة خطرًا، حتى الأطباء الذين لا يحادثون المساعد أبدًا. الخطر يُكتب من منظور الفئة: «ماذا يحدث لي إن أخطأ النظام؟».","minutes":null,"lo":["LO2"]},{"id":"find-the-missing","n":8,"title":"الفئة الغائبة تختبئ في الأرقام وفي القنوات","kind":"content","session":1,"hash":"cababa8f","md":"#### [day2#find-the-missing] الفئة الغائبة تختبئ في الأرقام وفي القنوات\n\n*من لم يُذكر*\n\n1. **الأرقام** كل نسبة من الناس في الملاحظات: من الباقون؟\n2. **القنوات** من لا يصل إلى القناة أصلًا لا يشتكي منها\n3. **المقابلات** من لم يُدعَ؟ ومن لم يحضر؟\n4. **ما بعد الحدث** من يدفع ثمن الخطأ ولم يكن طرفًا فيه؟\n\n> **في المستشفى الافتراضي:** المرضى المحوَّلون من مدن أخرى لا تظهر إحالاتهم في نظام المواعيد، فلا يجدون موعدًا ولا يذكرهم أحد في المقابلات.","notes":"الشكاوى لا تكشف الفئة الغائبة: من لا يستخدم القناة لا يشتكي منها. لذلك نسأل عن الأرقام: «ثلث المراجعين من خارج المدينة» يعني أن هناك فئة لها مسار مختلف.\n\nالمصادر: الإطار الوطني، قسم السياق والنطاق؛ مبادئ أخلاقيات الذكاء الاصطناعي، مبدأ الإنصاف والشمول.","minutes":null,"lo":["LO2"]},{"id":"one-risk-per-group","n":9,"title":"لكل فئة متأثرة خطر واحد على الأقل في السجل","kind":"content","session":1,"hash":"4dd77a4a","md":"#### [day2#one-risk-per-group] لكل فئة متأثرة خطر واحد على الأقل في السجل\n\n*قاعدة المكتب*\n\n- الفئة بلا خطر تعني أن أحدًا لم يسأل عنها\n- الخطر يُكتب باسم الفئة في عمود الطرف المتأثر\n- إن لم تجد خطرًا للفئة فاكتب لماذا، ووقّع\n\n- **الاستخدام المسؤول.** مبدأ الإنصاف في مبادئ الأخلاقيات يطلب ألا تتحمل فئة الضرر وحدها. السجل هو المكان الذي يظهر فيه ذلك أو يختفي.","notes":"هذه قاعدة نضعها في المكتب، وليست نصًا في الإطار. الإطار يطلب تحديد الفئات المتأثرة، والقاعدة تجعل ذلك قابلًا للتحقق: عمود الطرف المتأثر يُقارن بالخريطة.","minutes":null,"lo":["LO2"]},{"id":"interview-questions","n":10,"title":"أربعة أسئلة تكشف أكثر من «ما المخاطر التي تراها؟»","kind":"content","session":1,"hash":"caa6b1a3","md":"#### [day2#interview-questions] أربعة أسئلة تكشف أكثر من «ما المخاطر التي تراها؟»\n\n*المقابلة*\n\n- **ماذا تفعل حين يخطئ النظام؟** يكشف الالتفاف حوله، وهو ضابط غير مكتوب.\n- **من يتصل بك بعد الخطأ؟** يكشف المتأثر الذي لا يحادث النظام.\n- **ما الذي تغير في عملك؟** يكشف أثر النظام على المشغّلين.\n- **من لا يأتي إلينا أصلًا؟** يكشف الفئة الغائبة.","notes":"سؤال «ما المخاطر؟» يعطي قائمة عامة يعرفها الجميع. الأسئلة عن الوقائع تعطي مخاطر خاصة بالنظام. في المختبر لن تقابلوا أحدًا: الملاحظات جاهزة، والأسئلة الأربعة هي طريقة قراءتها.","minutes":null,"lo":["LO2"]},{"id":"check-stakeholders","n":11,"title":"أي فئة غائبة؟","kind":"quiz","session":1,"hash":"a548dc01","md":"#### [day2#check-stakeholders] أي فئة غائبة؟\n\n*نقطة تحقق*\n\n**سؤال:** ملاحظات مقابلات مساعد المواعيد الافتراضي تذكر المرضى والأطباء وموظفي الاستقبال، وتقول: «40% من المواعيد لمراجعين يرافقهم شخص». من الفئة التي لم تُذكر ويحمل النظام خطرًا عليها؟\n\n- أ. موظفو الاستقبال الذين يستلمون الحالات المحوّلة\n- ب. مورّد أجهزة المختبر في المستشفى وفنيو الصيانة الذين يعملون لديه\n- ج. فريق تقنية المعلومات الذي يشغّل المساعد يوميًا\n- د. المرافقون الذين يحجزون أو يُبلَّغون نيابة عن المريض","notes":"الإجابة: د. الطريقة نفسها في المختبر: ابحثوا في الأرقام عن الناس. فريق التقنية مالك للنظام لا فئة متأثرة، وخطره يُكتب من زاوية التشغيل.","minutes":null,"lo":["LO2"]},{"id":"lab-2-1","n":12,"title":"خريطة أضرار أصحاب المصلحة","kind":"lab","session":1,"hash":"b6a709d6","md":"#### [day2#lab-2-1] خريطة أضرار أصحاب المصلحة\n\nالمختبر 2.1 · 30 دقيقة\n\nتبني من ملاحظات المقابلات خريطة لأصحاب المصلحة في «سَمْت» وأضرارهم، وتكتب خطرًا واحدًا على الأقل من منظور كل فئة متأثرة، وتسمّي الفئة التي أغفلتها الملاحظات.\n\n[D2_1_stakeholders.html](https://sdaiaacademy.github.io/lds-aig-204/labs/D2_1_stakeholders.html)\n\n- [ ] اقرأ ملاحظات المقابلات الست (6 د)\n- [ ] صنّف أصحاب المصلحة في ثلاث فئات (6 د)\n- [ ] اكتب لكل فئة متأثرة ضررًا محتملًا (8 د)\n- [ ] اكتب خطرًا من منظور كل فئة (6 د)\n- [ ] سمِّ الفئة الغائبة وسبب غيابها (4 د)\n- [ ] ✱ إضافي: اسأل: من يستخدم «سَمْت» نيابة عن غيره؟ وأضف خطرًا من منظوره","notes":"دون مساعد ذكي. في الدقيقة الخامسة عشرة اسأل بصوت عالٍ: من وجد فئة غير مباشرة؟ لا تقل ما الفئة الغائبة قبل النهاية. من ينهي مبكرًا ينتقل إلى التمرين الإضافي.","minutes":null,"lo":[]},{"id":"debrief-2-1","n":13,"title":"ثماني فئات، وفئة واحدة لا تذكرها أي مقابلة","kind":"content","session":1,"hash":"42387cb8","md":"#### [day2#debrief-2-1] ثماني فئات، وفئة واحدة لا تذكرها أي مقابلة\n\n*ما أظهره المختبر 2.1*\n\n| النوع | الفئات في المرجع |\n| --- | --- |\n| مستخدم مباشر | المتقدمون للتجديد، الناطقون بالإنجليزية، مستخدمو قارئ الشاشة، كبار السن |\n| مشغّل | موظفو مركز الاتصال |\n| متأثر غير مباشر | مدارس القيادة وطلابها، مستخدمو الطريق |\n\n- **الفئة الغائبة.** المقيمون الذين لا يقرؤون العربية ولا الإنجليزية. ثلث الحجوزات لمقيمين، و«سَمْت» يخدم لغتين فقط. يصير هذا الخطر R06.\n\n> **خطر جديد:** أزرار الحجز بلا وصف، فيتعذر الحجز على مستخدم قارئ الشاشة.","notes":"المرجع في solutions/D2_1_stakeholders.md. يُقبل أيضًا مستخدمو الطريق وموظفو الفحص فئةً غائبة ثانية، لأن ملاحظة المكتب تقول إنهم لم يُقابَلوا. اسأل: كم منكم كتب خطرًا على موظفي مركز الاتصال؟","minutes":null,"lo":["LO2"]},{"id":"s2","n":14,"title":"صياغة الخطر وحالات إساءة الاستخدام","kind":"section","session":2,"hash":"99e80a33","md":"#### [day2#s2] صياغة الخطر وحالات إساءة الاستخدام\n\n*الجلسة 2*\n\n- تصوغ الخطر بالسبب والحدث والنتيجة والطرف المتأثر\n- تكتب حالة إساءة استخدام من منظور من يسيء الاستخدام\n- تراجع اقتراحات مساعد ذكي وتحذف المكرر والخارج عن النطاق","notes":"","minutes":null,"lo":["LO2"]},{"id":"four-part-statement","n":15,"title":"الخطر بأربعة أجزاء: السبب والحدث والنتيجة والطرف المتأثر","kind":"content","session":2,"hash":"51438d26","md":"#### [day2#four-part-statement] الخطر بأربعة أجزاء: السبب والحدث والنتيجة والطرف المتأثر\n\n*صياغة الخطر*\n\n1. **السبب** قائمة الأطباء تُحدَّث أسبوعيًا\n2. **الحدث** يحجز المساعد عند طبيب في إجازة\n3. **النتيجة** زيارة ضائعة وعلاج مؤجل\n4. **الطرف المتأثر** المرضى المراجعون\n\n> **ليست مخاطر:** «بيانات قديمة» (سبب وحده)، و«خطأ في المساعد» (لا سبب ولا متأثر)، و«ضرر بالسمعة» (نتيجة وحدها).","notes":"بالأجزاء الأربعة يمكن أن يُقدَّر الخطر غدًا: الاحتمالية تتبع السبب، والأثر يتبع النتيجة والطرف المتأثر. الخطر الذي ينقصه جزء لا يُقدَّر، أو يُقدَّر كل واحد له تقديرًا مختلفًا.\n\nالمصادر: الإطار الوطني، خطوة تحديد المخاطر؛ ISO 31000 في تعريف الخطر.","minutes":null,"lo":["LO2"]},{"id":"causal-tags","n":16,"title":"ثلاثة أوسمة لكل خطر: المسبب والقصد والتوقيت","kind":"content","session":2,"hash":"0b644630","md":"#### [day2#causal-tags] ثلاثة أوسمة لكل خطر: المسبب والقصد والتوقيت\n\n*الوصف السببي*\n\n| الوسم | القيم | لماذا يهم |\n| --- | --- | --- |\n| المسبب (Entity) | النظام، أو الإنسان، أو تفاعلهما | يحدد نوع الضابط: تقني أم إجرائي |\n| القصد (Intent) | متعمد، أو غير متعمد | المتعمد يتكيف مع ضوابطك، والخطأ لا |\n| التوقيت (Timing) | قبل الإطلاق، أو بعده | ما قبل الإطلاق يُمنع بالتصميم، وما بعده يُراقب |\n\n> الإطار الوطني يصنف المخاطر سببيًا بالأبعاد الثلاثة نفسها، وهي في مستودع مخاطر الذكاء الاصطناعي في MIT أيضًا.","notes":"الفئة من الأنواع السبعة تقول ما الضرر، والأوسمة تقول كيف يقع. خطران في فئة واحدة قد يحتاجان ضوابط مختلفة تمامًا: خطأ غير متعمد وإساءة متعمدة.\n\nالمصادر: الإطار الوطني، التصنيف السببي؛ MIT AI Risk Repository (CC BY 4.0).","minutes":null,"lo":["LO2"]},{"id":"misuse-kinds","n":17,"title":"المسيء والمخطئ يصلان إلى الضرر من بابين مختلفين","kind":"content","session":2,"hash":"799b8927","md":"#### [day2#misuse-kinds] المسيء والمخطئ يصلان إلى الضرر من بابين مختلفين\n\n*من منظور المستخدم*\n\n- **إساءة متعمدة.** شخص يريد شيئًا لا يُسمح به: يحجز بالجملة ليبيع، أو يخدع النظام ليكشف ما لا يُكشف. يتكيف مع ضوابطك.\n- **استخدام خاطئ غير متعمد.** شخص حسن النية يفعل ما لم يتوقعه المصمم: جملة مبهمة، أو ثقة زائدة بإجابة. لا يعرف أنه أخطأ.\n\n> ورش التحديد تحب المهاجمين. الاستخدام الخاطئ أكثر وقوعًا، وأقل ذكرًا في السجلات.","notes":"حالة إساءة الاستخدام مأخوذة من هندسة المتطلبات: نكتب قصة استخدام من منظور من يسيء. في المستشفى الافتراضي: مريض يحجز خمسة مواعيد ليختار منها (متعمد)، ومريض يكتب التاريخ بالهجري فيُحجز له يوم آخر (غير متعمد).","minutes":null,"lo":["LO2"]},{"id":"misuse-case","n":18,"title":"اكتبها بخطوات من يسيء، واربطها بخطوة في المسار","kind":"content","session":2,"hash":"de7bcb95","md":"#### [day2#misuse-case] اكتبها بخطوات من يسيء، واربطها بخطوة في المسار\n\n*حالة إساءة الاستخدام*\n\n| البند | في المستشفى الافتراضي |\n| --- | --- |\n| من يسيء | مريض يريد موعدًا أقرب |\n| ما يفعله | يحجز خمسة مواعيد بأسماء أفراد أسرته، ثم يلغي أربعة في اليوم نفسه |\n| خطوة المسار | الحجز: لا حد لعدد المواعيد لكل رقم جوال |\n| ما يحصل عليه | أقرب موعد |\n| من يتضرر | المرضى الذين لم يجدوا موعدًا، والعيادة بمواعيد فارغة |","notes":"ربط الحالة بخطوة في المسار هو ما يجعلها قابلة للمعالجة: الضابط يوضع على تلك الخطوة. حالة بلا خطوة غالبًا مبهمة أو خارج النطاق.","minutes":null,"lo":["LO2"]},{"id":"genai-risks","n":19,"title":"مخاطر تخص النماذج التوليدية في الملف التعريفي من NIST","kind":"content","session":2,"hash":"9471cba2","md":"#### [day2#genai-risks] مخاطر تخص النماذج التوليدية في الملف التعريفي من NIST\n\n*الأنظمة التوليدية*\n\n- اختلاق المعلومات (Confabulation): إجابة واثقة لا أصل لها\n- أمن المعلومات: تعليمات مخفية في المدخلات\n- خصوصية البيانات: ما يُحفظ وما يُكشف في المحادثة\n- التحيز الضار والتجانس\n\n- إعداد الإنسان والآلة: الثقة الزائدة والتشبيه بالبشر\n- سلامة المعلومات: محتوى يُنسب إلى جهة رسمية\n- سلسلة القيمة وتكامل المكونات: نموذج من طرف ثالث\n- المحتوى الخطر والعنيف والمهين\n\n> في الملف التعريفي اثنا عشر خطرًا؛ هذه ثمانية تخص المساعدات. كل منها يقع في فئة من الفئات الوطنية السبع.","notes":"الأربعة الباقية: المعلومات الكيميائية والبيولوجية والإشعاعية والنووية، والملكية الفكرية، والأثر البيئي، والمحتوى الفاحش. لا تخص مساعد خدمة عامة غالبًا، وتُذكر حين يُسأل عنها.\n\nالمصادر: NIST AI 600-1, Generative AI Profile (2024)، القسم 2.","minutes":null,"lo":["LO2"]},{"id":"agent-risks","n":20,"title":"الوكيل الذي ينفذ يضيف مخاطر لا يعرفها المساعد الذي يجيب","kind":"content","session":2,"hash":"cc505e9b","md":"#### [day2#agent-risks] الوكيل الذي ينفذ يضيف مخاطر لا يعرفها المساعد الذي يجيب\n\n*الوكلاء*\n\n- **فعل لا يُرجع.** وكيل حجز سفر افتراضي يدفع تذكرة غير قابلة للاسترداد بعد فهم خاطئ.\n- **صلاحية أوسع من المهمة.** يملك صلاحية الإلغاء لأن الواجهة البرمجية تمنحها مع الحجز.\n- **سلسلة خطوات.** خطأ صغير في الخطوة الأولى يتضاعف في الخامسة، ولا يراه أحد بينهما.\n\n> السؤال لكل أداة: هل يوصي أم يقرر أم ينفذ؟ وأين نقطة الاعتماد البشري قبل ما لا يُرجع؟","notes":"وكيل السفر مثال موازٍ نستعمله للوكلاء طوال المقرر. هذا ما بدأناه في المختبر 1.4 بمستوى الأتمتة لكل أداة. مخاطر الوكلاء تظهر كثيرًا في فئتي السلامة والمحدودية وتفاعل الإنسان والآلة.\n\nالمصادر: الإطار الوطني، نشاط الأتمتة ودور الإنسان؛ NIST AI 600-1.","minutes":null,"lo":["LO2"]},{"id":"review-suggestions","n":21,"title":"كل اقتراح من مساعد يمر بأربعة أسئلة قبل أن يدخل السجل","kind":"content","session":2,"hash":"1270dfb3","md":"#### [day2#review-suggestions] كل اقتراح من مساعد يمر بأربعة أسئلة قبل أن يدخل السجل\n\n*ما يقترحه مساعد*\n\n1. **داخل النطاق؟** هل يستطيع هذا النظام أن يفعل ذلك؟\n2. **محدد؟** هل فيه سبب وحدث ومتأثر؟\n3. **جديد؟** أليس خطرًا موجودًا بكلمات أخرى؟\n4. **موسوم** «اقترحه مساعد: نعم» وسبب القبول\n\n> **من وكيل السفر:** «قد يسيطر الوكيل على أنظمة شركة الطيران» خارج النطاق، و«قد يخطئ الوكيل أحيانًا» مبهم.","notes":"المساعد يكثر ويكرر ويبالغ. لا نمنعه، بل نراجعه ونعلّم ما قبلناه منه. عمود «اقترحه مساعد» في السجل يسمح للمراجع أن يرى نسبة ما جاء من المساعد ويسأل عنه.","minutes":null,"lo":["LO2"]},{"id":"check-statement","n":22,"title":"أي خطر مكتمل؟","kind":"quiz","session":2,"hash":"e3ee317c","md":"#### [day2#check-statement] أي خطر مكتمل؟\n\n*نقطة تحقق*\n\n**سؤال:** أربع صيغ من سجل مساعد المواعيد الافتراضي. أيها خطر مكتمل يمكن أن يُقدَّر غدًا؟\n\n- أ. تاريخ هجري يُقرأ ميلاديًا، فيُحجز يوم خاطئ ويفوت المريض موعده\n- ب. قائمة الأطباء في المساعد لا تُحدَّث إلا مرة في الأسبوع\n- ج. ضرر بسمعة المستشفى إن أخطأ المساعد في المواعيد\n- د. قد يرتكب المساعد أخطاء متكررة في التعامل مع المرضى ومواعيدهم في العيادات","notes":"الإجابة: أ. اطلب من القاعة أن تكمل «ب» إلى خطر كامل: بسبب التحديث الأسبوعي، قد يُحجز موعد عند طبيب في إجازة، فيأتي المريض بلا فائدة.","minutes":null,"lo":["LO2"]},{"id":"lab-2-2","n":23,"title":"حالات إساءة الاستخدام","kind":"lab","session":2,"hash":"660f2381","md":"#### [day2#lab-2-2] حالات إساءة الاستخدام\n\nالمختبر 2.2 · 35 دقيقة\n\nتكتب حالات إساءة استخدام لـ«سَمْت» من منظور المستخدم المسيء والمستخدم المخطئ، وتراجع ثماني حالات اقترحها مساعد، وتحوّل الصالح منها إلى مخاطر مصوغة بأربعة أجزاء.\n\n[D2_2_misuse.html](https://sdaiaacademy.github.io/lds-aig-204/labs/D2_2_misuse.html)\n\n- [ ] اقرأ مسار الخدمة وقالب الحالة (4 د)\n- [ ] اكتب ثلاث حالات إساءة متعمدة (9 د)\n- [ ] اكتب حالتين لاستخدام خاطئ غير متعمد (6 د)\n- [ ] راجع الحالات الثماني المقترحة واحذف ما لا يصلح (8 د)\n- [ ] حوّل خمس حالات إلى مخاطر بأربعة أجزاء ووسمها (8 د)\n- [ ] ✱ إضافي: اكتب حالة إساءة تجمع خطوتين من المسار لا تكفي إحداهما وحدها","notes":"النص البديل للمساعد في الملفات، فلا حاجة إلى أي نموذج. إن استعمل مشارك مساعدًا معتمدًا في جهته فليراجع اقتراحاته بالأسئلة الأربعة نفسها. وزّع المرجع بعد الخطوة الرابعة.","minutes":null,"lo":[]},{"id":"debrief-2-2","n":24,"title":"من ثماني حالات اقترحها المساعد، أربع فقط تدخل السجل","kind":"content","session":2,"hash":"5e1c892b","md":"#### [day2#debrief-2-2] من ثماني حالات اقترحها المساعد، أربع فقط تدخل السجل\n\n*ما أظهره المختبر 2.2*\n\n| البند | القيمة |\n| --- | --- |\n| تُقبل | 4 |\n| مكررة | 2 |\n| خارج النطاق | 1 |\n| مبهمة | 1 |\n\n> M4 تكرار لـM1 بكلمات أخرى، وM8 تكرار لـM3 من زاوية الأداة. المقبولة الأربع تصير مخاطر في السجل، وكل منها موسوم «اقترحه مساعد: نعم».","notes":"المرجع في solutions/D2_2_misuse.md. اسأل: من قبل M5؟ لماذا؟ الخطورة لا تجعلها داخل النطاق. وكم حالة غير متعمدة كتبتم؟ الأمثلة المرجعية: «لن أستطيع الحضور» تُفهم إلغاءً (R09)، والثقة بإجابة الفحص الطبي (R07).","minutes":null,"lo":["LO2"]},{"id":"s3","n":25,"title":"تحليل أنماط الفشل ومخاطر المورّد","kind":"section","session":3,"hash":"5f829963","md":"#### [day2#s3] تحليل أنماط الفشل ومخاطر المورّد\n\n*الجلسة 3*\n\n- تحلل خطوة من مسار خدمة: نمط الفشل وأثره وسببه والضابط الحالي\n- ترسم مخطط ربطة عنق لخطر واحد\n- تحدد مخاطر المورّد من شروطه وبطاقة نموذجه","notes":"","minutes":null,"lo":["LO2"]},{"id":"fmea-columns","n":26,"title":"خطوة بخطوة: كيف تفشل، وما أثر الفشل، ومن يكتشفه","kind":"content","session":3,"hash":"09fdee2a","md":"#### [day2#fmea-columns] خطوة بخطوة: كيف تفشل، وما أثر الفشل، ومن يكتشفه\n\n*تحليل أنماط الفشل*\n\n| العمود | خطوة: اختيار العيادة | خطوة: التحويل |\n| --- | --- | --- |\n| نمط الفشل | عيادة خاطئة للأعراض | ملخص ناقص |\n| الأثر | موعد بلا فائدة | يُسأل المريض من جديد |\n| السبب | وصف مختصر | حد لطول الملخص |\n| الضابط | سؤال تأكيد | لا شيء |\n| الاكتشاف | الطبيب عند الزيارة | شكوى المريض |\n\n> تحليل أنماط الفشل وآثارها (FMEA) يمر على المسار كله، فيجد ما لا تجده ورشة تبدأ من الأفكار.","notes":"الأداة قديمة في الهندسة والجودة، وتصلح للخدمات. نستعمل الأعمدة لا الدرجة: درجة الأولوية التقليدية (الشدة × الوقوع × الاكتشاف) لا نستعملها، لأن التقدير غدًا بمصفوفة الإطار الوطني.\n\nالمصادر: IEC 60812 لتحليل أنماط الفشل (يُذكر اسمًا فقط)؛ الإطار الوطني، خطوة تحديد المخاطر.","minutes":null,"lo":["LO2"]},{"id":"detection","n":27,"title":"الفشل الأخطر هو الذي لا يراه أحد","kind":"content","session":3,"hash":"082a3723","md":"#### [day2#detection] الفشل الأخطر هو الذي لا يراه أحد\n\n*الاكتشاف*\n\n| طريقة الاكتشاف | متى نعرف | من يدفع الثمن قبلها |\n| --- | --- | --- |\n| فحص قبل الإجابة | قبل الحدث | لا أحد |\n| عينة مراجعة دورية | بعد أيام | بعض المستخدمين |\n| شكوى | بعد الضرر، إن اشتكى أحد | المتضرر نفسه |\n| لا شيء | لا نعرف | كل من وقع عليه |\n\n> إذا كان المتضرر لا يعرف أنه تضرر، فلن يشتكي. هنا يفشل النظام بصمت.","notes":"اسأل: متى لا يعرف المتضرر أنه تضرر؟ حين لا يملك المعلومة الصحيحة ليقارن بها. في المستشفى الافتراضي: مريض أُرسل إلى عيادة خاطئة يظن أن هذا هو المسار.","minutes":null,"lo":["LO2"]},{"id":"bow-tie","n":28,"title":"الأسباب على جانب، والنتائج على الآخر، والضوابط بينهما","kind":"content","session":3,"hash":"53ffece8","md":"#### [day2#bow-tie] الأسباب على جانب، والنتائج على الآخر، والضوابط بينهما\n\n*ربطة العنق*\n\n1. **الأسباب** قائمة قديمة، إجازة غير مسجلة\n2. **ضوابط وقائية** تحديث يومي، تأكيد من العيادة\n3. **الحدث** موعد عند طبيب غائب\n4. **ضوابط مخففة** رسالة إلغاء قبل يوم، أولوية في الحجز\n5. **النتائج** زيارة ضائعة، علاج مؤجل","notes":"مخطط ربطة العنق (Bow-tie) يجعل الخطر الواحد صورة: هل الضوابط كلها على جانب واحد؟ غالبًا نعم، الوقائية فقط. هذا المخطط يعود غدًا حين نختار الضوابط.","minutes":null,"lo":["LO2"]},{"id":"third-party","n":29,"title":"النموذج المستضاف ينقل بعض الخطر إليك ولا ينقل المسؤولية عنه","kind":"content","session":3,"hash":"dbcda064","md":"#### [day2#third-party] النموذج المستضاف ينقل بعض الخطر إليك ولا ينقل المسؤولية عنه\n\n*المورّد*\n\n- التحديث: من يقرر متى يتغير النموذج؟\n- الاحتفاظ: ماذا يُحفظ من المدخلات، وأين، وكم؟\n- التوفر: ماذا يحدث حين ينقطع، ومن يعوّض؟\n- المعالجون الفرعيون: من غيرهم يرى البيانات؟\n\n- **الإطار الوطني.** يضع سلسلة القيمة والأطراف الخارجية في السياق والنطاق، ويجعل مخاطرها جزءًا من سجل الجهة لا سجل المورّد.","notes":"في NIST AI RMF يقابل ذلك GOVERN 6 عن مخاطر الأطراف الخارجية وسلسلة الإمداد، وMAP 4. صياغة البنود في العقد موضوع مقرر LDS-AIG-203، وهنا نكتفي بالخطر.\n\nالمصادر: الإطار الوطني، قسم السياق والنطاق؛ NIST AI RMF 1.0.","minutes":null,"lo":["LO2"]},{"id":"read-the-contract","n":30,"title":"كل شرط يُقرأ بسؤال: ماذا يحدث لنا إن وقع؟","kind":"content","session":3,"hash":"2b9ae6f8","md":"#### [day2#read-the-contract] كل شرط يُقرأ بسؤال: ماذا يحدث لنا إن وقع؟\n\n*ورقة المورّد*\n\n| شرط في عقد افتراضي لوكيل السفر | السؤال | الخطر |\n| --- | --- | --- |\n| واجهة الحجز تتغير بإشعار 7 أيام | هل نختبر قبلها؟ | حجوزات تفشل بعد التغيير ولا يعرف أحد |\n| الأسعار تُخزَّن مؤقتًا ساعة | ماذا لو تغير السعر؟ | يعرض الوكيل سعرًا لا يُدفع به |\n| لا التزام بزمن الاستجابة | ماذا في الموسم؟ | تعليق الحجز والدفع مرتين |","notes":"المثال الموازي هو وكيل السفر. في المختبر تقرؤون ورقة مورّد «سَمْت» بالسؤال نفسه. كل شرط يُترجم إلى خطر بأربعة أجزاء، والمتأثر غالبًا ليس المورّد.","minutes":null,"lo":["LO2"]},{"id":"check-fmea","n":31,"title":"أين يفشل المسار بصمت؟","kind":"quiz","session":3,"hash":"0ebbe06b","md":"#### [day2#check-fmea] أين يفشل المسار بصمت؟\n\n*نقطة تحقق*\n\n**سؤال:** مسار مساعد المواعيد الافتراضي: (1) يختار المريض العيادة، (2) يحجز المساعد، (3) يرسل تذكيرًا إلى الجوال المسجل، (4) يحوّل إلى موظف عند الطلب. أي خطوة يفشل فيها النظام دون أن يعرف أحد؟\n\n- أ. التحويل إلى موظف، لأنه قد يتأخر في أوقات الذروة\n- ب. اختيار العيادة، لأن المريض قد يصف أعراضه باختصار\n- ج. التذكير: الرقم القديم لا يرد ولا يُبلِغ أحدًا\n- د. الحجز نفسه، لأن الأداة قد تحجز في موعد ممتلئ أو مغلق","notes":"الإجابة: ج. الطريقة في المختبر: ابحثوا عن خطوة «لا شيء» في الضابط و«لا شيء» في الاكتشاف معًا، وأثرها لا يعرفه المتضرر في الحال.","minutes":null,"lo":["LO2"]},{"id":"lab-2-3","n":32,"title":"تحليل أنماط الفشل في مسار الخدمة","kind":"lab","session":3,"hash":"a00f5418","md":"#### [day2#lab-2-3] تحليل أنماط الفشل في مسار الخدمة\n\nالمختبر 2.3 · 35 دقيقة\n\nتملأ ورقة تحليل أنماط الفشل لخطوات مسار «سَمْت» التسع، وتجد الخطوة التي يفشل فيها النظام دون أن يكتشفه أحد، وتضيف مخاطر المورّد من ورقته.\n\n[D2_3_fmea.html](https://sdaiaacademy.github.io/lds-aig-204/labs/D2_3_fmea.html)\n\n- [ ] اقرأ مسار الخدمة وورقة المورّد (5 د)\n- [ ] املأ نمط الفشل وأثره لكل خطوة (11 د)\n- [ ] أضف السبب والضابط الحالي وطريقة الاكتشاف (8 د)\n- [ ] حدّد الخطوة التي لا يُكتشف فيها الفشل (4 د)\n- [ ] أضف مخاطر المورّد في سطرين أو ثلاثة (7 د)\n- [ ] ✱ إضافي: ارسم مخطط ربطة عنق لخطر الرسوم الخاطئة: الأسباب على جانب، والنتائج على الآخر، والضوابط بينهما","notes":"دون مساعد ذكي. من يتعثر في الخطوة الثانية يكتب نمطًا واحدًا لكل خطوة ويكمل. وزّع المرجع بعد الخطوة الرابعة، وناقش الخطوة الصامتة قبل مخاطر المورّد.","minutes":null,"lo":[]},{"id":"debrief-2-3","n":33,"title":"الخطوة السادسة تفشل بصمت: رسم قديم من مقال، ولا أحد يعرف","kind":"content","session":3,"hash":"05ded8aa","md":"#### [day2#debrief-2-3] الخطوة السادسة تفشل بصمت: رسم قديم من مقال، ولا أحد يعرف\n\n*ما أظهره المختبر 2.3*\n\n| البند | القيمة |\n| --- | --- |\n| لا اكتشاف | 4 |\n| شكوى | 3 |\n| عينة | 1 |\n| تدقيق | 1 |\n\n- **الخطوة 6.** الرسم من المقال، والحاسبة لا تُستدعى إلا بطلب صريح. لا ضابط ولا اكتشاف، والمتقدم لا يعرف أن الرسم خاطئ حتى يدفع. هذا الخطر R01.\n\n> **من ورقة المورّد:** لا تثبيت للإصدار وإشعار 14 يومًا (R10)، ومنطقة نسخ احتياطي غير مؤكدة، ولا تعويض عند الانقطاع.","notes":"الأعداد من المرجع لتسع خطوات. أربع خطوات بلا اكتشاف: 3 و4 و6 و8. الخطوة 6 هي الأخطر لأن أثرها مالي وواسع. هذا الخطر نفسه نراقبه في اليوم الرابع.","minutes":null,"lo":["LO2"]},{"id":"s4","n":34,"title":"من سجلات الحوادث إلى السجل","kind":"section","session":4,"hash":"78010216","md":"#### [day2#s4] من سجلات الحوادث إلى السجل\n\n*الجلسة 4*\n\n- تحوّل حادثة عامة إلى خطر مصوغ في سياق نظامك\n- تميّز الخطر الجديد من المكرر\n- تتحقق من تغطية الفئات السبع في سجل واحد","notes":"","minutes":null,"lo":["LO2"]},{"id":"incident-records","n":35,"title":"ما وقع لغيرك هو أرخص درس في التحديد","kind":"content","session":4,"hash":"0375afd4","md":"#### [day2#incident-records] ما وقع لغيرك هو أرخص درس في التحديد\n\n*سجلات الحوادث*\n\n- **AI Incident Database.** قاعدة مفتوحة لتقارير حوادث الذكاء الاصطناعي، يُبحث فيها بالكلمة والقطاع.\n- **OECD AI Incidents Monitor.** مرصد يجمع الحوادث من الأخبار ويصنفها بالقطاع والضرر.\n\n> **رابط لا نسخة.** بيانات القاعدة الأولى مرخصة بشرط المشاركة بالمثل، ونصوص التقارير لأصحابها. نذكر الرابط في السجل ولا ننسخ النص.","notes":"لهذا كتبنا في المختبر بطاقات اصطناعية على أنماط الحوادث العامة، لا نسخًا منها. الحادثة الحقيقية يُنقل رابطها فقط في عمود المصدر.\n\nالمصادر: incidentdatabase.ai؛ oecd.ai/en/incidents.","minutes":null,"lo":["LO2"]},{"id":"incident-to-risk","n":36,"title":"الحادثة تقع لغيرك؛ الخطر يُكتب في نظامك","kind":"content","session":4,"hash":"17dcb395","md":"#### [day2#incident-to-risk] الحادثة تقع لغيرك؛ الخطر يُكتب في نظامك\n\n*من حادثة إلى خطر*\n\n1. **ما وقع** مساعد حجز في جهة أخرى حجز للشخص نفسه مرتين\n2. **هل يقع عندنا؟** هل في نظامنا الخطوة نفسها؟\n3. **بأربعة أجزاء** سبب في نظامنا، وحدث، ونتيجة، ومتأثر عندنا\n4. **المصدر** «الحوادث» ورابط الحادثة","notes":"الخطأ الشائع: نسخ عنوان الحادثة في السجل («مساعد أخطأ في جهة أخرى»). هذا لا يُقدَّر ولا يُعالج عندنا. الحادثة دليل على أن الخطر ممكن، وتفيد غدًا في تقدير الاحتمالية.","minutes":null,"lo":["LO2"]},{"id":"new-dup-out","n":37,"title":"جديد، أو مكرر، أو خارج النطاق","kind":"content","session":4,"hash":"601aadc8","md":"#### [day2#new-dup-out] جديد، أو مكرر، أو خارج النطاق\n\n*ثلاثة أحكام*\n\n- **جديد.** يمكن أن يقع في نظامك، وليس في السجل خطر له السبب والحدث نفساهما.\n- **مكرر.** السبب والحدث موجودان في خطر في السجل. اكتب رقمه، وأضف الحادثة إلى مصدره.\n- **خارج النطاق.** نظامك لا يملك القدرة أو البيانات أو الخطوة التي وقعت فيها الحادثة.\n\n> الحادثة المكررة ليست بلا فائدة: هي دليل على احتمالية خطر موجود.","notes":"السبب والحدث هما ما يحدد هوية الخطر. نتيجتان مختلفتان لحدث واحد تُكتبان في الخطر نفسه، لا في خطرين. سبب مختلف قليلًا لحدث واحد يُدمج غالبًا، إلا إذا احتاج ضابطًا مختلفًا.","minutes":null,"lo":["LO2"]},{"id":"register-hygiene","n":38,"title":"سجل يُستعمل: سطر لكل خطر، وأعمدة لا تُترك فارغة","kind":"content","session":4,"hash":"85a1d87e","md":"#### [day2#register-hygiene] سجل يُستعمل: سطر لكل خطر، وأعمدة لا تُترك فارغة\n\n*نظافة السجل*\n\n| العمود | لماذا |\n| --- | --- |\n| الرقم الثابت | يبقى للخطر وإن تغيرت صياغته، فتُتبع قراراته |\n| الأجزاء الأربعة | ليُقدَّر ويُعالج |\n| الفئة والأوسمة الثلاثة | ليُعدّ ويُختار له الضابط المناسب |\n| المصدر | ليُعرف من أين جاء ومن يسأل عنه |\n| اقترحه مساعد؟ | ليرى المراجع ما قُبل من مساعد ولماذا |\n| الإصدار والتاريخ | ليُعرف ما تغير بين مراجعتين |","notes":"عمودا الإصدار والتاريخ يعودان في اليوم الرابع عند إعادة التقييم، وفي المشروع الختامي حيث يُقيَّم انضباط السجل. لا تحذفوا خطرًا من السجل: أغلقوه بتاريخ وسبب.","minutes":null,"lo":["LO2"]},{"id":"coverage","n":39,"title":"فئة فارغة في السجل سؤال، لا جواب","kind":"content","session":4,"hash":"ba627dd5","md":"#### [day2#coverage] فئة فارغة في السجل سؤال، لا جواب\n\n*التغطية*\n\n- عُدّ المخاطر في كل فئة من الفئات السبع\n- الفئة الفارغة تعني: لم نسأل، أو سألنا ولا خطر. اكتب أيهما\n- قارن عمود الطرف المتأثر بخريطة أصحاب المصلحة\n- عُدّ المصادر: سجل من مصدر واحد يرى زاوية واحدة\n\n- **في المستشفى الافتراضي.** سجل من اثني عشر خطرًا، ولا شيء في الآثار الاجتماعية والاقتصادية والبيئية. السؤال: ماذا يحدث لموظفي الاستقبال بعد عام من المساعد؟","notes":"التغطية لا تعني أن لكل فئة العدد نفسه. تعني أن الفراغ مقصود ومكتوب. الحد الأدنى في هذا المقرر خمسة عشر خطرًا متمايزًا في الفئات السبع، كما في دليل المقرر.","minutes":null,"lo":["LO2"]},{"id":"check-incident","n":40,"title":"أي حادثة مكررة؟","kind":"quiz","session":4,"hash":"4217d2eb","md":"#### [day2#check-incident] أي حادثة مكررة؟\n\n*نقطة تحقق*\n\n**سؤال:** في سجل مساعد المواعيد الافتراضي خطر: «القائمة لا تُحدَّث، فيُحجز موعد عند طبيب غائب، فيأتي المريض بلا فائدة». أي حادثة من سجل عام مكررة لهذا الخطر، فتُضاف إلى مصدره ولا تُكتب خطرًا جديدًا؟\n\n- أ. مساعد عيادة أرسل تذكيرًا فيه تشخيص المريض إلى رقم قريبه\n- ب. مساعد عيادة حجز مواعيد عند طبيب انتهى عقده لأن جدوله لم يُحدَّث\n- ج. نظام مواقف في مستشفى أخطأ في قراءة لوحات سيارات المراجعين\n- د. مستشفى أغلق خط الهاتف للمواعيد بعد إطلاق مساعد المواعيد بشهر واحد فقط","notes":"الإجابة: ب. «ج» لا تُكتب أيضًا، لكن لأنها خارج النطاق لا لأنها مكررة. ناقش الفرق: المكررة تُضاف إلى مصدر خطر، وخارج النطاق لا تُكتب.","minutes":null,"lo":["LO2"]},{"id":"lab-2-4","n":41,"title":"من الحوادث إلى السجل","kind":"lab","session":4,"hash":"662745c7","md":"#### [day2#lab-2-4] من الحوادث إلى السجل\n\nالمختبر 2.4 · 35 دقيقة\n\nتبدأ من سجل مرجعي من أحد عشر خطرًا، وتقرأ اثنتي عشرة بطاقة حادثة اصطناعية، وتضيف منها ما يكمل السجل إلى خمسة عشر خطرًا متمايزًا على الأقل تغطي الفئات السبع.\n\n[D2_4_register.html](https://sdaiaacademy.github.io/lds-aig-204/labs/D2_4_register.html)\n\n- [ ] اقرأ السجل المرجعي وعدّ الفئات المغطاة (5 د)\n- [ ] اقرأ البطاقات الاثنتي عشرة وعلّم المكرر (9 د)\n- [ ] أضف المخاطر الجديدة بأربعة أجزاء ووصف سببي (12 د)\n- [ ] تحقق من الفئات السبع والفئات المتأثرة (5 د)\n- [ ] ابحث في سجل عام عن حادثة واحدة تدعم خطرًا (4 د)\n- [ ] ✱ إضافي: أضف عمودًا لمصدر كل خطر: مقابلة أو إساءة استخدام أو تحليل فشل أو حادثة، وعدّ ما جاء من كل مصدر","notes":"يبدأ الجميع من السجل المرجعي ذي الأحد عشر خطرًا. الخطوة الخامسة تحتاج الإنترنت: من لا يصل إلى القاعدتين يكتب «تعذر الوصول» ويكمل. لا تُنسخ نصوص التقارير.","minutes":null,"lo":[]},{"id":"debrief-2-4","n":42,"title":"من أحد عشر خطرًا في خمس فئات إلى عشرين في الفئات السبع","kind":"content","session":4,"hash":"a14c8157","md":"#### [day2#debrief-2-4] من أحد عشر خطرًا في خمس فئات إلى عشرين في الفئات السبع\n\n*ما أظهره المختبر 2.4*\n\n| البند | القيمة |\n| --- | --- |\n| الخصوصية والأمن | 4 |\n| التحيز والتمييز | 3 |\n| الإنسان والآلة | 3 |\n| السلامة والمحدودية | 3 |\n| الاستخدام الضار | 3 |\n| المعلومات المضللة | 2 |\n| الآثار الاجتماعية | 2 |\n\n- **البطاقات.** تسع جديدة. I03 مكررة (R11)، وI07 مكررة (R02)، وI11 خارج النطاق: «سَمْت» لا يقرأ صورًا.","notes":"الأرقام من check.py. الفئتان الفارغتان في البداية جاءتا كلتاهما من الحوادث: الاستخدام الضار والآثار الاجتماعية. هذا جواب التمرين الإضافي: لو حُذف مصدر الحوادث لغابت فئتان. هذا السجل ذو العشرين خطرًا هو نقطة بداية الغد.","minutes":null,"lo":["LO2"]},{"id":"wrap-up","n":43,"title":"ثلاثة أمور تبقى معك","kind":"content","session":4,"hash":"a9fd0f3c","md":"#### [day2#wrap-up] ثلاثة أمور تبقى معك\n\n*خلاصة اليوم 2*\n\n- **أربعة مصادر.** الناس، ومن يسيء، والمسار، والحوادث. كل مصدر يرى ما لا يراه غيره.\n- **أربعة أجزاء.** سبب وحدث ونتيجة وطرف متأثر، وثلاثة أوسمة. ما ينقصه جزء لا يُقدَّر.\n- **سجل نظيف.** لا تكرار، ولا فئة فارغة دون سبب، وكل ما جاء من مساعد موسوم.","notes":"اطلب من كل مشارك أن يعدّ مصادر سجل جهته: من أي مصدر جاءت معظم المخاطر؟ وأي مصدر غائب؟","minutes":null,"lo":[]},{"id":"next","n":44,"title":"اليوم 3: التقدير والمعالجة","kind":"content","session":4,"hash":"858e12ee","md":"#### [day2#next] اليوم 3: التقدير والمعالجة\n\n*التالي*\n\nاقرأ دليل التقدير في scoring_guide.txt: مستويات الاحتمالية والأثر الأربعة وما يعنيه كل منها في «سَمْت». غدًا يقدّر كل مشارك عشرين خطرًا وحده قبل أن يرى تقدير غيره.","notes":"التقدير الأول غدًا دون مساعد ذكي، عمدًا: نريد أن نرى اختلاف المقدّرين قبل أن يوحّده مساعد.","minutes":null,"lo":[]}],"activities":[{"id":"review-day1-q1","slide":"review-day1","type":"single","prompt":"وصف مساعد مواعيد في مستشفى افتراضي يقول: «لا يحجز إلا بعد تأكيد المريض»، وتقرير التشغيل يقول: «مواعيد المتابعة تُحجز تلقائيًا». ماذا تفعل بهذا قبل ورشة التحديد؟","options":[{"key":"أ","text":"تكتبه تعارضًا في ورقة النطاق، فهو مصدر خطر يُكتب في السجل"},{"key":"ب","text":"تعتمد الوصف لأنه الوثيقة الرسمية المعتمدة من الإدارة، وتترك تقرير التشغيل جانبًا"},{"key":"ج","text":"توصي بإيقاف الحجز التلقائي فورًا قبل أي ورشة أو تقدير"},{"key":"د","text":"تطلب تصحيح الوصف ثم تبدأ الورشة كأن شيئًا لم يكن"}],"correct":[0],"explanation":"التعارض بين وثيقتين معلومة عن سلوك لم يُقيَّم. يُكتب في ورقة النطاق، ويصير خطرًا في السجل.","misconceptions":["","يثق بالوثيقة المعتمدة ويتجاهل ما يحدث فعلًا في التشغيل","يقفز إلى المعالجة قبل أن يُكتب الخطر ويُقدَّر","يظن أن التعارض خطأ توثيق فقط، وهو يدل على سلوك لم يُقيَّم"],"lo":["LO2"]},{"id":"check-stakeholders-q1","slide":"check-stakeholders","type":"single","prompt":"ملاحظات مقابلات مساعد المواعيد الافتراضي تذكر المرضى والأطباء وموظفي الاستقبال، وتقول: «40% من المواعيد لمراجعين يرافقهم شخص». من الفئة التي لم تُذكر ويحمل النظام خطرًا عليها؟","options":[{"key":"أ","text":"موظفو الاستقبال الذين يستلمون الحالات المحوّلة"},{"key":"ب","text":"مورّد أجهزة المختبر في المستشفى وفنيو الصيانة الذين يعملون لديه"},{"key":"ج","text":"فريق تقنية المعلومات الذي يشغّل المساعد يوميًا"},{"key":"د","text":"المرافقون الذين يحجزون أو يُبلَّغون نيابة عن المريض"}],"correct":[3],"explanation":"الرقم يدل على فئة لها دور في الحجز ولم يقابلها أحد: المرافق قد يتلقى الموعد ولا يبلغه، أو يحجز بهوية غيره.","misconceptions":["يذكر فئة موجودة في الملاحظات، والسؤال عن الغائبة","يختار طرفًا خارج نطاق مساعد المواعيد لا يتأثر بقراراته","يخلط بين صاحب مصلحة وفريق يملك النظام ويعرف مخاطره",""],"lo":["LO2"]},{"id":"check-statement-q1","slide":"check-statement","type":"single","prompt":"أربع صيغ من سجل مساعد المواعيد الافتراضي. أيها خطر مكتمل يمكن أن يُقدَّر غدًا؟","options":[{"key":"أ","text":"تاريخ هجري يُقرأ ميلاديًا، فيُحجز يوم خاطئ ويفوت المريض موعده"},{"key":"ب","text":"قائمة الأطباء في المساعد لا تُحدَّث إلا مرة في الأسبوع"},{"key":"ج","text":"ضرر بسمعة المستشفى إن أخطأ المساعد في المواعيد"},{"key":"د","text":"قد يرتكب المساعد أخطاء متكررة في التعامل مع المرضى ومواعيدهم في العيادات"}],"correct":[0],"explanation":"الأولى فيها السبب (تاريخ هجري يُقرأ ميلاديًا)، والحدث (حجز يوم خاطئ)، والنتيجة (موعد فائت)، والطرف المتأثر (المريض).","misconceptions":["","يكتب السبب وحده، فلا حدث ولا نتيجة ولا متأثر","يكتب نتيجة على الجهة وحدها دون سبب ولا حدث","عام إلى حد لا يُقدَّر: لا سبب ولا متأثر محدد"],"lo":["LO2"]},{"id":"check-fmea-q1","slide":"check-fmea","type":"single","prompt":"مسار مساعد المواعيد الافتراضي: (1) يختار المريض العيادة، (2) يحجز المساعد، (3) يرسل تذكيرًا إلى الجوال المسجل، (4) يحوّل إلى موظف عند الطلب. أي خطوة يفشل فيها النظام دون أن يعرف أحد؟","options":[{"key":"أ","text":"التحويل إلى موظف، لأنه قد يتأخر في أوقات الذروة"},{"key":"ب","text":"اختيار العيادة، لأن المريض قد يصف أعراضه باختصار"},{"key":"ج","text":"التذكير: الرقم القديم لا يرد ولا يُبلِغ أحدًا"},{"key":"د","text":"الحجز نفسه، لأن الأداة قد تحجز في موعد ممتلئ أو مغلق"}],"correct":[2],"explanation":"لا ضابط ولا اكتشاف: الرسالة تصل إلى رقم لا يملكه المريض، والمريض لا يعرف أنه كان هناك تذكير، والعيادة ترى غيابًا فقط.","misconceptions":["الفشل هنا يظهر للموظف أو للمريض في المحادثة نفسها","الخطأ في العيادة يكتشفه الطبيب عند الزيارة، وإن كان متأخرًا","","الحجز الناجح يظهر للمريض فورًا ويؤكده، فالخطأ يُرى"],"lo":["LO2"]},{"id":"check-incident-q1","slide":"check-incident","type":"single","prompt":"في سجل مساعد المواعيد الافتراضي خطر: «القائمة لا تُحدَّث، فيُحجز موعد عند طبيب غائب، فيأتي المريض بلا فائدة». أي حادثة من سجل عام مكررة لهذا الخطر، فتُضاف إلى مصدره ولا تُكتب خطرًا جديدًا؟","options":[{"key":"أ","text":"مساعد عيادة أرسل تذكيرًا فيه تشخيص المريض إلى رقم قريبه"},{"key":"ب","text":"مساعد عيادة حجز مواعيد عند طبيب انتهى عقده لأن جدوله لم يُحدَّث"},{"key":"ج","text":"نظام مواقف في مستشفى أخطأ في قراءة لوحات سيارات المراجعين"},{"key":"د","text":"مستشفى أغلق خط الهاتف للمواعيد بعد إطلاق مساعد المواعيد بشهر واحد فقط"}],"correct":[1],"explanation":"السبب (جدول لا يُحدَّث) والحدث (موعد عند طبيب غير موجود) هما الخطر نفسه. الحادثة تُضاف دليلًا إلى مصدره.","misconceptions":["الحدث مختلف: كشف بيانات لا حجز خاطئ","","خارج النطاق ليس تكرارًا: المساعد لا يقرأ لوحات السيارات أصلًا","الحدث مختلف: إقصاء عن القناة لا موعد خاطئ"],"lo":["LO2"]}],"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":"day2.md","llms":"../llms.txt"},"tasks":[],"tools":[]},"bridge":{"allowedOrigins":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>
