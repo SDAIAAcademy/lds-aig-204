@@ -1,158 +1,505 @@
 <section class="slide title" id="title" data-auto="title">
-  <aside class="notes">REPLACE: الترحيب، والتعريف بنفسك، وسؤال للقاعة يضبط الإيقاع، وإيقاع اليوم</aside>
+  <aside class="notes"><p>اليوم الأخير قبل المشروع الختامي. خطة المعالجة وُقّعت أمس؛ اليوم نعرف هل تعمل، ومتى نعيد التقييم، وكيف نقف أمام لجنة. في آخر جلسة نسلّم موجز المشروع.</p></aside>
 </section>
 
-<section class="slide" id="agenda" data-auto="agenda"></section>
+<section class="slide" id="agenda" data-auto="agenda">
+  <aside class="notes"><p>جلستان للمراقبة، وجلسة لإعادة التقييم، وجلسة للجنة. المختبر الأخير تمرين على المشروع الختامي. الاستراحات بزر B.</p></aside>
+</section>
+
+<section class="slide" id="review-day3" data-lo="LO5">
+  <div class="kicker">مراجعة اليوم 3</div>
+  <h2>ماذا يخفض هذا الضابط؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO5">
+    <p class="lead">خطة معالجة لمساعد المواعيد الافتراضي تقول: «تقرير يومي بالمواعيد المحجوزة عند أطباء في إجازة يخفض احتمالية الخطر من 3 إلى 1». ما الخطأ؟</p>
+    <div class="opts">
+      <div class="opt" data-ok>التقرير كاشف يقصّر مدة الضرر، ولا يمنع الحجز الخاطئ من الأصل</div>
+      <div class="opt" data-why="المشكلة في المحور لا في حجم الخفض وحده">لا خطأ في المحور، لكن الخفض مستويان كثير على ضابط واحد</div>
+      <div class="opt" data-why="الكاشف لا يُرفض، بل يُكتب على المحور الصحيح">التقرير لا يصلح ضابطًا لأن الضوابط الكاشفة لا تُكتب في خطط المعالجة</div>
+      <div class="opt" data-why="التكرار لا يغيّر نوع الضابط">الخطأ في التكرار: لو كان التقرير كل ساعة لخفض الاحتمالية فعلًا</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> الكاشف يعرف ما وقع. الحجز الخاطئ يقع كما كان، ثم يُكتشف أسرع: هذا خفض للأثر لا للاحتمالية.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: أ. هذا يربط أمس باليوم: الضابط الكاشف هو في الحقيقة مؤشر. اليوم نكتب المؤشرات بأنفسنا ونعرف متى تنذر.</p></aside>
+</section>
 
 <!-- الجلسة 1 -->
 
 <section class="slide section" id="s1" data-auto="section" data-session="1"></section>
 
-<section class="slide" id="s1-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
-  <div class="cols cols-2">
-    <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
-    </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
-  </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
+<section class="slide" id="kri-vs-kpi" data-lo="LO6">
+  <div class="kicker">ماذا نقيس</div>
+  <h2>مؤشر الأداء يقول كم نعمل؛ مؤشر الخطر يقول كم نقترب من الحد</h2>
+  <table class="t">
+    <tr><th></th><th>مؤشر أداء <span class="en">(KPI)</span></th><th>مؤشر خطر رئيس <span class="en">(KRI)</span></th></tr>
+    <tr><td>السؤال</td><td>هل نحقق الهدف؟</td><td>هل نقترب من حد التحمّل؟</td></tr>
+    <tr><td>في المستشفى الافتراضي</td><td>عدد المواعيد المحجوزة عبر المساعد</td><td>نسبة المواعيد عند أطباء غائبين في عينة أسبوعية</td></tr>
+    <tr><td>إذا ارتفع</td><td>خبر جيد غالبًا</td><td>إنذار له إجراء ومالك</td></tr>
+  </table>
+  <div class="callout warn mt">عدد المحادثات ورضا المستخدمين مؤشرا أداء. قد يرتفعان والخطر يرتفع معهما.</div>
+  <aside class="notes"><p>كثير من لوحات «مخاطر الذكاء الاصطناعي» في الجهات لوحات أداء: استخدام، ورضا، وزمن استجابة. هذه مهمة، لكنها لا تخبر اللجنة متى تتدخل.</p><p>المصادر: الإطار الوطني، خطوة المتابعة والمراجعة؛ <span class="en">NIST AI RMF 1.0</span>، <span class="en">MEASURE 3</span> و<span class="en">MANAGE 4</span>.</p></aside>
 </section>
 
-<section class="slide" id="s1-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
+<section class="slide" id="leading-lagging" data-lo="LO6">
+  <div class="kicker">التوقيت</div>
+  <h2>السابق ينذر قبل الضرر، واللاحق يعدّه بعد وقوعه</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal"><h4>سابق</h4><p class="small mb0">يتحرك قبل أن يصل الضرر إلى الناس: نسبة الخطأ في عينة المراجعة، محاولات التعليمات المخفية المحجوبة، تأخر رفع قائمة الأطباء.</p></div>
+    <div class="card c-coral"><h4>لاحق</h4><p class="small mb0">يعدّ ما وقع: شكاوى المرضى، المواعيد الضائعة، الحوادث المبلغ عنها.</p></div>
   </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
+  <div class="callout tip mt">الورقة الجيدة تجمعهما: السابق ليتصرف الفريق، واللاحق ليعرف هل كان السابق صادقًا.</div>
+  <aside class="notes"><p>اسأل: الشكاوى سابقة أم لاحقة؟ لاحقة دائمًا: الضرر وقع، والمتضرر اشتكى. ومن لا يعرف أنه تضرر لا يشتكي، كما رأينا في الفشل الصامت.</p></aside>
+</section>
+
+<section class="slide" id="kri-anatomy" data-lo="LO6">
+  <div class="kicker">تشريح المؤشر</div>
+  <h2>ثمانية أعمدة، وكل عمود فارغ يعني أن المؤشر لن يعمل</h2>
+  <table class="t small">
+    <tr><th>العمود</th><th>في المستشفى الافتراضي</th></tr>
+    <tr><td>الخطر المرتبط</td><td>موعد عند طبيب غائب</td></tr>
+    <tr><td>ما يقيسه ومصدره</td><td>المواعيد عند أطباء غائبين في عينة 100 موعد من سجل الحجز</td></tr>
+    <tr><td>التكرار</td><td>أسبوعي</td></tr>
+    <tr><td>العتبتان</td><td>أصفر عند 3، وأحمر عند 6</td></tr>
+    <tr><td>الإجراء</td><td>عند الأحمر: إيقاف الحجز للعيادة المعنية وإبلاغ قسم الجدولة خلال يوم</td></tr>
+    <tr><td>المالك وسابق أم لاحق</td><td>مدير الجدولة؛ سابق</td></tr>
+  </table>
+  <aside class="notes"><p>العتبات تأتي من بيان التحمّل الذي كتبناه في اليوم الأول: البيان يقول النسبة، والمؤشر يحولها إلى عدد في عينة. المصدر يجب أن يكون موجودًا اليوم، لا «سننشئ تقريرًا».</p><p>المصادر: الإطار الوطني، خطوة المتابعة والمراجعة.</p></aside>
+</section>
+
+<section class="slide" id="tolerance-to-kri" data-lo="LO6 LO4">
+  <div class="kicker">من البيان إلى المؤشر</div>
+  <h2>حد التحمّل يقول النسبة، والمؤشر يقولها بالعدد في عينة</h2>
+  <div class="flow">
+    <div class="step c-navy"><b>بيان التحمّل</b>أحمر عند 6% من المواعيد الخاطئة</div>
+    <div class="arrow">←</div>
+    <div class="step c-teal"><b>العينة</b>100 موعد أسبوعيًا</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>العتبة</b>6 مواعيد خاطئة أو أكثر</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>القاعدة</b>أو أسبوعان أصفران متتاليان</div>
+  </div>
+  <div class="callout note mt">حجم العينة جزء من العتبة. «5%» بلا عينة لا يُحسب، و5% من عشرين إجابة خطأ واحد.</div>
+  <aside class="notes"><p>شرط «أسبوعين أصفرين متتاليين» يلتقط التدهور البطيء الذي لا يبلغ الأحمر في أسبوع واحد. نرى في الجلسة التالية ماذا يكلّف من إنذارات كاذبة.</p></aside>
+</section>
+
+<section class="slide" id="monitoring-gaps" data-lo="LO6">
+  <div class="kicker">فجوة المراقبة</div>
+  <h2>خطر بلا بيان يقيسه يُكتب فجوةً، لا يُترك بلا مؤشر</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li>ابدأ من المخاطر ذات المتبقي الأعلى، لا من البيانات المتاحة</li>
+      <li>إن لم يوجد بيان، فاكتب ما يلزم ومن يوفره ومتى</li>
+      <li>الفجوة تذهب إلى اللجنة في بند «ما لم نتحقق منه»</li>
+    </ul>
+    <div class="card c-purple"><h4>في وكيل السفر الافتراضي</h4><p class="small mb0">خطر «حجز بسعر لا يُدفع به» لا يقيسه أي سجل اليوم: الوكيل لا يحفظ السعر المعروض. الفجوة: حفظ السعر المعروض مع كل حجز.</p></div>
+  </div>
+  <aside class="notes"><p>الخطأ الشائع: ورقة مؤشرات تُبنى من البيانات الموجودة، فتغطي المخاطر السهلة القياس وتترك الأعلى. اعكس الترتيب.</p></aside>
+</section>
+
+<section class="slide" id="control-testing" data-lo="LO6">
+  <div class="kicker">اختبار الضابط</div>
+  <h2>الضابط الموجود ليس بالضرورة ضابطًا يعمل</h2>
+  <table class="t small">
+    <tr><th>السؤال</th><th>الاختبار</th><th>في المستشفى الافتراضي</th></tr>
+    <tr><td>هل التصميم يمنع الخطر لو نُفذ؟</td><td>قراءة الإجراء ومقارنته بالخطر</td><td>هل التأكيد قبل يوم يشمل الإجازات الطارئة؟</td></tr>
+    <tr><td>هل يُنفذ فعلًا؟</td><td>عينة من الأدلة</td><td>عشرون موعدًا: هل وصلها تأكيد؟</td></tr>
+    <tr><td>هل يلتقط ما صُمم له؟</td><td>حالة معروفة تُدخل عمدًا</td><td>طبيب في إجازة تجريبية: هل يُمنع الحجز عنده؟</td></tr>
+  </table>
+  <aside class="notes"><p>إدخال حالة معروفة عمدًا هو أقوى اختبار، ويصلح للإشراف البشري أيضًا: أدخل أخطاء معروفة في عينة المراجع، وعُدّ ما اكتُشف منها. هذا من ممارسات التحقق المستقل في إدارة مخاطر النماذج.</p><p>المصادر: <span class="en">NIST AI RMF 1.0</span>، <span class="en">MEASURE 2</span>؛ إرشادات إدارة مخاطر النماذج <span class="en">SR 26-2</span> في التحقق والتحدي الفعّال.</p></aside>
+</section>
+
+<section class="slide" id="check-kri" data-lo="LO6">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أي هذه مؤشر خطر سابق؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO6">
+    <p class="lead">لوحة مساعد المواعيد الافتراضي فيها أربعة أرقام أسبوعية. أيها مؤشر خطر رئيس سابق لخطر «موعد عند طبيب غائب»؟</p>
+    <div class="opts">
+      <div class="opt" data-why="مؤشر أداء: يرتفع مع الاستخدام لا مع الخطر">عدد المواعيد المحجوزة عبر المساعد هذا الأسبوع</div>
+      <div class="opt" data-why="لاحق: يعدّ الضرر بعد أن وقع على المريض">عدد شكاوى المرضى من مواعيد لم تُقم في هذا الأسبوع</div>
+      <div class="opt" data-ok>الأيام التي تأخر فيها رفع قائمة الأطباء عن موعده</div>
+      <div class="opt" data-why="مؤشر رضا عام لا يرتبط بخطر بعينه ولا بعتبة">متوسط تقييم المرضى للمساعد في استبيان الأسبوع من خمسة</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> تأخر الرفع هو السبب في الخطر. يتحرك قبل أن يُحجز أي موعد خاطئ، فيستطيع الفريق أن يتصرف قبل أن يأتي مريض بلا فائدة.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ج. مؤشر السبب أسبق من مؤشر الحدث، ومؤشر الحدث أسبق من مؤشر الضرر. في المختبر ابحثوا عن عمود في القاموس يقيس السبب أو الحدث.</p></aside>
 </section>
 
 <section class="slide lab" id="lab-4-1" data-auto="lab" data-lab="4.1">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
+  <aside class="notes"><p>يبدأ الجميع من السجل المعالَج المرجعي. راقب من يكتب «عدد المحادثات» مؤشرًا، واسأله: ما العتبة؟ ومن يتصرف إذا ارتفع؟ لا توزع الورقة المرجعية: المختبر التالي يبدأ منها.</p></aside>
+</section>
+
+<section class="slide" id="debrief-4-1" data-lo="LO6">
+  <div class="kicker">ما أظهره المختبر 4.1</div>
+  <h2>ثمانية مؤشرات تغطي تسعة مخاطر، وخمسة منها سابقة</h2>
+  <table class="t small">
+    <tr><th>المؤشر</th><th>الخطر</th><th>ما يقيسه</th><th>أصفر</th><th>أحمر</th></tr>
+    <tr><td>K1</td><td>R01 R10 R11</td><td>الخطأ في عينة 200 أسبوعيًا</td><td>11</td><td>16 أو أسبوعان أصفران</td></tr>
+    <tr><td>K2</td><td>R01</td><td>أخطاء الرسوم في عينة 60</td><td>3</td><td>5</td></tr>
+    <tr><td>K3</td><td>R05</td><td>فرق الخطأ بين الإنجليزية والعربية، شهريًا</td><td>3 نقاط</td><td>5 نقاط</td></tr>
+    <tr><td>K4 إلى K8</td><td>R12 R03 R09 R08 R18</td><td>الحجز الجماعي، التعليمات المخفية، الإلغاء دون تأكيد، النسخ دون تحقق، التوفر</td><td colspan="2">في الورقة المرجعية</td></tr>
+  </table>
+  <aside class="notes"><p>الأعداد من <span class="ltr">check.py</span>. K1 إلى K5 سابقة، وK6 إلى K8 لاحقة. K1 هو الذي نطبقه في الجلسة التالية على ستة وعشرين أسبوعًا. اسأل: من كتب «عدد المحادثات»؟ سنرى بعد قليل لماذا كان سيضللنا.</p></aside>
 </section>
 
 <!-- الجلسة 2 -->
 
 <section class="slide section" id="s2" data-auto="section" data-session="2"></section>
 
-<section class="slide" id="s2-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
+<section class="slide" id="noise" data-lo="LO6">
+  <div class="kicker">الضجيج</div>
+  <h2>في عينة من 200، الأسبوع العادي يتراوح بين خطأين وعشرة</h2>
   <div class="cols cols-2">
     <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
+      <li>نسبة خطأ ثابتة 3% تعطي في المتوسط 6 أخطاء من 200</li>
+      <li>ومن أسبوع إلى أسبوع تتراوح غالبًا بين 2 و10 دون أي تغير</li>
+      <li>أسبوع من 9 أخطاء ليس تدهورًا بالضرورة</li>
+      <li>كلما صغرت العينة اتسع التراوح</li>
     </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
+    <div class="card tint c-navy"><h4>السؤال الصحيح</h4><p class="small mb0">ليس «هل ارتفع الرقم؟» بل «هل ارتفع أكثر مما يرتفع عادة وحده؟». العتبات تجيب عن ذلك سلفًا، فلا يُناقش كل أسبوع من جديد.</p></div>
   </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
+  <aside class="notes"><p>الأرقام من التوزيع ذي الحدين: عند 3% و200 محادثة، الانحراف المعياري نحو 2.4 خطأ، ونحو 94% من الأسابيع بين 2 و10. لا نشرح الإحصاء؛ نكتفي بأن الرقم يتحرك وحده.</p><p>المصادر: حساب المقرر.</p></aside>
 </section>
 
-<section class="slide" id="s2-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
+<section class="slide" id="two-level-rule" data-lo="LO6">
+  <div class="kicker">قاعدة بمستويين</div>
+  <h2>ماذا تفعل قاعدة «أصفر عند 11، وأحمر عند 16 أو أسبوعين أصفرين»؟</h2>
+  <div class="cols cols-2">
+    <div class="bars">
+      <div class="row"><span>أصفر كاذب في أسبوع</span><div class="bar c-amber" style="--w:4%"></div><span class="val">4%</span></div>
+      <div class="row"><span>أحمر كاذب في 18 أسبوعًا</span><div class="bar c-coral" style="--w:3.2%"></div><span class="val">3.2%</span></div>
+      <div class="row"><span>أحمر خلال أسبوعين عند 7%</span><div class="bar c-teal" style="--w:80%"></div><span class="val">80%</span></div>
+      <div class="row"><span>أحمر خلال 4 أسابيع عند 7%</span><div class="bar c-cyan" style="--w:97%"></div><span class="val">97%</span></div>
+    </div>
+    <div class="card c-purple"><h4>كيف نقرأها</h4><p class="small mb0">حين يكون الخطأ 3%، تنذر القاعدة بالأحمر كذبًا مرة في نحو ثلاثين فترة من 18 أسبوعًا. وحين يصير 7%، تنذر خلال أسبوعين في أربع حالات من خمس.</p></div>
   </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
+  <aside class="notes"><p>هذه أرقام القاعدة نفسها لا أرقام المختبر: محاكاة 20 ألف مرة بنسبة أساس 3% وعينة 200. الأصفر الواحد ليس سببًا للتصعيد، لأنه يقع كذبًا مرة كل خمسة وعشرين أسبوعًا تقريبًا. الأحمر سبب للتصرف.</p><p>المصادر: محاكاة المقرر، موثقة في ملاحظات الإعداد.</p></aside>
+</section>
+
+<section class="slide" id="volume-vs-rate" data-lo="LO6">
+  <div class="kicker">الحجم والمعدل</div>
+  <h2>إذا تضاعف العمل تضاعفت الأخطاء، ولم يتغير الخطر</h2>
+  <table class="t">
+    <tr><th>المستشفى الافتراضي</th><th>المواعيد</th><th>الخاطئة</th><th>المعدل</th></tr>
+    <tr><td>أسبوع عادي</td><td>4,000</td><td>80</td><td>2.0%</td></tr>
+    <tr><td>أسبوع حملة التطعيم</td><td>8,000</td><td>160</td><td>2.0%</td></tr>
+    <tr><td>أسبوع بعد تحديث النظام</td><td>4,100</td><td>205</td><td>5.0%</td></tr>
+  </table>
+  <div class="callout warn mt">لوحة تعرض عدد الأخطاء وحده كانت ستنذر في أسبوع الحملة، وتهدأ في أسبوع التحديث.</div>
+  <aside class="notes"><p>لهذا نقيس الخطأ في عينة ثابتة الحجم: 200 محادثة كل أسبوع مهما كان عدد المحادثات. العينة الثابتة تجعل العدد معدلًا.</p></aside>
+</section>
+
+<section class="slide" id="small-samples" data-lo="LO6">
+  <div class="kicker">العينة الصغيرة</div>
+  <h2>في عينة من ثلاثين، خطأ إضافي واحد يغير اللون</h2>
+  <div class="cols cols-2">
+    <div class="card c-coral"><h4>المشكلة</h4><p class="small mb0">مؤشر على عينة صغيرة يتنقل بين الأصفر والأخضر وحده. بعد شهر لا ينتبه أحد لأصفره.</p></div>
+    <div class="card c-teal"><h4>ما يساعد</h4><p class="small mb0">لا يُصعَّد أصفر واحد. يُنظر إلى المؤشر مع مؤشر أكبر عينةً، أو تُجمع عينة أسبوعين.</p></div>
+  </div>
+  <aside class="notes"><p>إنذار يتكرر بلا سبب يُدرّب الفريق على تجاهله، وهذا أخطر من غيابه. القاعدة بمستويين تحمي من ذلك جزئيًا: الأصفر انتباه، والأحمر تصرف.</p></aside>
+</section>
+
+<section class="slide" id="on-alert" data-lo="LO6">
+  <div class="kicker">عند الإنذار</div>
+  <h2>أربع خطوات قبل أي تفسير</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>تحقق من البيانات</b>هل تغيرت العينة أو طريقة المراجعة؟</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>ابحث في سجل التغيير</b>ماذا تغير قبل الأسبوع الأول؟</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>نفّذ إجراء المؤشر</b>كما كُتب، لا كما يُرتجل</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>أبلغ</b>المالك ومكتب المخاطر، بالأرقام</div>
+  </div>
+  <aside class="notes"><p>الإجراء المكتوب سلفًا هو قيمة المؤشر: لا اجتماع لتقرير ماذا نفعل. التفسير (لماذا ارتفع الخطأ؟) يأتي بالتحقيق، ولا يؤخر الإجراء.</p></aside>
+</section>
+
+<section class="slide" id="check-amber" data-lo="LO6">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>ماذا يعني أسبوع أصفر واحد؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO6">
+    <p class="lead">مؤشر المواعيد الخاطئة في المستشفى الافتراضي: أصفر عند 3 من 100، وأحمر عند 6 أو أسبوعين أصفرين متتاليين. هذا الأسبوع 4 بعد عشرة أسابيع خضراء. ماذا تفعل؟</p>
+    <div class="opts">
+      <div class="opt" data-ok>تسجله، وتراجع سجل التغيير، وتنتظر الأسبوع التالي قبل التصعيد</div>
+      <div class="opt" data-why="يعامل الأصفر كالأحمر، والأصفر يقع كذبًا أحيانًا">تصعده فورًا إلى لجنة المخاطر لأن العتبة تجاوزت</div>
+      <div class="opt" data-why="يتجاهل الإنذار كله، والأصفر الثاني يجعله أحمر">لا شيء، فالأسابيع العشرة الخضراء السابقة تثبت أن الضابط يعمل جيدًا</div>
+      <div class="opt" data-why="يغير العتبة بعد رؤية البيانات، فيفقد المؤشر معناه">ترفع العتبة الصفراء إلى 5 لأن 4 قريبة من الضجيج المعتاد</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> الأصفر انتباه: يُسجل ويُبحث عن تغيير. أصفر ثانٍ متتالٍ يجعله أحمر، وعندها يُنفذ الإجراء ويُصعَّد.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: أ. «د» شائعة جدًا في الجهات: تُعدّل العتبة كلما أنذرت. العتبة تُراجع في موعد مراجعة البيان، لا في يوم الإنذار.</p></aside>
 </section>
 
 <section class="slide lab" id="lab-4-2" data-auto="lab" data-lab="4.2">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
+  <aside class="notes"><p>الجميع على ورقة المؤشرات المرجعية. اطلب رسمين منفصلين: المحادثات والنسبة. لا تقل متى يبدأ التدهور. من ينهي مبكرًا يقدّر أثر العينة الأصغر في التمرين الإضافي.</p></aside>
+</section>
+
+<section class="slide" id="debrief-4-2" data-lo="LO6">
+  <div class="kicker">ما أظهره المختبر 4.2</div>
+  <h2>ثمانية عشر أسبوعًا خضراء، ثم أصفر في الأسبوع 19 وأحمر في 20</h2>
+  <div class="cols cols-2">
+    <div class="bars">
+      <div class="row"><span>الأسبوع 17</span><div class="bar c-green" style="--w:35%"></div><span class="val">7</span></div>
+      <div class="row"><span>الأسبوع 18</span><div class="bar c-green" style="--w:30%"></div><span class="val">6</span></div>
+      <div class="row"><span>الأسبوع 19</span><div class="bar c-amber" style="--w:60%"></div><span class="val">12</span></div>
+      <div class="row"><span>الأسبوع 20</span><div class="bar c-coral" style="--w:65%"></div><span class="val">13</span></div>
+      <div class="row"><span>الأسبوع 21</span><div class="bar c-coral" style="--w:85%"></div><span class="val">17</span></div>
+      <div class="row"><span>الأسبوع 22</span><div class="bar c-coral" style="--w:80%"></div><span class="val">16</span></div>
+    </div>
+    <div class="card c-purple"><h4>ما ليس تدهورًا</h4><p class="small mb0">الأسابيع 9 إلى 11: محادثات أكثر بنحو 45% (موسم التجديد)، والنسبة 2% و2% و3%. ومؤشر الرسوم أصفر أربع مرات قبل الأسبوع 19 دون أحمر: ضجيج عينة من ستين.</p></div>
+  </div>
+  <aside class="notes"><p>الأرقام أخطاء العينة من 200، من <span class="ltr">check.py</span>. الأسبوع 20 أحمر لأنه الأصفر الثاني المتتالي، رغم أنه دون 16. السبب المزروع: تحديث صامت للنموذج وتغيير في مقالات الرسوم في الأسبوع 19. من كتب «عدد المحادثات» مؤشرًا كان سينذر في الأسبوع 9 ويسكت في الأسبوع 19.</p></aside>
 </section>
 
 <!-- الجلسة 3 -->
 
 <section class="slide section" id="s3" data-auto="section" data-session="3"></section>
 
-<section class="slide" id="s3-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
-  <div class="cols cols-2">
-    <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
-    </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
+<section class="slide" id="triggers" data-lo="LO6">
+  <div class="kicker">متى نعيد التقييم</div>
+  <h2>خمسة محفزات لإعادة التقييم، وموعد ثابت لا يغني عنها</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>تغيير</h4><p class="small mb0">في النموذج، أو البيانات، أو الاستخدام، أو النطاق.</p></div>
+    <div class="card c-coral"><h4>حادثة</h4><p class="small mb0">هنا أو في نظام مشابه.</p></div>
+    <div class="card c-purple"><h4>انحراف</h4><p class="small mb0">مؤشر يبلغ الأحمر.</p></div>
+    <div class="card c-cyan"><h4>تنظيم جديد</h4><p class="small mb0">نظام أو لائحة أو معيار يغير الحدود.</p></div>
+    <div class="card c-navy"><h4>الموعد الدوري</h4><p class="small mb0">ولو لم يحدث شيء.</p></div>
   </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
+  <aside class="notes"><p>الإطار الوطني يطلب مراقبة مستمرة، ومراجعات دورية ومراجعات عند الأحداث (تغير البيانات، تحديث النموذج، توسع النطاق، تنظيم جديد)، واكتشاف الحوادث والاستجابة لها. المحفزات تُكتب في ورقة النطاق من اليوم الأول.</p><p>المصادر: الإطار الوطني، خطوة المتابعة والمراجعة.</p></aside>
 </section>
 
-<section class="slide" id="s3-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
+<section class="slide" id="read-notice" data-lo="LO6">
+  <div class="kicker">إشعار المورّد</div>
+  <h2>اقرأ الإشعار مرتين: لما يقوله، ولما لا يقوله</h2>
+  <table class="t small">
+    <tr><th>في إشعار افتراضي لمورّد وكيل السفر</th><th>السؤال</th></tr>
+    <tr><td>«تحسينات في فهم طلبات الحجز»</td><td>أي إصدار؟ هل يتغير السلوك في حالاتنا؟ هل نختبر قبل السريان؟</td></tr>
+    <tr><td>«تحديث سياسة البيانات»</td><td>ما الذي يُحفظ الآن ولم يكن يُحفظ؟ وأين؟</td></tr>
+    <tr><td>«يسري بعد 14 يومًا»</td><td>هل نستطيع الرفض أو التأجيل؟ وماذا لو لم نوافق؟</td></tr>
+    <tr><td>ما لم يُذكر</td><td>المعالجون الفرعيون، والمنطقة، والإعدادات الافتراضية</td></tr>
+  </table>
+  <aside class="notes"><p>الإشعار مكتوب ليُقبل، لا ليُقيَّم. عبارات مثل «تحسينات» لا تقول ما يتغير. ما لا يقوله الإشعار يُرسل سؤالًا إلى المورّد قبل موعد السريان.</p></aside>
+</section>
+
+<section class="slide" id="change-to-risks" data-lo="LO6 LO5">
+  <div class="kicker">من التغيير إلى المخاطر</div>
+  <h2>تغيير واحد قد يمس ثلاثة مخاطر، في محورين مختلفين</h2>
+  <table class="t small">
+    <tr><th>تغيير في وكيل السفر الافتراضي</th><th>الخطر الذي يمسه</th><th>المحور</th></tr>
+    <tr><td>الوكيل يستطيع الآن تعديل الحجز دون سؤال المسافر</td><td>تعديل خاطئ لا يُرجع</td><td>الاحتمالية ↑</td></tr>
+    <tr><td></td><td>رسوم تعديل لا يعرفها المسافر</td><td>الأثر ↑</td></tr>
+    <tr><td></td><td>ثقة زائدة بأن الوكيل «يتولى كل شيء»</td><td>الاحتمالية ↑</td></tr>
+  </table>
+  <div class="callout tip mt">لكل خطر في السجل: هل يغير التغيير سببه، أو حدثه، أو ضابطه؟ إن لم يغير شيئًا، فاكتب «لا يمسه» وسببه.</div>
+  <aside class="notes"><p>كتابة «لا يمسه» مهمة كالتي يمسها: تثبت أن الخطر رُوجع ولم يُنس. في سجل الإصدارات يظهر أن المراجعة شملت السجل كله.</p></aside>
+</section>
+
+<section class="slide" id="pending" data-lo="LO6">
+  <div class="kicker">ما لا نعرفه بعد</div>
+  <h2>«معلق حتى القياس» أصدق من رقم مخمَّن</h2>
+  <div class="cols cols-2">
+    <div class="card c-coral"><h4>لا تفعل</h4><p class="small mb0">«الإصدار الجديد أفضل بحسب المورّد، نخفض الاحتمالية».</p></div>
+    <div class="card c-teal"><h4>افعل</h4><p class="small mb0">«الدرجة 6 معلقة حتى نشغّل مجموعة الاختبار على الإصدار الجديد. المالك: مدير المنصات. الموعد: قبل السريان بأسبوع».</p></div>
   </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
+  <aside class="notes"><p>الدرجة المعلقة تبقى كما هي، ويُضاف إليها القياس المطلوب وموعده. اللجنة تحتاج أن تعرف ما لم يُقس، لا أن ترى رقمًا جديدًا بلا أساس.</p></aside>
+</section>
+
+<section class="slide" id="version-history" data-lo="LO6">
+  <div class="kicker">سجل الإصدارات</div>
+  <h2>كل تغيير في الدرجات سطر: ماذا، ولماذا، ومن اعتمد</h2>
+  <table class="t">
+    <tr><th>الإصدار</th><th>التاريخ</th><th>ما تغير</th><th>من اعتمد</th></tr>
+    <tr><td>2.0</td><td>1 فبراير</td><td>التقييم الأول لوكيل السفر</td><td>لجنة المخاطر</td></tr>
+    <tr><td>2.1</td><td>15 مارس</td><td>إضافة خطرين بعد حادثة في القطاع</td><td>مكتب المخاطر</td></tr>
+    <tr><td>2.2</td><td>2 مايو</td><td>إعادة تقدير ثلاثة مخاطر بعد إشعار المورّد</td><td>مكتب المخاطر</td></tr>
+  </table>
+  <aside class="notes"><p>سجل الإصدارات يجيب عن سؤال اللجنة «ماذا تغير منذ آخر مرة؟» في ثانية. في المشروع الختامي، انضباط السجل عشرة في المئة من التقدير، وسجل الإصدارات أوله.</p></aside>
+</section>
+
+<section class="slide" id="check-notice" data-lo="LO6">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أي خطر يمسه هذا الإشعار؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO6">
+    <p class="lead">مورّد الرسائل في المستشفى الافتراضي يُشعر: «من الشهر القادم تُحفظ نصوص الرسائل 180 يومًا بدل 7 أيام لأغراض الجودة». أي خطر في السجل يجب أن يُعاد تقديره أولًا؟</p>
+    <div class="opts">
+      <div class="opt" data-why="الحفظ لا يغير احتمال وصول الرسالة">رسائل التذكير تُرسل إلى رقم قديم فلا تصل إلى المريض</div>
+      <div class="opt" data-why="انقطاع المورّد خطر توفر لا يمسه طول الحفظ">انقطاع خدمة الرسائل في أوقات الذروة وقبل المواعيد مباشرة بساعات</div>
+      <div class="opt" data-why="محتوى الرسالة نفسه لا يتغير بالإشعار">رسالة تذكير بموعد خاطئ لأن قائمة الأطباء قديمة</div>
+      <div class="opt" data-ok>نصوص الرسائل تكشف نوع العيادة لمن يصل إلى بيانات المورّد</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> حفظ أطول للنصوص يزيد ما يمكن أن ينكشف وطول تعرضه. الاحتمالية ترتفع، والأثر يبقى بحساسية العيادة.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: د. مثل هذا التغيير يُرسل أيضًا إلى مسؤول حماية البيانات. الطريقة نفسها في المختبر: لكل تغيير، أي خطر يتغير سببه أو حدثه أو ضابطه؟</p></aside>
 </section>
 
 <section class="slide lab" id="lab-4-3" data-auto="lab" data-lab="4.3">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
+  <aside class="notes"><p>المختبر ثلاثون دقيقة. أصر على سطر في سجل الإصدارات قبل نهاية المختبر. من يخفض درجة R05 دون قياس، اسأله: من قاس؟</p></aside>
+</section>
+
+<section class="slide" id="debrief-4-3" data-lo="LO6 LO5">
+  <div class="kicker">ما أظهره المختبر 4.3</div>
+  <h2>ستة مخاطر يمسها الإشعار، وأربعة منها صارت مرتفعة</h2>
+  <table class="t small">
+    <tr><th>الخطر</th><th>التغيير</th><th>قبل</th><th>بعد</th><th>الإجراء</th></tr>
+    <tr><td>R10</td><td>N1</td><td>9</td><td>12</td><td>اختبار الانحدار قبل الاستبدال</td></tr>
+    <tr><td>R05</td><td>N1</td><td>6</td><td>6، معلق</td><td>قياس فرق اللغتين على الإصدار الجديد</td></tr>
+    <tr><td>R14، R17</td><td>N2</td><td>4، 6</td><td>6، 9</td><td>طلب الإعداد الصارم واختبار الأسئلة الاستفزازية</td></tr>
+    <tr><td>R02</td><td>N3</td><td>9</td><td>12</td><td>إبلاغ مسؤولة حماية البيانات، وطلب عدم الاحتفاظ كتابيًا</td></tr>
+    <tr><td>R20</td><td>N3 وN4</td><td>6</td><td>9</td><td>طلب المنطقة كتابيًا قبل الموافقة</td></tr>
+  </table>
+  <div class="callout note mt">لا يمس الإشعار R12 ولا R18. سجل الإصدارات: 1.5، يعتمده مكتب المخاطر، ويُعرض R02 وR10 وR17 وR20 على الرئيسة التنفيذية للمخاطر.</div>
+  <aside class="notes"><p>الأرقام من <span class="ltr">check.py</span>. شروط العقد نفسها (التثبيت، والاحتفاظ، والمنطقة) في المقرر LDS-AIG-203. هنا نعيد التقدير ونرسل الأسئلة.</p></aside>
 </section>
 
 <!-- الجلسة 4 -->
 
 <section class="slide section" id="s4" data-auto="section" data-session="4"></section>
 
-<section class="slide" id="s4-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
+<section class="slide" id="what-committee-needs" data-lo="LO7">
+  <div class="kicker">اللجنة</div>
+  <h2>اللجنة لا تريد السجل؛ تريد أن تعرف ماذا تقرر</h2>
   <div class="cols cols-2">
     <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
+      <li>القرار المطلوب، في سطر</li>
+      <li>الخيارات وما يترتب على كل منها</li>
+      <li>ما يبقى من خطر بعد كل خيار، ومن يحمله</li>
+      <li>ما لم نتحقق منه بعد</li>
     </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
+    <div class="card c-coral"><h4>ورقة «للاطلاع»</h4><p class="small mb0">تُقرأ وتُشكر وتُنسى. إن لم تطلب قرارًا فاللجنة لن تتخذ واحدًا، والمتبقي يبقى بلا موقّع.</p></div>
   </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
+  <aside class="notes"><p>رئيسة اللجنة في حالتنا هي الرئيسة التنفيذية للمخاطر. وقتها في الاجتماع دقائق لكل بند. السؤال الذي تسأله أولًا: «ماذا تريدون مني؟».</p></aside>
 </section>
 
-<section class="slide" id="s4-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
+<section class="slide" id="one-page" data-lo="LO7">
+  <div class="kicker">ورقة من صفحة</div>
+  <h2>سبعة بنود في صفحة واحدة</h2>
+  <table class="t small">
+    <tr><th>#</th><th>البند</th><th>في المستشفى الافتراضي</th></tr>
+    <tr><td>1</td><td>القرار المطلوب</td><td>قبول المتبقي في ثلاثة مخاطر، وحسم واحد فوق حده</td></tr>
+    <tr><td>2</td><td>ما تغير</td><td>تحديث يومي للقائمة، وتأكيد قبل يوم</td></tr>
+    <tr><td>3</td><td>أعلى المخاطر بعد المعالجة</td><td>أربعة أسطر، لا عشرون</td></tr>
+    <tr><td>4</td><td>ما نوصي بقبوله وشروطه</td><td>بشرط المؤشر الأسبوعي</td></tr>
+    <tr><td>5</td><td>ما نصعّده ولماذا</td><td>خطر خصوصية فوق حد فئته، بخيارين</td></tr>
+    <tr><td>6</td><td>المؤشرات</td><td>التي ستخبرنا أننا أخطأنا</td></tr>
+    <tr><td>7</td><td>ما لم نتحقق منه</td><td>منطقة تخزين مورّد الرسائل</td></tr>
+  </table>
+  <aside class="notes"><p>القالب نفسه في ملفات المختبر. البند السابع يحمي التوصية: إن ظهر لاحقًا ما لم يُتحقق منه، فاللجنة قررت وهي تعرف.</p></aside>
+</section>
+
+<section class="slide" id="decision-line" data-lo="LO7">
+  <div class="kicker">السطر الأول</div>
+  <h2>السطر الأول يُجاب عنه بنعم أو لا، أو باختيار</h2>
+  <div class="cols cols-2">
+    <div class="card c-coral"><h4>ضعيف</h4><p class="small mb0">«عرض نتائج تقييم مخاطر مساعد المواعيد على اللجنة للاطلاع».</p></div>
+    <div class="card c-teal"><h4>قوي</h4><p class="small mb0">«نطلب قبول المتبقي في ثلاثة مخاطر بشروط المؤشر K1، والاختيار بين خيارين لخطر الخصوصية الذي يبقى فوق حده».</p></div>
   </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
+  <aside class="notes"><p>اطلب من القاعة أن تكتب السطر الأول لورقة عن مشروع في جهتها الآن، ثم يقرأ اثنان سطرهما بصوت عالٍ.</p></aside>
+</section>
+
+<section class="slide" id="changed-fact" data-lo="LO7 LO3">
+  <div class="kicker">الحقيقة المتغيرة</div>
+  <h2>حين تتغير حقيقة أمام اللجنة: أي خطر، أي محور، كم، وهل تتغير التوصية</h2>
+  <div class="flow">
+    <div class="step c-navy"><b>الحقيقة</b>«المساعد سيحجز أيضًا مواعيد العمليات»</div>
+    <div class="arrow">←</div>
+    <div class="step c-teal"><b>الخطر</b>موعد عند طبيب غائب</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>المحور</b>الأثر من 2 إلى 3: عملية مؤجلة لا زيارة</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>التوصية</b>المتبقي 6 فوق حد الفئة: نصعّد بدل القبول</div>
+  </div>
+  <div class="callout tip mt">غيّر محورًا واحدًا إلا إذا كان للحقيقة أثر واضح على الاثنين، وقل لماذا لم يتغير الآخر.</div>
+  <aside class="notes"><p>في المشروع الختامي يغيّر المقيّم حقيقة واحدة، ويعيد المشارك تقدير الخطر المتأثر في الحال. ما يُقيَّم: الخطر الصحيح، والمحور الصحيح، والسبب، وأثر ذلك على التوصية. ليس الرقم وحده.</p></aside>
+</section>
+
+<section class="slide" id="cycle-complete" data-lo="LO1">
+  <div class="kicker">الدورة كاملة</div>
+  <h2>أربعة أيام مرت بالدورة الوطنية كلها، وبوظائف NIST الأربع</h2>
+  <table class="t small">
+    <tr><th>الدورة الوطنية</th><th>في المقرر</th><th><span class="en">NIST AI RMF</span></th></tr>
+    <tr><td>الركائز والتقبّل</td><td>اليوم 1: التقبّل والتحمّل</td><td><span class="en">GOVERN</span></td></tr>
+    <tr><td>السياق والنطاق، والتحديد</td><td>اليوم 1 واليوم 2</td><td><span class="en">MAP</span></td></tr>
+    <tr><td>التقييم</td><td>اليوم 3: التقدير والمعايرة</td><td><span class="en">MEASURE</span></td></tr>
+    <tr><td>المعالجة</td><td>اليوم 3: الخيارات والمتبقي</td><td><span class="en">MANAGE</span></td></tr>
+    <tr><td>المتابعة والمراجعة</td><td>اليوم 4: المؤشرات وإعادة التقييم</td><td><span class="en">MEASURE</span> و<span class="en">MANAGE</span></td></tr>
+  </table>
+  <aside class="notes"><p>هذه الخريطة نفسها التي رسمناها في المختبر 1.1، وقد صارت عملًا. اسأل: أي خطوة كانت الأصعب في التطبيق؟ غالبًا المتابعة، لأنها تحتاج بيانات لا يملكها مكتب المخاطر.</p><p>المصادر: الإطار الوطني؛ <span class="en">NIST AI RMF 1.0</span>.</p></aside>
+</section>
+
+<section class="slide" id="handoffs" data-lo="LO1">
+  <div class="kicker">ما يُسلَّم بعد التقييم</div>
+  <h2>التقييم لا ينتهي عند اللجنة: ثلاثة تسليمات إلى مقررات أخرى</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>تقييم الأثر</h4><p class="small mb0">LDS-AIG-303: الفئات المتأثرة وأضرارها من الخريطة، والمخاطر على الحقوق، إلى وثيقة تقييم الأثر.</p></div>
+    <div class="card c-coral"><h4>الاستجابة للحوادث</h4><p class="small mb0">LDS-AIG-305: المؤشرات وعتباتها الحمراء، ومن يُبلَّغ، إلى خطة الاستجابة وقواعد الإبلاغ.</p></div>
+    <div class="card c-purple"><h4>العقود</h4><p class="small mb0">LDS-AIG-203: مخاطر المورّد وأسئلة الإشعار، إلى بنود التثبيت والاحتفاظ والمنطقة.</p></div>
+  </div>
+  <aside class="notes"><p>لم نكتب في هذا المقرر وثيقة تقييم أثر ولا خطة استجابة ولا بند عقد، عمدًا. ما كتبناه هو المدخلات التي تحتاجها تلك الأعمال.</p></aside>
+</section>
+
+<section class="slide" id="capstone-brief" data-lo="LO7">
+  <div class="kicker">المشروع الختامي</div>
+  <h2>تقييم كامل لنظامين، ودفاع أمام لجنة، ومتابعة بعد أربعة أسابيع</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li>«سَمْت» الإصدار الثاني: دفع الرسوم وخط صوتي</li>
+      <li>«مَؤونة»: وكيل مشتريات يملك أدوات</li>
+      <li>تقرير، وسجل بسجل إصدارات، وورقة مؤشرات</li>
+      <li>عرض 12 دقيقة وأسئلة 8، وحقيقة تتغير أمامك</li>
+      <li>بعد أربعة أسابيع: حادثة وإشعار تغيير، وتحديث السجل</li>
+    </ul>
+    <div class="card tint c-navy"><h4>التسليم</h4><p class="small mb0">فردي. رابط مجلد مشترك في Google Drive، فيه التقرير والسجل والورقة والشرائح. كل خطر اقترحه مساعد يُعلَّم ويُبرَّر.</p></div>
+  </div>
+  <aside class="notes"><p>ملفات المشروع في <span class="ltr">labs/files/capstone/</span>، وهي حالة مختلفة عن المختبرات: نظام جديد، وبيانات مراقبة خاصة بها، ومشكلة مزروعة غير التي رأيناها. سلم التقدير في الشريحة الأولى من يوم المشروع.</p></aside>
+</section>
+
+<section class="slide" id="check-committee" data-lo="LO7">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>ما السطر الأول الأفضل؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO7">
+    <p class="lead">ورقة لجنة عن وكيل السفر الافتراضي: ثلاثة مخاطر متبقيها ضمن الحدود، وخطر واحد فوق حد فئته وله خياران. أي سطر أول هو الأنسب؟</p>
+    <div class="opts">
+      <div class="opt" data-why="لا يطلب قرارًا، فيبقى المتبقي بلا موقّع">عرض نتائج تقييم مخاطر وكيل السفر على اللجنة للاطلاع</div>
+      <div class="opt" data-ok>قبول متبقي ثلاثة مخاطر بشروط مسماة، والاختيار بين خيارين للرابع</div>
+      <div class="opt" data-why="يطلب من اللجنة ما يملكه غيرها، ويخلط القبول بالتمويل">اعتماد ميزانية الضوابط المقترحة كلها للسنة القادمة والتي تليها مباشرة</div>
+      <div class="opt" data-why="يخفي الخطر الذي فوق حده داخل موافقة عامة">الموافقة على إطلاق وكيل السفر بعد اكتمال تقييم مخاطره بنجاح تام وكامل</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> السطر يطلب قرارين تملكهما اللجنة: قبول ما ضمن الحدود بشروط، وحسم ما فوق الحد بين خيارين مسمَّيين.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ب. «د» شائعة وخطرة: «الموافقة على الإطلاق» تبدو قرارًا، لكنها تقبل الخطر الذي فوق حده دون أن تُسمّيه.</p></aside>
 </section>
 
 <section class="slide lab" id="lab-4-4" data-auto="lab" data-lab="4.4">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
+  <aside class="notes"><p>تمرين على المشروع الختامي، وليس من مختبرات دليل المقرر. أزواج للخطوتين الثالثة والرابعة. ابدأ مؤقت الدقائق الثلاث لكل عرض. بطاقات المشروع الختامي مختلفة عن بطاقات اليوم.</p></aside>
+</section>
+
+<section class="slide" id="debrief-4-4" data-lo="LO7">
+  <div class="kicker">ما أظهره المختبر 4.4</div>
+  <h2>ست بطاقات، وكل منها يغيّر محورًا واحدًا لخطر واحد</h2>
+  <table class="t small">
+    <tr><th>البطاقة</th><th>الخطر</th><th>المحور</th><th>قبل</th><th>بعد</th></tr>
+    <tr><td>F1 دفع الرسوم في المحادثة</td><td>R13</td><td>الأثر ↑</td><td>9</td><td>12</td></tr>
+    <tr><td>F2 تقليص ساعات التحويل</td><td>R06</td><td>الأثر ↑</td><td>8</td><td>12</td></tr>
+    <tr><td>F3 المورّد لا يحتفظ بشيء</td><td>R20</td><td>الاحتمالية ↓</td><td>6</td><td>3</td></tr>
+    <tr><td>F4 الإلغاء برابط تأكيد</td><td>R09</td><td>الاحتمالية ↓</td><td>9</td><td>3</td></tr>
+    <tr><td>F5 أربعون حسابًا تحجز بالجملة</td><td>R12</td><td>الاحتمالية ↑</td><td>9</td><td>12</td></tr>
+    <tr><td>F6 مقالات إنجليزية يراجعها بشر</td><td>R05</td><td>الاحتمالية ↓</td><td>6</td><td>4</td></tr>
+  </table>
+  <aside class="notes"><p>الأرقام من <span class="ltr">check.py</span>. F2 أصعبها: R06 كان فوق حده أصلًا، والآن مرتفع؛ التوصية تتغير من «اختيار بين خيارين» إلى «معالجة قبل أي قبول». الدرجات قبل البطاقة هي درجات السجل المقدَّر قبل المعالجة، كما في ملخص اللجنة.</p></aside>
 </section>
 
 <section class="slide" id="wrap-up">
   <div class="kicker">خلاصة اليوم 4</div>
   <h2>ثلاثة أمور تبقى معك</h2>
   <div class="cols cols-3">
-    <div class="card c-teal"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
-    <div class="card c-coral"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
-    <div class="card c-purple"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
+    <div class="card c-teal"><h4>مؤشر له إجراء</h4><p class="small mb0">سابق، بعينة ثابتة، وعتبتين، ومالك، وإجراء مكتوب سلفًا.</p></div>
+    <div class="card c-coral"><h4>اقرأ المعدل لا العدد</h4><p class="small mb0">الحجم يضلل، والأصفر الواحد انتباه، والأحمر تصرف.</p></div>
+    <div class="card c-purple"><h4>اطلب قرارًا</h4><p class="small mb0">سطر أول يُجاب بنعم أو لا، وما لم تتحقق منه مكتوب.</p></div>
   </div>
+  <aside class="notes"><p>اطلب من كل مشارك أن يقول ما سيبدأ به في مشروعه الختامي الليلة: قراءة الوثائق معًا، كما في اليوم الأول.</p></aside>
 </section>
 
 <section class="slide dark" id="next" data-label="التالي">
   <div class="kicker">التالي</div>
-  <h2>المشروع الختامي: عروض المشروع الختامي</h2>
-  <p class="lead">REPLACE: ما يجهزه المشاركون قبل ذلك، والمختبرات غير المكتملة يمكن إكمالها في المنزل</p>
-  <aside class="notes">REPLACE: الحسابات أو التثبيتات أو القراءة التي يحتاجها المشاركون قبل الوحدة التالية</aside>
+  <h2>اليوم 5: المشروع الختامي</h2>
+  <p class="lead">افتح <span class="ltr">labs/files/capstone/README.txt</span> واقرأ وثائق «سَمْت» الإصدار الثاني و«مَؤونة» معًا. العرض 12 دقيقة والأسئلة 8، وحقيقة واحدة ستتغير أمامك.</p>
+  <aside class="notes"><p>ذكّر بالتسليم: رابط مجلد Google Drive قبل بدء العروض. ومهمة المتابعة بعد أربعة أسابيع في المجلد نفسه.</p></aside>
 </section>

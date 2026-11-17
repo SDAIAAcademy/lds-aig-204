@@ -210,7 +210,10 @@ def lab_4_2():
     print(f"  first amber week {first_amber}, first red week {first_red}; errors weeks 17-22: {errs[16:22]}")
     print(f"  volume spike weeks {spike} (error rate there {rate_spike}%): not a deterioration")
     print(f"  fee errors per 60, weeks 15-26: {fee[14:]}")
-    return clean.count("red") == 0 and first_red in (D.SHIFT_WEEK, D.SHIFT_WEEK + 1, D.SHIFT_WEEK + 2) and spike == [9, 10, 11]
+    k2_amber = [i + 1 for i, f in enumerate(fee) if 3 <= f < 5]
+    k2_red = [i + 1 for i, f in enumerate(fee) if f >= 5]
+    print(f"  K2 (amber 3, red 5 of 60): amber weeks {k2_amber}; first red week {k2_red[0]}")
+    return min(k2_red) == D.SHIFT_WEEK and clean.count("red") == 0 and first_red in (D.SHIFT_WEEK, D.SHIFT_WEEK + 1, D.SHIFT_WEEK + 2) and spike == [9, 10, 11]
 
 
 def lab_4_3():
